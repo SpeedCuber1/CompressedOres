@@ -21,9 +21,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-/**
- * Created by Tyler on 11/6/2015.
- */
 public class BlockMetaGold extends Block
 {
     public BlockMetaGold()
@@ -62,8 +59,8 @@ public class BlockMetaGold extends Block
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        int levelBits = meta;
-        EnumLevel level = EnumLevel.byMetadata(levelBits);
+        int levelbits = meta;
+        EnumLevel level = EnumLevel.byMetadata(levelbits);
         return this.getDefaultState().withProperty(PROPERTYLEVEL, level);
     }
 
@@ -72,8 +69,8 @@ public class BlockMetaGold extends Block
     {
         EnumLevel level = (EnumLevel)state.getValue(PROPERTYLEVEL);
 
-        int levelBits = level.getMetadata();
-        return levelBits;
+        int levelbits = level.getMetadata();
+        return levelbits;
     }
 
     @Override
@@ -83,7 +80,7 @@ public class BlockMetaGold extends Block
     }
 
     @Override
-    public IBlockState onBlockPlaced(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    public IBlockState onBlockPlaced(World world, BlockPos pos, EnumFacing levelPlaced, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
         EnumLevel levels = EnumLevel.byMetadata(meta);
         return this.getDefaultState().withProperty(PROPERTYLEVEL, levels);

@@ -1,5 +1,6 @@
 package com.tylerh.compressedores.Items;
 
+import com.tylerh.compressedores.Blocks.BlockMetaGold;
 import com.tylerh.compressedores.ModInfo;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
@@ -9,9 +10,6 @@ import net.minecraft.item.ItemStack;
 
 import java.util.List;
 
-/**
- * Created by Tyler on 11/6/2015.
- */
 public class ItemBlockMetaGold extends ItemBlock
 {
     public ItemBlockMetaGold(Block block)
