@@ -1,5 +1,6 @@
 package com.tylerh.compressedores;
 
+import com.tylerh.compressedores.Init.ModBlocks;
 import com.tylerh.compressedores.Proxy.CommonProxy;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.LogHelper;
@@ -10,9 +11,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-/**
- * Created by Tyler on 11/6/2015.
- */
 @Mod(modid = ModInfo.MOD_ID, name = ModInfo.MOD_NAME, version = ModInfo.MOD_VERSION)
 public class CompressedOres
 {
@@ -21,7 +19,6 @@ public class CompressedOres
 
     @SidedProxy(clientSide = ModInfo.CLIENT_PROXY, serverSide = ModInfo.SERVER_PROXY)
     public static CommonProxy proxy;
-
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -41,9 +38,13 @@ public class CompressedOres
     public void postInit(FMLPostInitializationEvent event)
     {
         proxy.postInit();
-        LogHelper.info("Compressed Ores has finished Poset-Initialization");
     }
 
+    /**
+     * Prepend the name with the mod ID, suitable for ResourceLocations such as textures.
+     * @param name
+     * @return eg "minecraftbyexample:myblockname"
+     */
     public static String prependModID(String name)
     {
         return ModInfo.MOD_ID + ":" + name;

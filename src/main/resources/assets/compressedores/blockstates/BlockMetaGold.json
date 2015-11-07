@@ -13,7 +13,7 @@
       "model":"compressedores:blockMetaGold.Quadruple"
     },
     "level=quintuple":{
-      "model":"compressedores:blockMetaGold.Quintuple"
+      "model": "compressedores:blockMetaGold.Quintuple"
     },
     "level=sextuple":{
       "model":"compressedores:blockMetaGold.Sextuple"

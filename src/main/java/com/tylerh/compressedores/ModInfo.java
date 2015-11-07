@@ -1,7 +1,7 @@
 package com.tylerh.compressedores;
 
 /**
- * Created by Tyler on 11/6/2015.
+ * Created by tyler on 5/4/15.
  */
 public class ModInfo
 {
