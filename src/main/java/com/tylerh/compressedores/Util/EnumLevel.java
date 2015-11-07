@@ -3,18 +3,18 @@ package com.tylerh.compressedores.Util;
 import net.minecraft.util.IStringSerializable;
 
 /**
- * Created by Tyler on 11/6/2015.
+ * Created by stephen on 11/1/15.
  */
 public enum EnumLevel implements IStringSerializable
 {
-    Compressed(0, "Compressed"),
-    Double(1, "Double"),
-    Triple(2, "Triple"),
-    Quadruple(3, "Quadruple"),
-    Quintuple(4, "Quintuple"),
-    Sextuple(5, "Sextuple"),
-    Septuple(6, "Septuple"),
-    Octuple(7, "Octuple");
+    COMPRESSED(0, "Compressed"),
+    DOUBLE(1, "Double"),
+    TRIPLE(2, "Triple"),
+    QUADRUPLE(3, "Quadruple"),
+    QUINTUPLE(4, "Quintuple"),
+    SEXTUPLE(5, "Sextuple"),
+    SEPTUPLE(6, "Septuple"),
+    OCTUPLE(7, "Octuple");
 
     public int getMetadata()
     {

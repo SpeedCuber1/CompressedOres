@@ -1,12 +1,10 @@
 package com.tylerh.compressedores.Util;
 
+
 import com.tylerh.compressedores.ModInfo;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
-/**
- * Created by Tyler on 11/6/2015.
- */
 public class LogHelper
 {
     public static void log(Level logLevel, Object object)
