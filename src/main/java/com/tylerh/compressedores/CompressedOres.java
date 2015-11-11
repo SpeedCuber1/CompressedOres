@@ -1,6 +1,5 @@
 package com.tylerh.compressedores;
 
-import com.tylerh.compressedores.Init.ModBlocks;
 import com.tylerh.compressedores.Proxy.CommonProxy;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.LogHelper;

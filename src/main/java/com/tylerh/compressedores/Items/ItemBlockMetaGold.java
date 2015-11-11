@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Items;
 
-import com.tylerh.compressedores.Blocks.BlockMetaGold;
 import com.tylerh.compressedores.ModInfo;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;

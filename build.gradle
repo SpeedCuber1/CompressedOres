@@ -1,4 +1,4 @@
-/*
+
 // For those who want the bleeding edge
 buildscript {
     repositories {
@@ -13,19 +13,18 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
-*/
+
 
 // for people who want stable
-plugins {
+/*plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.1"
-}
+}*/
 
-version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "1.3"
+group = "com.tylerh.compressedores" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 minecraft {
-    version = "1.8-11.14.3.1521"
+    version = "1.8-11.14.3.1562"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -80,4 +79,8 @@ processResources
         exclude 'mcmod.info'
     }
 }
-idea { module { inheritOutputDirs = true } }
+idea {
+    module {
+        inheritOutputDirs = true
+    }
+}

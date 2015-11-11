@@ -4,7 +4,6 @@ import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
@@ -28,6 +27,7 @@ public class BlockMetaRedstone extends Block
         super(Material.iron);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setHardness(5f);
+        this.setUnlocalizedName("blockMetaRedstone");
     }
 
     @SideOnly(Side.CLIENT)
@@ -76,7 +76,7 @@ public class BlockMetaRedstone extends Block
     @Override
     protected BlockState createBlockState()
     {
-        return new BlockState(this, new IProperty[] {PROPERTYLEVEL});
+        return new BlockState(this, PROPERTYLEVEL);
     }
 
     @Override

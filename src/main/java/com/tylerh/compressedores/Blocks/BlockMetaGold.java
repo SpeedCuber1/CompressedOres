@@ -4,7 +4,6 @@ import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
@@ -28,6 +27,7 @@ public class BlockMetaGold extends Block
         super(Material.iron);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setHardness(3f);
+        this.setUnlocalizedName("blockMetaGold");
     }
 
     @SideOnly(Side.CLIENT)
@@ -36,6 +36,20 @@ public class BlockMetaGold extends Block
         return EnumWorldBlockLayer.SOLID;
     }
 
+    @Override
+    public int getRenderType() {
+        return 3;
+    }
+
+    @Override
+    public boolean isFullCube() {
+        return true;
+    }
+
+    @Override
+    public boolean isOpaqueCube() {
+        return true;
+    }
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
 
     @Override
@@ -76,7 +90,7 @@ public class BlockMetaGold extends Block
     @Override
     protected BlockState createBlockState()
     {
-        return new BlockState(this, new IProperty[] {PROPERTYLEVEL});
+        return new BlockState(this, PROPERTYLEVEL);
     }
 
     @Override
