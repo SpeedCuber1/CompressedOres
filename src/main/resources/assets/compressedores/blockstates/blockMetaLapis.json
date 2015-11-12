@@ -1,0 +1,28 @@
+{
+  "variants":{
+    "level=compressed":{
+      "model":"compressedores:blockMetaLapis.Compressed"
+    },
+    "level=double":{
+      "model":"compressedores:blockMetaLapis.Double"
+    },
+    "level=triple":{
+      "model":"compressedores:blockMetaLapis.Triple"
+    },
+    "level=quadruple":{
+      "model":"compressedores:blockMetaLapis.Quadruple"
+    },
+    "level=quintuple":{
+      "model": "compressedores:blockMetaLapis.Quintuple"
+    },
+    "level=sextuple":{
+      "model":"compressedores:blockMetaLapis.Sextuple"
+    },
+    "level=septuple":{
+      "model":"compressedores:blockMetaLapis.Septuple"
+    },
+    "level=octuple":{
+      "model":"compressedores:blockMetaLapis.Octuple"
+    }
+  }
+}

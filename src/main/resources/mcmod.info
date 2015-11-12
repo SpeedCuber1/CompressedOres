@@ -1,0 +1,16 @@
+[
+{
+  "modid": "CompressedOres",
+  "name": "Compressed Ores",
+  "description": "Unlimited Ore Compression...  Little Chest Space",
+  "version": "1.3",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SpeedCuber1","CyberCube82],
+  "credits": "The Forge and FML guys, for making this possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
