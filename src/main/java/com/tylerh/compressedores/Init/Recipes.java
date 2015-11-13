@@ -142,7 +142,7 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaLapis, 9, 4), "S", 'S', new ItemStack(ModBlocks.blockMetaLapis, 1, 5));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaLapis, 9, 5), "S", 'S', new ItemStack(ModBlocks.blockMetaLapis, 1, 6));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaLapis, 9, 6), "O", 'O', new ItemStack(ModBlocks.blockMetaLapis, 1, 7));
-        }/*
+        }
         if(ModBlocks.registerQuartz)
         {
             //Compressing
@@ -164,7 +164,7 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaQuartz, 9, 4), "S", 'S', new ItemStack(ModBlocks.blockMetaQuartz, 1, 5));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaQuartz, 9, 5), "S", 'S', new ItemStack(ModBlocks.blockMetaQuartz, 1, 6));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaQuartz, 9, 6), "O", 'O', new ItemStack(ModBlocks.blockMetaQuartz, 1, 7));
-        }*/
+        }
         if(ModBlocks.registerCoal)
         {
             //Compressing

@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Blocks;
 
-import com.tylerh.compressedores.ModInfo;
 import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
@@ -15,22 +14,22 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumWorldBlockLayer;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockMetaRedstone extends Block
+public class BlockMetaQuartz extends Block
 {
-    public BlockMetaRedstone()
+    public BlockMetaQuartz()
     {
         super(Material.iron);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
-        this.setHardness(5f);
-        this.setUnlocalizedName("blockMetaRedstone");
+        this.setHardness(3f);
+        this.setUnlocalizedName("blockMetaQuartz");
     }
+
     @SideOnly(Side.CLIENT)
     public EnumWorldBlockLayer getBlockLayer()
     {
@@ -38,17 +37,19 @@ public class BlockMetaRedstone extends Block
     }
 
     @Override
-    public boolean canProvidePower()
-    {
+    public int getRenderType() {
+        return 3;
+    }
+
+    @Override
+    public boolean isFullCube() {
         return true;
     }
 
     @Override
-    public int isProvidingWeakPower(IBlockAccess worldIn, BlockPos pos, IBlockState state, EnumFacing side)
-    {
-        return 15;
+    public boolean isOpaqueCube() {
+        return true;
     }
-
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
 
     @Override
