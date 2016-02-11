@@ -43,7 +43,7 @@ public class BlockMetaRedstone extends Block
     }
 
     @Override
-    public int isProvidingWeakPower(IBlockAccess worldIn, BlockPos pos, IBlockState state, EnumFacing side)
+    public int getWeakPower(IBlockAccess worldIn, BlockPos pos, IBlockState state, EnumFacing side)
     {
         return 15;
     }
