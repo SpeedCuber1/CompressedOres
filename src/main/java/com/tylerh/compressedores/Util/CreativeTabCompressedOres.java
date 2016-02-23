@@ -17,7 +17,7 @@ public class CreativeTabCompressedOres
         @Override
         public Item getTabIconItem()
         {
-            return Item.getItemFromBlock(Blocks.gold_block);
+            return Item.getItemFromBlock(ModBlocks.blockMetaGold);
         }
 
         @Override
