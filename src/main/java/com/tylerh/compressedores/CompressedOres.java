@@ -64,7 +64,7 @@ public class CompressedOres
         ModInfo.craftQuintuple = new Achievement("achievement.craftQuintuple","craftQuintuple",6,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftQuadruple).registerStat();
         ModInfo.craftSextuple = new Achievement("achievement.craftSextuple","craftSextuple",8,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftQuintuple).registerStat();
         ModInfo.craftSeptuple = new Achievement("achievement.craftSeptuple","craftSeptuple",8,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftSextuple).registerStat();
-        ModInfo.craftOctuple = new Achievement("achievement.craftOctuple","craftOctuple",10,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftSeptuple).registerStat();
+        ModInfo.craftOctuple = new Achievement("achievement.craftOctuple","craftOctuple",10,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftSeptuple).registerStat().setSpecial();
         ModInfo.compressedOresPage = new AchievementPage("Compressed Ores", ModInfo.craftCompressed, ModInfo.craftDouble, ModInfo.craftTriple, ModInfo.craftQuadruple, ModInfo.craftQuintuple, ModInfo.craftSextuple, ModInfo.craftSeptuple, ModInfo.craftOctuple);
         AchievementPage.registerAchievementPage(ModInfo.compressedOresPage);
     }
