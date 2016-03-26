@@ -190,7 +190,7 @@ public class Recipes
         if(ModBlocks.registerAndesite)
         {
             //Compressing
-            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 5));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw(1), 9, 5));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 1, 1), "ddd", "ddd", "ddd", 'd', new ItemStack(ModBlocks.blockMetaAndesite, 9, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 1, 2), "ttt", "ttt", "ttt", 't', new ItemStack(ModBlocks.blockMetaAndesite, 9, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 1, 3), "qqq", "qqq", "qqq", 'q', new ItemStack(ModBlocks.blockMetaAndesite, 9, 2));
@@ -200,7 +200,7 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 1, 7), "ooo", "ooo", "ooo", 'o', new ItemStack(ModBlocks.blockMetaAndesite, 9, 6));
 
             //Decompressing
-            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 5), "G", 'G', new ItemStack(ModBlocks.blockMetaAndesite, 1, 0));
+            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1), 9, 5), "G", 'G', new ItemStack(ModBlocks.blockMetaAndesite, 1, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 9, 0), "D", 'D', new ItemStack(ModBlocks.blockMetaAndesite, 1, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 9, 1), "T", 'T', new ItemStack(ModBlocks.blockMetaAndesite, 1, 2));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaAndesite, 9, 2), "Q", 'Q', new ItemStack(ModBlocks.blockMetaAndesite, 1, 3));
@@ -212,7 +212,7 @@ public class Recipes
         if(ModBlocks.registerDiorite)
         {
             //Compressing
-            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 3));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw(1), 9, 3));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 1, 1), "ddd", "ddd", "ddd", 'd', new ItemStack(ModBlocks.blockMetaDiorite, 9, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 1, 2), "ttt", "ttt", "ttt", 't', new ItemStack(ModBlocks.blockMetaDiorite, 9, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 1, 3), "qqq", "qqq", "qqq", 'q', new ItemStack(ModBlocks.blockMetaDiorite, 9, 2));
@@ -222,7 +222,7 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 1, 7), "ooo", "ooo", "ooo", 'o', new ItemStack(ModBlocks.blockMetaDiorite, 9, 6));
 
             //Decompressing
-            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 3), "G", 'G', new ItemStack(ModBlocks.blockMetaDiorite, 1, 0));
+            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1), 9, 3), "G", 'G', new ItemStack(ModBlocks.blockMetaDiorite, 1, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 9, 0), "D", 'D', new ItemStack(ModBlocks.blockMetaDiorite, 1, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 9, 1), "T", 'T', new ItemStack(ModBlocks.blockMetaDiorite, 1, 2));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaDiorite, 9, 2), "Q", 'Q', new ItemStack(ModBlocks.blockMetaDiorite, 1, 3));
@@ -234,7 +234,7 @@ public class Recipes
         if(ModBlocks.registerGranite)
         {
             //Compressing
-            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 1));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw(1), 9, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 1, 1), "ddd", "ddd", "ddd", 'd', new ItemStack(ModBlocks.blockMetaGranite, 9, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 1, 2), "ttt", "ttt", "ttt", 't', new ItemStack(ModBlocks.blockMetaGranite, 9, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 1, 3), "qqq", "qqq", "qqq", 'q', new ItemStack(ModBlocks.blockMetaGranite, 9, 2));
@@ -244,7 +244,7 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 1, 7), "ooo", "ooo", "ooo", 'o', new ItemStack(ModBlocks.blockMetaGranite, 9, 6));
 
             //Decompressing
-            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 1), "G", 'G', new ItemStack(ModBlocks.blockMetaGranite, 1, 0));
+            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1), 9, 1), "G", 'G', new ItemStack(ModBlocks.blockMetaGranite, 1, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 9, 0), "D", 'D', new ItemStack(ModBlocks.blockMetaGranite, 1, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 9, 1), "T", 'T', new ItemStack(ModBlocks.blockMetaGranite, 1, 2));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaGranite, 9, 2), "Q", 'Q', new ItemStack(ModBlocks.blockMetaGranite, 1, 3));
@@ -256,7 +256,7 @@ public class Recipes
         if(ModBlocks.registerCobblestone)
         {
             //Compressing
-            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 0));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 1, 0), "ggg", "ggg", "ggg", 'g', new ItemStack(GameData.getBlockRegistry().getRaw(4), 9, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 1, 1), "ddd", "ddd", "ddd", 'd', new ItemStack(ModBlocks.blockMetaCobble, 9, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 1, 2), "ttt", "ttt", "ttt", 't', new ItemStack(ModBlocks.blockMetaCobble, 9, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 1, 3), "qqq", "qqq", "qqq", 'q', new ItemStack(ModBlocks.blockMetaCobble, 9, 2));
@@ -266,7 +266,7 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 1, 7), "ooo", "ooo", "ooo", 'o', new ItemStack(ModBlocks.blockMetaCobble, 9, 6));
 
             //Decompressing
-            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw("minecraft:stone"), 9, 0), "G", 'G', new ItemStack(ModBlocks.blockMetaCobble, 1, 0));
+            GameRegistry.addRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(4), 9, 0), "G", 'G', new ItemStack(ModBlocks.blockMetaCobble, 1, 0));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 9, 0), "D", 'D', new ItemStack(ModBlocks.blockMetaCobble, 1, 1));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 9, 1), "T", 'T', new ItemStack(ModBlocks.blockMetaCobble, 1, 2));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.blockMetaCobble, 9, 2), "Q", 'Q', new ItemStack(ModBlocks.blockMetaCobble, 1, 3));

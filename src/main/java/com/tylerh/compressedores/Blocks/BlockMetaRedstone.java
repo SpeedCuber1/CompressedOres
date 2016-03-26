@@ -5,16 +5,17 @@ import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
-import net.minecraft.block.state.BlockState;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumWorldBlockLayer;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -24,32 +25,31 @@ import java.util.List;
 
 public class BlockMetaRedstone extends Block
 {
+    public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
     public BlockMetaRedstone()
     {
         super(Material.iron);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYLEVEL,EnumLevel.COMPRESSED));
         this.setHardness(5f);
         this.setUnlocalizedName("blockMetaRedstone");
     }
     @SideOnly(Side.CLIENT)
-    public EnumWorldBlockLayer getBlockLayer()
+    public BlockRenderLayer getBlockLayer()
     {
-        return EnumWorldBlockLayer.SOLID;
+        return BlockRenderLayer.SOLID;
     }
-
     @Override
-    public boolean canProvidePower()
+    public boolean canProvidePower(IBlockState state)
     {
         return true;
     }
-
     @Override
-    public int isProvidingWeakPower(IBlockAccess worldIn, BlockPos pos, IBlockState state, EnumFacing side)
+    public int getStrongPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
         return 15;
     }
 
-    public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
 
     @Override
     public int damageDropped(IBlockState state)
@@ -87,9 +87,9 @@ public class BlockMetaRedstone extends Block
     }
 
     @Override
-    protected BlockState createBlockState()
+    protected BlockStateContainer createBlockState()
     {
-        return new BlockState(this, PROPERTYLEVEL);
+        return new BlockStateContainer(this,new IProperty[] {PROPERTYLEVEL});
     }
 
     @Override

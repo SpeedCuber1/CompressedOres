@@ -7,52 +7,54 @@ import net.minecraft.util.IStringSerializable;
  */
 public enum EnumLevel implements IStringSerializable
 {
-    COMPRESSED(0, "Compressed"),
-    DOUBLE(1, "Double"),
-    TRIPLE(2, "Triple"),
-    QUADRUPLE(3, "Quadruple"),
-    QUINTUPLE(4, "Quintuple"),
-    SEXTUPLE(5, "Sextuple"),
-    SEPTUPLE(6, "Septuple"),
-    OCTUPLE(7, "Octuple");
+    COMPRESSED(0,"compressed","compressed"),
+    DOUBLE(1,"double","double"),
+    TRIPLE(2,"triple","triple"),
+    QUADRUPLE(3,"quadruple","quadruple"),
+    QUINTUPLE(4,"quintuple","quintuple"),
+    SEXTUPLE(5,"sextuple","sextuple"),
+    SEPTUPLE(6,"septuple","septuple"),
+    OCTUPLE(7,"octuple","octuple");
 
+    private static final EnumLevel[] META_LOOKUP = new EnumLevel[values().length];
+    private final int meta;
+    private final String name;
+    private final String unlocalizedName;
+
+    private EnumLevel(int meta, String name, String unlocalizedName)
+    {
+        this.meta = meta;
+        this.name = name;
+        this.unlocalizedName = unlocalizedName;
+    }
     public int getMetadata()
     {
         return this.meta;
     }
-
-    @Override
-    public String toString()
+    public String getUnlocalizedName()
     {
-        return this.name;
+        return this.unlocalizedName;
     }
 
     public static EnumLevel byMetadata(int meta)
     {
-        if(meta < 0 || meta >= META_LOOKUP.length)
+        if (meta < 0 || meta >= META_LOOKUP.length)
         {
             meta = 0;
         }
         return META_LOOKUP[meta];
     }
-
+    public String toString()
+    {
+        return this.unlocalizedName;
+    }
     public String getName()
     {
         return this.name;
     }
-
-    private final int meta;
-    private final String name;
-    private static final EnumLevel[] META_LOOKUP = new EnumLevel[values().length];
-
-    EnumLevel(int i_meta, String i_name)
-    {
-        this.meta = i_meta;
-        this.name = i_name;
-    }
     static
     {
-        for(EnumLevel level : values())
+        for (EnumLevel level : values())
         {
             META_LOOKUP[level.getMetadata()] = level;
         }
