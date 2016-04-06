@@ -1,8 +1,5 @@
 package com.tylerh.compressedores.Util;
 
-import com.tylerh.compressedores.Init.ModBlocks;
-import com.tylerh.compressedores.Items.ItemBlockMetaGold;
-import com.tylerh.compressedores.ModInfo;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;

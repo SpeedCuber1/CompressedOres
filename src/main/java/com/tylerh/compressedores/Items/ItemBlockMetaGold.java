@@ -1,12 +1,11 @@
 package com.tylerh.compressedores.Items;
 
-import com.tylerh.compressedores.ModInfo;
+import com.tylerh.compressedores.Util.ModInfo;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.List;
 
