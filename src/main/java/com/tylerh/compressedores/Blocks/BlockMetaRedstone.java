@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Blocks;
 
-import com.tylerh.compressedores.ModInfo;
 import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
@@ -45,7 +44,7 @@ public class BlockMetaRedstone extends Block
         return true;
     }
     @Override
-    public int getStrongPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+    public int getWeakPower(IBlockState state, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
         return 15;
     }

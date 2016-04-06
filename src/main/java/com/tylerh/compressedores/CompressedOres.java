@@ -45,15 +45,6 @@ public class CompressedOres
         proxy.postInit();
     }
 
-    /**
-     * Prepend the name with the mod ID, suitable for ResourceLocations such as textures.
-     * @param name
-     * @return eg "minecraftbyexample:myblockname"
-     */
-    public static String prependModID(String name)
-    {
-        return ModInfo.MOD_ID + ":" + name;
-    }
     public void loadAchievements()
     {
         ModInfo.craftCompressed = new Achievement("achievement.craftCompressed","craftCompressed",2,3,ModInfo.tempBlocks[getRandom()],null).initIndependentStat().registerStat();
