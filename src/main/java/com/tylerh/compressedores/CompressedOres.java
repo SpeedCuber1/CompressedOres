@@ -3,6 +3,7 @@ package com.tylerh.compressedores;
 import com.tylerh.compressedores.Proxy.CommonProxy;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.LogHelper;
+import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.stats.Achievement;
 import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.fml.common.Mod;
@@ -46,15 +47,6 @@ public class CompressedOres
         proxy.postInit();
     }
 
-    /**
-     * Prepend the name with the mod ID, suitable for ResourceLocations such as textures.
-     * @param name
-     * @return eg "minecraftbyexample:myblockname"
-     */
-    public static String prependModID(String name)
-    {
-        return ModInfo.MOD_ID + ":" + name;
-    }
     public void loadAchievements()
     {
         ModInfo.craftCompressed = new Achievement("achievement.craftCompressed","craftCompressed",2,3,ModInfo.tempBlocks[getRandom()],null).initIndependentStat().registerStat();

@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Util;
 
-import com.tylerh.compressedores.ModInfo;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;

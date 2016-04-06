@@ -1,4 +1,4 @@
-package com.tylerh.compressedores;
+package com.tylerh.compressedores.Util;
 
 import com.tylerh.compressedores.Blocks.BlockMetaAndesite;
 import com.tylerh.compressedores.Init.ModBlocks;
