@@ -4,6 +4,8 @@ import com.tylerh.compressedores.Proxy.CommonProxy;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.LogHelper;
 import com.tylerh.compressedores.Util.ModInfo;
+import net.minecraft.stats.Achievement;
+import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -38,5 +40,23 @@ public class CompressedOres
     public void postInit(FMLPostInitializationEvent event)
     {
         proxy.postInit();
+    }
+    public void loadAchievements()
+    {
+        ModInfo.craftCompressed = new Achievement("achievement.craftCompressed","craftCompressed",2,3,ModInfo.tempBlocks[getRandom()],null).initIndependentStat().registerStat();
+        ModInfo.craftDouble = new Achievement("achievement.craftDouble","craftDouble",4,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftCompressed).registerStat();
+        ModInfo.craftTriple = new Achievement("achievement.craftTriple","craftTriple",4,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftDouble).registerStat();
+        ModInfo.craftQuadruple = new Achievement("achievement.craftQuadruple","craftQuadruple",6,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftTriple).registerStat();
+        ModInfo.craftQuintuple = new Achievement("achievement.craftQuintuple","craftQuintuple",6,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftQuadruple).registerStat();
+        ModInfo.craftSextuple = new Achievement("achievement.craftSextuple","craftSextuple",8,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftQuintuple).registerStat();
+        ModInfo.craftSeptuple = new Achievement("achievement.craftSeptuple","craftSeptuple",8,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftSextuple).registerStat();
+        ModInfo.craftOctuple = new Achievement("achievement.craftOctuple","craftOctuple",10,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftSeptuple).registerStat().setSpecial();
+        ModInfo.compressedOresPage = new AchievementPage("Compressed Ores", ModInfo.craftCompressed, ModInfo.craftDouble, ModInfo.craftTriple, ModInfo.craftQuadruple, ModInfo.craftQuintuple, ModInfo.craftSextuple, ModInfo.craftSeptuple, ModInfo.craftOctuple);
+        AchievementPage.registerAchievementPage(ModInfo.compressedOresPage);
+    }
+
+    public int getRandom()
+    {
+        return rnd.nextInt(12);
     }
 }
