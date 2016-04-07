@@ -13,9 +13,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import java.util.Random;
+
 @Mod(modid = ModInfo.MOD_ID, name = ModInfo.MOD_NAME, version = ModInfo.MOD_VERSION)
 public class CompressedOres
 {
+    Random rnd = new Random();
     @Mod.Instance(ModInfo.MOD_ID)
     public static CompressedOres instance;
 
