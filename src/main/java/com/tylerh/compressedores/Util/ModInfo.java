@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Util;
 
-import com.tylerh.compressedores.Blocks.BlockMetaAndesite;
 import com.tylerh.compressedores.Init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.stats.Achievement;
@@ -13,7 +12,7 @@ public class ModInfo
 {
     public static final String MOD_ID = "CompressedOres";
     public static final String MOD_NAME = "Compressed Ores";
-    public static final String MOD_VERSION = "1.6";
+    public static final String MOD_VERSION = "1.8";
     public static final String CLIENT_PROXY = "com.tylerh.compressedores.Proxy.ClientProxy";
     public static final String SERVER_PROXY = "com.tylerh.compressedores.Proxy.ServerProxy";
 
