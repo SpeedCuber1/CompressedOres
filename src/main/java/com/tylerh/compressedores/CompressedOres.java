@@ -3,6 +3,7 @@ package com.tylerh.compressedores;
 import com.tylerh.compressedores.Proxy.CommonProxy;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.LogHelper;
+import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;

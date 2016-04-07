@@ -1,4 +1,4 @@
-package com.tylerh.compressedores;
+package com.tylerh.compressedores.Util;
 
 /**
  * Created by tyler on 5/4/15.
