@@ -36,6 +36,7 @@ public class CompressedOres
     public void init(FMLInitializationEvent event)
     {
         proxy.init();
+        loadAchievements();
         LogHelper.info("Compressed Ores has finished Initialization");
     }
 
