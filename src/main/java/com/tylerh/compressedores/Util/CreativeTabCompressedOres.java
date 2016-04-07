@@ -1,10 +1,7 @@
 package com.tylerh.compressedores.Util;
 
 import com.tylerh.compressedores.Init.ModBlocks;
-import com.tylerh.compressedores.Items.ItemBlockMetaGold;
-import com.tylerh.compressedores.ModInfo;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
 /**
@@ -17,7 +14,7 @@ public class CreativeTabCompressedOres
         @Override
         public Item getTabIconItem()
         {
-            return Item.getItemFromBlock(Blocks.gold_block);
+            return Item.getItemFromBlock(ModBlocks.blockMetaGold);
         }
 
         @Override
