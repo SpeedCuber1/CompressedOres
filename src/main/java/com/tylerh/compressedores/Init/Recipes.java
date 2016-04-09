@@ -4,7 +4,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameData;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class Recipes
 {
@@ -23,14 +22,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockGoldSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.gold_block,9),new Object[]{"G",Character.valueOf('G'),"blockGoldCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,0),new Object[]{"D",Character.valueOf('D'),"blockGoldDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,1),new Object[]{"T",Character.valueOf('T'),"blocGoldTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockGoldQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockGoldQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,4),new Object[]{"S",Character.valueOf('S'),"blockGoldSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,5),new Object[]{"S",Character.valueOf('S'),"blockGoldSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,6),new Object[]{"O",Character.valueOf('O'),"blockGoldOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.gold_block,9),new Object[]{"G",Character.valueOf('G'),"blockGoldCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,0),new Object[]{"D",Character.valueOf('D'),"blockGoldDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,1),new Object[]{"T",Character.valueOf('T'),"blocGoldTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockGoldQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockGoldQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,4),new Object[]{"S",Character.valueOf('S'),"blockGoldSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,5),new Object[]{"S",Character.valueOf('S'),"blockGoldSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGold,9,6),new Object[]{"O",Character.valueOf('O'),"blockGoldOctuple"}));
 
         }
         if(ModBlocks.registerIron)
@@ -47,14 +46,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockIronSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.iron_block,9),new Object[]{"G",Character.valueOf('G'),"blockIronCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,0),new Object[]{"D",Character.valueOf('D'),"blockIronDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,1),new Object[]{"T",Character.valueOf('T'),"blocIronTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockIronQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockIronQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,4),new Object[]{"S",Character.valueOf('S'),"blockIronSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,5),new Object[]{"S",Character.valueOf('S'),"blockIronSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,6),new Object[]{"O",Character.valueOf('O'),"blockIronOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.iron_block,9),new Object[]{"G",Character.valueOf('G'),"blockIronCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,0),new Object[]{"D",Character.valueOf('D'),"blockIronDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,1),new Object[]{"T",Character.valueOf('T'),"blocIronTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockIronQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockIronQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,4),new Object[]{"S",Character.valueOf('S'),"blockIronSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,5),new Object[]{"S",Character.valueOf('S'),"blockIronSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaIron,9,6),new Object[]{"O",Character.valueOf('O'),"blockIronOctuple"}));
 
         }
         if(ModBlocks.registerDiamond)
@@ -71,14 +70,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockDiamondSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.diamond_block,9),new Object[]{"G",Character.valueOf('G'),"blockDiamondCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,0),new Object[]{"D",Character.valueOf('D'),"blockDiamondDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,1),new Object[]{"T",Character.valueOf('T'),"blocDiamondTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockDiamondQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockDiamondQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,4),new Object[]{"S",Character.valueOf('S'),"blockDiamondSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,5),new Object[]{"S",Character.valueOf('S'),"blockDiamondSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,6),new Object[]{"O",Character.valueOf('O'),"blockDiamondOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.diamond_block,9),new Object[]{"G",Character.valueOf('G'),"blockDiamondCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,0),new Object[]{"D",Character.valueOf('D'),"blockDiamondDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,1),new Object[]{"T",Character.valueOf('T'),"blocDiamondTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockDiamondQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockDiamondQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,4),new Object[]{"S",Character.valueOf('S'),"blockDiamondSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,5),new Object[]{"S",Character.valueOf('S'),"blockDiamondSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiamond,9,6),new Object[]{"O",Character.valueOf('O'),"blockDiamondOctuple"}));
 
         }
         if(ModBlocks.registerEmerald)
@@ -95,14 +94,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockEmeraldSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.emerald_block,9),new Object[]{"G",Character.valueOf('G'),"blockEmeraldCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,0),new Object[]{"D",Character.valueOf('D'),"blockEmeraldDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,1),new Object[]{"T",Character.valueOf('T'),"blocEmeraldTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockEmeraldQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockEmeraldQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,4),new Object[]{"S",Character.valueOf('S'),"blockEmeraldSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,5),new Object[]{"S",Character.valueOf('S'),"blockEmeraldSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,6),new Object[]{"O",Character.valueOf('O'),"blockEmeraldOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.emerald_block,9),new Object[]{"G",Character.valueOf('G'),"blockEmeraldCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,0),new Object[]{"D",Character.valueOf('D'),"blockEmeraldDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,1),new Object[]{"T",Character.valueOf('T'),"blocEmeraldTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockEmeraldQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockEmeraldQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,4),new Object[]{"S",Character.valueOf('S'),"blockEmeraldSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,5),new Object[]{"S",Character.valueOf('S'),"blockEmeraldSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaEmerald,9,6),new Object[]{"O",Character.valueOf('O'),"blockEmeraldOctuple"}));
 
         }
         if(ModBlocks.registerRedstone) {
@@ -118,14 +117,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 1, 7), new Object[]{"ooo", "ooo", "ooo", Character.valueOf('o'), "blockRedstoneSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.redstone_block, 9), new Object[]{"G", Character.valueOf('G'), "blockRedstoneCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 0), new Object[]{"D", Character.valueOf('D'), "blockRedstoneDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 1), new Object[]{"T", Character.valueOf('T'), "blocRedstoneTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 2), new Object[]{"Q", Character.valueOf('Q'), "blockRedstoneQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 3), new Object[]{"Q", Character.valueOf('Q'), "blockRedstoneQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 4), new Object[]{"S", Character.valueOf('S'), "blockRedstoneSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 5), new Object[]{"S", Character.valueOf('S'), "blockRedstoneSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 6), new Object[]{"O", Character.valueOf('O'), "blockRedstoneOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.redstone_block, 9), new Object[]{"G", Character.valueOf('G'), "blockRedstoneCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 0), new Object[]{"D", Character.valueOf('D'), "blockRedstoneDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 1), new Object[]{"T", Character.valueOf('T'), "blocRedstoneTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 2), new Object[]{"Q", Character.valueOf('Q'), "blockRedstoneQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 3), new Object[]{"Q", Character.valueOf('Q'), "blockRedstoneQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 4), new Object[]{"S", Character.valueOf('S'), "blockRedstoneSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 5), new Object[]{"S", Character.valueOf('S'), "blockRedstoneSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaRedstone, 9, 6), new Object[]{"O", Character.valueOf('O'), "blockRedstoneOctuple"}));
         }
         if(ModBlocks.registerLapis)
         {
@@ -141,14 +140,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockLapisSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.lapis_block,9),new Object[]{"G",Character.valueOf('G'),"blockLapisCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,0),new Object[]{"D",Character.valueOf('D'),"blockLapisDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,1),new Object[]{"T",Character.valueOf('T'),"blocLapisTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockLapisQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockLapisQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,4),new Object[]{"S",Character.valueOf('S'),"blockLapisSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,5),new Object[]{"S",Character.valueOf('S'),"blockLapisSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,6),new Object[]{"O",Character.valueOf('O'),"blockLapisOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.lapis_block,9),new Object[]{"G",Character.valueOf('G'),"blockLapisCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,0),new Object[]{"D",Character.valueOf('D'),"blockLapisDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,1),new Object[]{"T",Character.valueOf('T'),"blocLapisTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockLapisQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockLapisQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,4),new Object[]{"S",Character.valueOf('S'),"blockLapisSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,5),new Object[]{"S",Character.valueOf('S'),"blockLapisSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaLapis,9,6),new Object[]{"O",Character.valueOf('O'),"blockLapisOctuple"}));
 
         }
         if(ModBlocks.registerQuartz)
@@ -165,14 +164,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockQuartzSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.quartz_block,9),new Object[]{"G",Character.valueOf('G'),"blockQuartzCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,0),new Object[]{"D",Character.valueOf('D'),"blockQuartzDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,1),new Object[]{"T",Character.valueOf('T'),"blocQuartzTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockQuartzQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockQuartzQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,4),new Object[]{"S",Character.valueOf('S'),"blockQuartzSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,5),new Object[]{"S",Character.valueOf('S'),"blockQuartzSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,6),new Object[]{"O",Character.valueOf('O'),"blockQuartzOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.quartz_block,9),new Object[]{"G",Character.valueOf('G'),"blockQuartzCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,0),new Object[]{"D",Character.valueOf('D'),"blockQuartzDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,1),new Object[]{"T",Character.valueOf('T'),"blocQuartzTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockQuartzQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockQuartzQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,4),new Object[]{"S",Character.valueOf('S'),"blockQuartzSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,5),new Object[]{"S",Character.valueOf('S'),"blockQuartzSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaQuartz,9,6),new Object[]{"O",Character.valueOf('O'),"blockQuartzOctuple"}));
 
         }
         if(ModBlocks.registerCoal)
@@ -189,14 +188,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockCoalSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.coal_block,9),new Object[]{"G",Character.valueOf('G'),"blockCoalCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,0),new Object[]{"D",Character.valueOf('D'),"blockCoalDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,1),new Object[]{"T",Character.valueOf('T'),"blocCoalTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockCoalQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockCoalQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,4),new Object[]{"S",Character.valueOf('S'),"blockCoalSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,5),new Object[]{"S",Character.valueOf('S'),"blockCoalSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,6),new Object[]{"O",Character.valueOf('O'),"blockCoalOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.coal_block,9),new Object[]{"G",Character.valueOf('G'),"blockCoalCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,0),new Object[]{"D",Character.valueOf('D'),"blockCoalDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,1),new Object[]{"T",Character.valueOf('T'),"blocCoalTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockCoalQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockCoalQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,4),new Object[]{"S",Character.valueOf('S'),"blockCoalSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,5),new Object[]{"S",Character.valueOf('S'),"blockCoalSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCoal,9,6),new Object[]{"O",Character.valueOf('O'),"blockCoalOctuple"}));
 
         }
         if(ModBlocks.registerAndesite)
@@ -212,14 +211,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockAndesiteSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,5),new Object[]{"G",Character.valueOf('G'),"blockAndesiteCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,0),new Object[]{"D",Character.valueOf('D'),"blockAndesiteDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,1),new Object[]{"T",Character.valueOf('T'),"blocAndesiteTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockAndesiteQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockAndesiteQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,4),new Object[]{"S",Character.valueOf('S'),"blockAndesiteSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,5),new Object[]{"S",Character.valueOf('S'),"blockAndesiteSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,6),new Object[]{"O",Character.valueOf('O'),"blockAndesiteOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,5),new Object[]{"G",Character.valueOf('G'),"blockAndesiteCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,0),new Object[]{"D",Character.valueOf('D'),"blockAndesiteDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,1),new Object[]{"T",Character.valueOf('T'),"blocAndesiteTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockAndesiteQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockAndesiteQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,4),new Object[]{"S",Character.valueOf('S'),"blockAndesiteSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,5),new Object[]{"S",Character.valueOf('S'),"blockAndesiteSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaAndesite,9,6),new Object[]{"O",Character.valueOf('O'),"blockAndesiteOctuple"}));
         }
         if(ModBlocks.registerDiorite)
         {
@@ -234,14 +233,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockDioriteSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,3),new Object[]{"G",Character.valueOf('G'),"blockDioriteCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,0),new Object[]{"D",Character.valueOf('D'),"blockDioriteDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,1),new Object[]{"T",Character.valueOf('T'),"blocDioriteTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockDioriteQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockDioriteQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,4),new Object[]{"S",Character.valueOf('S'),"blockDioriteSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,5),new Object[]{"S",Character.valueOf('S'),"blockDioriteSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,6),new Object[]{"O",Character.valueOf('O'),"blockDioriteOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,3),new Object[]{"G",Character.valueOf('G'),"blockDioriteCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,0),new Object[]{"D",Character.valueOf('D'),"blockDioriteDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,1),new Object[]{"T",Character.valueOf('T'),"blocDioriteTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockDioriteQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockDioriteQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,4),new Object[]{"S",Character.valueOf('S'),"blockDioriteSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,5),new Object[]{"S",Character.valueOf('S'),"blockDioriteSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaDiorite,9,6),new Object[]{"O",Character.valueOf('O'),"blockDioriteOctuple"}));
         }
         if(ModBlocks.registerGranite)
         {
@@ -256,14 +255,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockGraniteSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,1),new Object[]{"G",Character.valueOf('G'),"blockGraniteCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,0),new Object[]{"D",Character.valueOf('D'),"blockGraniteDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,1),new Object[]{"T",Character.valueOf('T'),"blocGraniteTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockGraniteQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockGraniteQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,4),new Object[]{"S",Character.valueOf('S'),"blockGraniteSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,5),new Object[]{"S",Character.valueOf('S'),"blockGraniteSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,6),new Object[]{"O",Character.valueOf('O'),"blockGraniteOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,1),new Object[]{"G",Character.valueOf('G'),"blockGraniteCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,0),new Object[]{"D",Character.valueOf('D'),"blockGraniteDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,1),new Object[]{"T",Character.valueOf('T'),"blocGraniteTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockGraniteQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockGraniteQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,4),new Object[]{"S",Character.valueOf('S'),"blockGraniteSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,5),new Object[]{"S",Character.valueOf('S'),"blockGraniteSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaGranite,9,6),new Object[]{"O",Character.valueOf('O'),"blockGraniteOctuple"}));
         }
         if(ModBlocks.registerCobblestone)
         {
@@ -278,14 +277,14 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,1,7),new Object[]{"ooo","ooo","ooo",Character.valueOf('o'),"blockCobbleSeptuple"}));
 
             //Decompressing
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,0),new Object[]{"G",Character.valueOf('G'),"blockCobbleCompressed"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,0),new Object[]{"D",Character.valueOf('D'),"blockCobbleDouble"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,1),new Object[]{"T",Character.valueOf('T'),"blocCobbleTriple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockCobbleQuadruple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockCobbleQuintuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,4),new Object[]{"S",Character.valueOf('S'),"blockCobbleSextuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,5),new Object[]{"S",Character.valueOf('S'),"blockCobbleSeptuple"}));
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,6),new Object[]{"O",Character.valueOf('O'),"blockCobbleOctuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(GameData.getBlockRegistry().getRaw(1),9,0),new Object[]{"G",Character.valueOf('G'),"blockCobbleCompressed"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,0),new Object[]{"D",Character.valueOf('D'),"blockCobbleDouble"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,1),new Object[]{"T",Character.valueOf('T'),"blocCobbleTriple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,2),new Object[]{"Q",Character.valueOf('Q'),"blockCobbleQuadruple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,3),new Object[]{"Q",Character.valueOf('Q'),"blockCobbleQuintuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,4),new Object[]{"S",Character.valueOf('S'),"blockCobbleSextuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,5),new Object[]{"S",Character.valueOf('S'),"blockCobbleSeptuple"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaCobble,9,6),new Object[]{"O",Character.valueOf('O'),"blockCobbleOctuple"}));
         }
     }
 }
