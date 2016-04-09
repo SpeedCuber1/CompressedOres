@@ -1,5 +1,6 @@
 package com.tylerh.compressedores.Proxy;
 
+import com.tylerh.compressedores.Util.EventListener;
 import com.tylerh.compressedores.Init.ModBlocks;
 import com.tylerh.compressedores.Util.EventListener;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,6 +17,7 @@ public abstract class CommonProxy
     }
     public void init()
     {
+        MinecraftForge.EVENT_BUS.register(new EventListener());
     }
     public void postInit()
     {

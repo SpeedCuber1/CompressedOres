@@ -1,5 +1,4 @@
 package com.tylerh.compressedores.Init;
-
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameData;
