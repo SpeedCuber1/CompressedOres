@@ -26,7 +26,7 @@ public class BlockMetaCobble extends Block
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
     public BlockMetaCobble()
     {
-        super(Material.rock);
+        super(Material.ROCK);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYLEVEL,EnumLevel.COMPRESSED));
         this.setHardness(2f);

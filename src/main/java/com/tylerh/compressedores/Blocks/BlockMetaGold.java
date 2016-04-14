@@ -26,7 +26,7 @@ public class BlockMetaGold extends Block
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
     public BlockMetaGold()
     {
-        super(Material.rock);
+        super(Material.IRON);
         this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYLEVEL,EnumLevel.COMPRESSED));
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setHardness(1.5f);

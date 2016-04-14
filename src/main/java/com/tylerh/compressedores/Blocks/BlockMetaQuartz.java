@@ -26,7 +26,7 @@ public class BlockMetaQuartz extends Block
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
     public BlockMetaQuartz()
     {
-        super(Material.iron);
+        super(Material.IRON);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYLEVEL,EnumLevel.COMPRESSED));
         this.setHardness(3f);

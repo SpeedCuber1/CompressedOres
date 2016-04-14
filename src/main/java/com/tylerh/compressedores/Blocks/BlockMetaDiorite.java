@@ -26,7 +26,7 @@ public class BlockMetaDiorite extends Block
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
     public BlockMetaDiorite()
     {
-        super(Material.rock);
+        super(Material.ROCK);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYLEVEL,EnumLevel.COMPRESSED));
         this.setHardness(1.5f);

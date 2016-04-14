@@ -26,7 +26,7 @@ public class BlockMetaAndesite extends Block
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
     public BlockMetaAndesite()
     {
-        super(Material.rock);
+        super(Material.ROCK);
         this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYLEVEL,EnumLevel.COMPRESSED));
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.setHardness(1.5f);
