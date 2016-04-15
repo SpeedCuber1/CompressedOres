@@ -25,7 +25,7 @@ group= "com.tylerh.compressedores" // http://maven.apache.org/guides/mini/guide-
 archivesBaseName = "CompressedOres"
 
 minecraft {
-    version = "1.8.9-11.15.1.1747"
+    version = "1.8.9-11.15.1.1855"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
