@@ -25,6 +25,7 @@ import java.util.List;
 public class BlockMetaRedstone extends Block
 {
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
+    public static int redstoneMultiple;
     public BlockMetaRedstone()
     {
         super(Material.IRON);
@@ -46,7 +47,7 @@ public class BlockMetaRedstone extends Block
     @Override
     public int getWeakPower(IBlockState state, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
-        return 15;
+        return 15 * redstoneMultiple;
     }
 
 
@@ -65,6 +66,7 @@ public class BlockMetaRedstone extends Block
         for(EnumLevel level : allLevels)
         {
             list.add(new ItemStack(itemIn, 1, level.getMetadata()));
+            redstoneMultiple = level.getMetadata() + 1;
         }
     }
 
