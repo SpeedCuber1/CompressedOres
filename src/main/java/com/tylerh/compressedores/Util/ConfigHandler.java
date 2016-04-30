@@ -2,6 +2,7 @@ package com.tylerh.compressedores.Util;
 
 import com.tylerh.compressedores.Init.ModBlocks;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Loader;
 
 import java.io.File;
 
@@ -32,10 +33,10 @@ public class ConfigHandler
             ModBlocks.registerLapis = config.get("blocks", "Lapis", true).getBoolean(true);
             ModBlocks.registerQuartz = config.get("blocks", "Quartz", true).getBoolean(true);
             ModBlocks.registerCoal = config.get("blocks", "Coal", true).getBoolean(true);
-            ModBlocks.registerAndesite = config.get("blocks", "Andesite", true).getBoolean(true);
+            ModBlocks.registerAndesite = config.get("blocks", "Andesite", true, "Determine whether or not to allow compressing of resources").getBoolean(true);
             ModBlocks.registerDiorite = config.get("blocks", "Diorite", true).getBoolean(true);
             ModBlocks.registerGranite = config.get("blocks", "Granite", true).getBoolean(true);
-            ModBlocks.registerCobblestone = config.get("blocks", "Cobblestone", true, "Determine whether or not to allow compressing of resources").getBoolean(true);
+            ModBlocks.registerCobblestone = config.get("blocks", "Cobblestone", true).getBoolean(true);
         }
         catch(Exception e)
         {

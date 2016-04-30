@@ -14,22 +14,28 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumWorldBlockLayer;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockMetaGranite extends Block
+/**
+ * Created by IpodT on 4/30/2016.
+ */
+public class BlockMetaCompressedOre extends Block
 {
-    public BlockMetaGranite()
+    private boolean isRedstone;
+    public BlockMetaCompressedOre(Material mat,float hardness, float resistance,String uName,boolean isRedstone)
     {
-        super(Material.rock);
+        super(mat);
+        this.setHardness(hardness);
+        this.setResistance(resistance);
+        this.setUnlocalizedName(uName);
         this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
-        this.setHardness(1.5f);
-        this.setUnlocalizedName("blockMetaGranite");
+        this.isRedstone = isRedstone;
     }
-
     @SideOnly(Side.CLIENT)
     public EnumWorldBlockLayer getBlockLayer()
     {
@@ -44,7 +50,6 @@ public class BlockMetaGranite extends Block
         EnumLevel enumLevel = (EnumLevel)state.getValue(PROPERTYLEVEL);
         return enumLevel.getMetadata();
     }
-
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
@@ -55,7 +60,6 @@ public class BlockMetaGranite extends Block
             list.add(new ItemStack(itemIn, 1, level.getMetadata()));
         }
     }
-
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
@@ -84,5 +88,29 @@ public class BlockMetaGranite extends Block
     {
         EnumLevel levels = EnumLevel.byMetadata(meta);
         return this.getDefaultState().withProperty(PROPERTYLEVEL, levels);
+    }
+    @Override
+    public boolean canProvidePower()
+    {
+        if(isRedstone)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    @Override
+    public int getWeakPower(IBlockAccess worldIn, BlockPos pos, IBlockState state, EnumFacing side)
+    {
+        if(isRedstone)
+        {
+            return 15;
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
