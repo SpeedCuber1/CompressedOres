@@ -5,7 +5,8 @@ import net.minecraft.util.IStringSerializable;
 /**
  * Created by stephen on 11/1/15.
  */
-public enum EnumLevel implements IStringSerializable {
+public enum EnumLevel implements IStringSerializable
+{
     COMPRESSED(0, "compressed", "Compressed"),
     DOUBLE(1, "double", "Double"),
     TRIPLE(2, "triple", "Triple"),
@@ -20,7 +21,8 @@ public enum EnumLevel implements IStringSerializable {
     private final String name;
     private final String unlocalizedName;
 
-    private EnumLevel(int meta, String name, String unlocalizedName) {
+    private EnumLevel(int meta, String name, String unlocalizedName)
+    {
         this.meta = meta;
         this.name = name;
         this.unlocalizedName = unlocalizedName;

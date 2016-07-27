@@ -27,7 +27,7 @@ public class ServerProxy extends CommonProxy
         if(player instanceof EntityPlayerMP)
         {
             EntityPlayerMP entityPlayerMP = (EntityPlayerMP)player;
-            return entityPlayerMP.theItemInWorldManager.isCreative();
+            return entityPlayerMP.isCreative();
         }
         return false;
     }
