@@ -10,7 +10,7 @@ import net.minecraftforge.common.AchievementPage;
  */
 public class ModInfo
 {
-    public static final String MOD_ID = "CompressedOres";
+    public static final String MOD_ID = "compressedores";
     public static final String MOD_NAME = "Compressed Ores";
     public static final String MOD_VERSION = "1.10";
     public static final String CLIENT_PROXY = "com.tylerh.compressedores.Proxy.ClientProxy";
