@@ -5,15 +5,15 @@ import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
-import net.minecraft.block.state.BlockState;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumWorldBlockLayer;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -37,9 +37,9 @@ public class BlockMetaCompressedOre extends Block
         this.isRedstone = isRedstone;
     }
     @SideOnly(Side.CLIENT)
-    public EnumWorldBlockLayer getBlockLayer()
+    public BlockRenderLayer getBlockLayer()
     {
-        return EnumWorldBlockLayer.SOLID;
+        return BlockRenderLayer.SOLID;
     }
 
     public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
@@ -78,9 +78,9 @@ public class BlockMetaCompressedOre extends Block
     }
 
     @Override
-    protected BlockState createBlockState()
+    protected BlockStateContainer createBlockState()
     {
-        return new BlockState(this, PROPERTYLEVEL);
+        return new BlockStateContainer(this, PROPERTYLEVEL);
     }
 
     @Override
@@ -90,7 +90,7 @@ public class BlockMetaCompressedOre extends Block
         return this.getDefaultState().withProperty(PROPERTYLEVEL, levels);
     }
     @Override
-    public boolean canProvidePower()
+    public boolean canProvidePower(IBlockState state)
     {
         if(isRedstone)
         {
@@ -102,7 +102,7 @@ public class BlockMetaCompressedOre extends Block
         }
     }
     @Override
-    public int getWeakPower(IBlockAccess worldIn, BlockPos pos, IBlockState state, EnumFacing side)
+    public int getWeakPower(IBlockState state, IBlockAccess access,BlockPos pos, EnumFacing side)
     {
         if(isRedstone)
         {
