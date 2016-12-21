@@ -37,6 +37,10 @@ public class ConfigHandler
             ModBlocks.registerDiorite = config.get("blocks", "Diorite", true).getBoolean(true);
             ModBlocks.registerGranite = config.get("blocks", "Granite", true).getBoolean(true);
             ModBlocks.registerCobblestone = config.get("blocks", "Cobblestone", true).getBoolean(true);
+            ModBlocks.registerDirt = config.get("blocks","Dirt",true).getBoolean(true);
+            ModBlocks.registerSand = config.get("blocks","Sand",true).getBoolean(true);
+            ModBlocks.registerGravel = config.get("blocks","Gravel",true).getBoolean(true);
+            ModBlocks.registerClay = config.get("blocks","Clay",true).getBoolean(true);
         }
         catch(Exception e)
         {

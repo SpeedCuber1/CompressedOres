@@ -61,6 +61,6 @@ public class CompressedOres
 
     public int getRandom()
     {
-        return rnd.nextInt(12);
+        return rnd.nextInt(16);
     }
 }

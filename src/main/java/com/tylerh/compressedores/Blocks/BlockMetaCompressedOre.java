@@ -84,7 +84,7 @@ public class BlockMetaCompressedOre extends Block
     }
 
     @Override
-    public IBlockState onBlockPlaced(World world, BlockPos pos, EnumFacing levelPlaced, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing levelPlaced, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
         EnumLevel levels = EnumLevel.byMetadata(meta);
         return this.getDefaultState().withProperty(PROPERTYLEVEL, levels);
