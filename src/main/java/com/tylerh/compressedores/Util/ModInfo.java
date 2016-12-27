@@ -29,4 +29,5 @@ public class ModInfo
     public static final Block[] tempBlocks = {ModBlocks.blockMetaCobble,ModBlocks.blockMetaGranite,ModBlocks.blockMetaDiorite,ModBlocks.blockMetaAndesite,ModBlocks.blockMetaCoal,ModBlocks.blockMetaDiamond,ModBlocks.blockMetaEmerald,ModBlocks.blockMetaGold,ModBlocks.blockMetaIron,ModBlocks.blockMetaLapis,ModBlocks.blockMetaQuartz,ModBlocks.blockMetaRedstone,ModBlocks.blockMetaDirt,ModBlocks.blockMetaSand,ModBlocks.blockMetaGravel,ModBlocks.blockMetaClay};
     public static final String[] matCosts = {"9","81","729","6,561","59,049","531,441","4,782,969","43,046,721"};
     public static final String[] appendNames = {"Gold","Iron","Diamond","Emerald","Lapis","Quartz","Redstone","Coal","Clay"};
+
 }
