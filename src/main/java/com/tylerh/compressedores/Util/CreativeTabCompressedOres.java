@@ -3,6 +3,7 @@ package com.tylerh.compressedores.Util;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 /**
  * Created by tyler on 5/5/15.

@@ -50,9 +50,10 @@ public class BlockMetaCompressedOre extends Block
         EnumLevel enumLevel = (EnumLevel)state.getValue(PROPERTYLEVEL);
         return enumLevel.getMetadata();
     }
+
     @Override
     @SideOnly(Side.CLIENT)
-    public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
+    public void getSubBlocks(Item itemIn, CreativeTabs tab, List<ItemStack> list)
     {
         EnumLevel[] allLevels = EnumLevel.values();
         for(EnumLevel level : allLevels)

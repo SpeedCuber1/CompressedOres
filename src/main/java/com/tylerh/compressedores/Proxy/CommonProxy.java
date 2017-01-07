@@ -1,6 +1,7 @@
 package com.tylerh.compressedores.Proxy;
 
 import com.tylerh.compressedores.Util.CompressedOresFuelHandler;
+import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.EventListener;
 import com.tylerh.compressedores.Init.ModBlocks;
 import com.tylerh.compressedores.Util.EventListener;
@@ -15,6 +16,7 @@ public abstract class CommonProxy
 {
     public void preInit()
     {
+        ConfigHandler.preInit();
         ModBlocks.preInitCommon();
     }
     public void init()

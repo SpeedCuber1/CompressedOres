@@ -12,9 +12,12 @@ public class ModInfo
 {
     public static final String MOD_ID = "compressedores";
     public static final String MOD_NAME = "Compressed Ores";
-    public static final String MOD_VERSION = "1.13";
+    public static final String MOD_VERSION = "1.14";
     public static final String CLIENT_PROXY = "com.tylerh.compressedores.Proxy.ClientProxy";
     public static final String SERVER_PROXY = "com.tylerh.compressedores.Proxy.ServerProxy";
+    public static final String GUI_FACTORY = "com.tylerh.compressedores.Util.CompressedOresGuiFactory";
+    public static final String GUI_CATEGORY = "blocks";
+    public static final boolean GUI_DEFAULT = true;
 
     public static Achievement craftCompressed;
     public static Achievement craftDouble;

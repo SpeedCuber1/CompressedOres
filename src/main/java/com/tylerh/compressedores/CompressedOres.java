@@ -1,7 +1,6 @@
 package com.tylerh.compressedores;
 
 import com.tylerh.compressedores.Proxy.CommonProxy;
-import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.LogHelper;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.stats.Achievement;
@@ -15,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import java.util.Random;
 
-@Mod(modid = ModInfo.MOD_ID, name = ModInfo.MOD_NAME, version = ModInfo.MOD_VERSION)
+@Mod(modid = ModInfo.MOD_ID, name = ModInfo.MOD_NAME, version = ModInfo.MOD_VERSION,guiFactory = ModInfo.GUI_FACTORY)
 public class CompressedOres
 {
     Random rnd = new Random();
@@ -27,7 +26,6 @@ public class CompressedOres
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        ConfigHandler.init(event.getSuggestedConfigurationFile());
         proxy.preInit();
         LogHelper.info("Compressed Ores has finished Pre-Initialization");
     }
