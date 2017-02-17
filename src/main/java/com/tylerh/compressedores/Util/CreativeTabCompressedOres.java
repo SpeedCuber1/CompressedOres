@@ -13,9 +13,9 @@ public class CreativeTabCompressedOres
     public static final CreativeTabs COMPRESSED_ORES_TAB = new CreativeTabs(ModInfo.MOD_ID)
     {
         @Override
-        public Item getTabIconItem()
+        public ItemStack getTabIconItem()
         {
-            return Item.getItemFromBlock(Blocks.GOLD_BLOCK);
+            return new ItemStack(Item.getItemFromBlock(Blocks.GOLD_BLOCK));
         }
 
         @Override

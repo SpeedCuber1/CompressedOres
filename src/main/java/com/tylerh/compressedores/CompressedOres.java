@@ -20,7 +20,6 @@ public class CompressedOres
     Random rnd = new Random();
     @Mod.Instance(ModInfo.MOD_ID)
     public static CompressedOres instance;
-
     @SidedProxy(clientSide = ModInfo.CLIENT_PROXY, serverSide = ModInfo.SERVER_PROXY)
     public static CommonProxy proxy;
     @EventHandler
