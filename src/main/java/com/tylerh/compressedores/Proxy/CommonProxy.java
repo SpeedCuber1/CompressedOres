@@ -1,5 +1,6 @@
 package com.tylerh.compressedores.Proxy;
 
+import com.tylerh.compressedores.Init.Recipes;
 import com.tylerh.compressedores.Util.CompressedOresFuelHandler;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import com.tylerh.compressedores.Util.EventListener;
@@ -23,6 +24,7 @@ public abstract class CommonProxy
     {
         MinecraftForge.EVENT_BUS.register(new EventListener());
         GameRegistry.registerFuelHandler(new CompressedOresFuelHandler());
+        Recipes.init();
     }
     public void postInit()
     {

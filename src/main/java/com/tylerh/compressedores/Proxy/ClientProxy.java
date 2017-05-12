@@ -1,7 +1,6 @@
 package com.tylerh.compressedores.Proxy;
 
 import com.tylerh.compressedores.Init.ModBlocks;
-import com.tylerh.compressedores.Init.Recipes;
 import com.tylerh.compressedores.Util.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -23,7 +22,6 @@ public class ClientProxy extends CommonProxy
     {
         super.init();
         ModBlocks.initClient();
-        Recipes.init();
     }
     public void postInit()
     {
