@@ -1,6 +1,6 @@
 {
   "parent":"minecraft:block/cube_all",
   "textures":{
-    "all":"compressedores:blocks/blockMetaAndesite2"
+    "all":"compressedores:blocks/blockmetaandesite2"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaAndesite.Triple",
+  "parent": "compressedores:block/blockmetaandesite.triple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],
