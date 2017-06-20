@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaGold.Sextuple",
+  "parent": "compressedores:block/blockmetagold.sextuple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

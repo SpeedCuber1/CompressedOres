@@ -1,28 +1,28 @@
 {
   "variants":{
     "level=compressed":{
-      "model":"compressedores:blockMetaClay.Compressed"
+      "model":"compressedores:blockmetaclay.compressed"
     },
     "level=double":{
-      "model":"compressedores:blockMetaClay.Double"
+      "model":"compressedores:blockmetaclay.double"
     },
     "level=triple":{
-      "model":"compressedores:blockMetaClay.Triple"
+      "model":"compressedores:blockmetaclay.triple"
     },
     "level=quadruple":{
-      "model":"compressedores:blockMetaClay.Quadruple"
+      "model":"compressedores:blockmetaclay.quadruple"
     },
     "level=quintuple":{
-      "model": "compressedores:blockMetaClay.Quintuple"
+      "model": "compressedores:blockmetaclay.quintuple"
     },
     "level=sextuple":{
-      "model":"compressedores:blockMetaClay.Sextuple"
+      "model":"compressedores:blockmetaclay.sextuple"
     },
     "level=septuple":{
-      "model":"compressedores:blockMetaClay.Septuple"
+      "model":"compressedores:blockmetaclay.septuple"
     },
     "level=octuple":{
-      "model":"compressedores:blockMetaClay.Octuple"
+      "model":"compressedores:blockmetaclay.octuple"
     }
   }
 }
