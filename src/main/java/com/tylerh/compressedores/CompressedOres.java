@@ -3,8 +3,6 @@ package com.tylerh.compressedores;
 import com.tylerh.compressedores.Proxy.CommonProxy;
 import com.tylerh.compressedores.Util.LogHelper;
 import com.tylerh.compressedores.Util.ModInfo;
-import net.minecraft.stats.Achievement;
-import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -33,7 +31,7 @@ public class CompressedOres
     public void init(FMLInitializationEvent event)
     {
         proxy.init();
-        loadAchievements();
+        //loadAchievements();
         LogHelper.info("Compressed Ores has finished Initialization");
     }
 
@@ -42,7 +40,7 @@ public class CompressedOres
     {
         proxy.postInit();
     }
-    private void loadAchievements()
+    /*private void loadAchievements()
     {
         ModInfo.craftCompressed = new Achievement("achievement.craftCompressed","craftCompressed",2,3,ModInfo.tempBlocks[getRandom()],null).initIndependentStat().registerStat();
         ModInfo.craftDouble = new Achievement("achievement.craftDouble","craftDouble",4,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftCompressed).registerStat();
@@ -54,7 +52,7 @@ public class CompressedOres
         ModInfo.craftOctuple = new Achievement("achievement.craftOctuple","craftOctuple",10,3,ModInfo.tempBlocks[getRandom()],ModInfo.craftSeptuple).registerStat().setSpecial();
         ModInfo.compressedOresPage = new AchievementPage("Compressed Ores", ModInfo.craftCompressed, ModInfo.craftDouble, ModInfo.craftTriple, ModInfo.craftQuadruple, ModInfo.craftQuintuple, ModInfo.craftSextuple, ModInfo.craftSeptuple, ModInfo.craftOctuple);
         AchievementPage.registerAchievementPage(ModInfo.compressedOresPage);
-    }
+    }*/
     private int getRandom()
     {
         return rnd.nextInt(16);

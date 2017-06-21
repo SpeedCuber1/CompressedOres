@@ -7,7 +7,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class Recipes
 {
-    public static void init()
+    /*public static void init()
     {
         if(ModBlocks.registerGold)
         {
@@ -374,5 +374,5 @@ public class Recipes
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaClay,9,5),new Object[]{"S",Character.valueOf('S'),"blockClaySeptuple"}));
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockMetaClay,9,6),new Object[]{"O",Character.valueOf('O'),"blockClayOctuple"}));
         }
-    }
+    }*/
 }

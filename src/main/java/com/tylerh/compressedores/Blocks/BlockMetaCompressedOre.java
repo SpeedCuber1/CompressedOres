@@ -52,7 +52,6 @@ public class BlockMetaCompressedOre extends Block
         return enumLevel.getMetadata();
     }
 
-    @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> list)
     {

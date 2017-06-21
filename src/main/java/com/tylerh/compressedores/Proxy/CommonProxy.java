@@ -24,7 +24,7 @@ public abstract class CommonProxy
     {
         MinecraftForge.EVENT_BUS.register(new EventListener());
         GameRegistry.registerFuelHandler(new CompressedOresFuelHandler());
-        Recipes.init();
+        //Recipes.init();
     }
     public void postInit()
     {
