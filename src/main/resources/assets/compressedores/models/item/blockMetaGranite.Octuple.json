@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaGranite.Octuple",
+  "parent": "compressedores:block/blockmetagranite.octuple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

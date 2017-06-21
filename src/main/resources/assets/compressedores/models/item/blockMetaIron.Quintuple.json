@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaIron.Quintuple",
+  "parent": "compressedores:block/blockmetairon.quintuple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

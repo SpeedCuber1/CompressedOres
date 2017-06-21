@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaGravel.Septuple",
+  "parent": "compressedores:block/blockmetagravel.septuple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

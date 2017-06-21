@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaQuartz.Quadruple",
+  "parent": "compressedores:block/blockmetaquartz.quadruple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

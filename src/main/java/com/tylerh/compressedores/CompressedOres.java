@@ -21,7 +21,7 @@ public class CompressedOres
     @Mod.Instance(ModInfo.MOD_ID)
     public static CompressedOres instance;
     @SidedProxy(clientSide = ModInfo.CLIENT_PROXY, serverSide = ModInfo.SERVER_PROXY)
-    public static CommonProxy proxy;
+    private static CommonProxy proxy;
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -42,7 +42,7 @@ public class CompressedOres
     {
         proxy.postInit();
     }
-    public void loadAchievements()
+    private void loadAchievements()
     {
         ModInfo.craftCompressed = new Achievement("achievement.craftCompressed","craftCompressed",2,3,ModInfo.tempBlocks[getRandom()],null).initIndependentStat().registerStat();
         ModInfo.craftDouble = new Achievement("achievement.craftDouble","craftDouble",4,1,ModInfo.tempBlocks[getRandom()],ModInfo.craftCompressed).registerStat();
@@ -55,8 +55,7 @@ public class CompressedOres
         ModInfo.compressedOresPage = new AchievementPage("Compressed Ores", ModInfo.craftCompressed, ModInfo.craftDouble, ModInfo.craftTriple, ModInfo.craftQuadruple, ModInfo.craftQuintuple, ModInfo.craftSextuple, ModInfo.craftSeptuple, ModInfo.craftOctuple);
         AchievementPage.registerAchievementPage(ModInfo.compressedOresPage);
     }
-
-    public int getRandom()
+    private int getRandom()
     {
         return rnd.nextInt(16);
     }

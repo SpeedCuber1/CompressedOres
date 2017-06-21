@@ -1,6 +1,6 @@
 {
   "parent":"minecraft:block/cube_all",
   "textures":{
-    "all":"compressedores:blocks/blockMetaRedstone4"
+    "all":"compressedores:blocks/blockmetaredstone4"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent":"minecraft:block/cube_all",
   "textures":{
-    "all":"compressedores:blocks/blockMetaGravel2"
+    "all":"compressedores:blocks/blockmetagravel2"
   }
 }

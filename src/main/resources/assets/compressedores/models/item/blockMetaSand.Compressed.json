@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaSand.Compressed",
+  "parent": "compressedores:block/blockmetasand.compressed",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

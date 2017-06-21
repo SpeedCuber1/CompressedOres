@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaLapis.Compressed",
+  "parent": "compressedores:block/blockmetalapis.compressed",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

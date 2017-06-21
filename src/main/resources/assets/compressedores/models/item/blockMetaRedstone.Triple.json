@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blockMetaRedstone.Triple",
+  "parent": "compressedores:block/blockmetaredstone.triple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],
