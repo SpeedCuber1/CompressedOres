@@ -16,12 +16,12 @@ public class EventListener
         {
             if(event.crafting.getItem() == Item.getItemFromBlock(ModInfo.tempBlocks[i]))
             {
-                activateAchievement(event.crafting.getItemDamage(),event);
+                //activateAchievement(event.crafting.getItemDamage(),event);
                 break;
             }
         }
     }
-
+    /*
     public void activateAchievement(int meta, PlayerEvent.ItemCraftedEvent event)
     {
         switch (meta)
@@ -67,5 +67,5 @@ public class EventListener
                 break;
             }
         }
-    }
+    }*/
 }

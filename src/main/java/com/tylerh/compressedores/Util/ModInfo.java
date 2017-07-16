@@ -1,6 +1,7 @@
 package com.tylerh.compressedores.Util;
 
 import com.tylerh.compressedores.Init.ModBlocks;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.block.Block;
 
 /**

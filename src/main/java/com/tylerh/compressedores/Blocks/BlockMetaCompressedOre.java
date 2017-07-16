@@ -11,16 +11,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import java.util.List;
 
 /**
  * Created by IpodT on 4/30/2016.
@@ -53,12 +52,13 @@ public class BlockMetaCompressedOre extends Block
     }
 
     @SideOnly(Side.CLIENT)
-    public void getSubBlocks(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> list)
+    @Override
+    public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
         EnumLevel[] allLevels = EnumLevel.values();
         for(EnumLevel level : allLevels)
         {
-            list.add(new ItemStack(itemIn, 1, level.getMetadata()));
+            list.add(new ItemStack(this, 1, level.getMetadata()));
         }
     }
     @Override

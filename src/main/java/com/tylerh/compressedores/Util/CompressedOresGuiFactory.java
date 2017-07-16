@@ -17,7 +17,6 @@ public class CompressedOresGuiFactory implements IModGuiFactory
     {
 
     }
-
     @Override
     public boolean hasConfigGui()
     {
@@ -30,11 +29,6 @@ public class CompressedOresGuiFactory implements IModGuiFactory
         return null;
     }
 
-    @Override
-    public Class<? extends GuiScreen> mainConfigGuiClass()
-    {
-        return CompressedOresGuiConfig.class;
-    }
 
     @Override
     public Set<RuntimeOptionCategoryElement> runtimeGuiCategories()
@@ -42,9 +36,4 @@ public class CompressedOresGuiFactory implements IModGuiFactory
         return null;
     }
 
-    @Override
-    public RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element)
-    {
-        return null;
-    }
 }

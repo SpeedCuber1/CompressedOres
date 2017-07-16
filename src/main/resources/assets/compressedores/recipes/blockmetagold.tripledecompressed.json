@@ -1,0 +1,14 @@
+{
+    "type": "forge:ore_shapeless",
+    "result": {
+        "item": "compressedores:blockMetaGold",
+        "data": 1,
+        "count": 9
+    },
+    "ingredients": [
+      {
+          "type": "forge:ore_dict",
+          "ore": "blockGoldTriple"
+      }
+    ]
+}

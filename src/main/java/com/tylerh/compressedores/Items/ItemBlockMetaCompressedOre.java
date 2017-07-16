@@ -3,10 +3,13 @@ package com.tylerh.compressedores.Items;
 import com.sun.jna.platform.win32.WinUser;
 import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
+import jline.internal.Nullable;
 import net.minecraft.block.Block;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 import java.util.List;
 
@@ -32,22 +35,23 @@ public class ItemBlockMetaCompressedOre extends ItemBlock
         EnumLevel level = EnumLevel.byMetadata(stack.getMetadata());
         return super.getUnlocalizedName() + "." + level.toString();
     }
+
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
+    public void addInformation(ItemStack stack, @Nullable World world, List<String> tooltip, ITooltipFlag flag)
     {
         boolean append = true;
         for(int i = 0; i < ModInfo.appendNames.length; i++)
         {
             if(block.getUnlocalizedName().substring(14).equals(ModInfo.appendNames[i]))
             {
-                list.add(ModInfo.matCosts[stack.getMetadata()] + " Blocks of " + block.getUnlocalizedName().substring(14));
+                tooltip.add(ModInfo.matCosts[stack.getMetadata()] + " Blocks of " + block.getUnlocalizedName().substring(14));
                 append = false;
                 break;
             }
         }
         if(append)
         {
-            list.add(ModInfo.matCosts[stack.getMetadata()] + " " + block.getUnlocalizedName().substring(14));
+            tooltip.add(ModInfo.matCosts[stack.getMetadata()] + " " + block.getUnlocalizedName().substring(14));
         }
     }
 }

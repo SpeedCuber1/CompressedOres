@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -78,8 +79,8 @@ public class ModBlocks
             blockMetaGold = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaGold",false);
             itemBlockMetaGold = new ItemBlockMetaCompressedOre(blockMetaGold);
             createRegistry(blockMetaGold,itemBlockMetaGold,"blockMetaGold");
-            GameRegistry.register(blockMetaGold);
-            GameRegistry.register(itemBlockMetaGold);
+            ForgeRegistries.BLOCKS.register(blockMetaGold);
+            ForgeRegistries.ITEMS.register(itemBlockMetaGold);
             initOreDict(blockMetaGold,"blockGold");
         }
         if(registerIron)
@@ -87,8 +88,8 @@ public class ModBlocks
             blockMetaIron = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaIron",false);
             itemBlockMetaIron = new ItemBlockMetaCompressedOre(blockMetaIron);
             createRegistry(blockMetaIron,itemBlockMetaIron,"blockMetaIron");
-            GameRegistry.register(blockMetaIron);
-            GameRegistry.register(itemBlockMetaIron);
+            ForgeRegistries.BLOCKS.register(blockMetaIron);
+            ForgeRegistries.ITEMS.register(itemBlockMetaIron);
             initOreDict(blockMetaIron,"blockIron");
         }
         if(registerDiamond)
@@ -96,8 +97,8 @@ public class ModBlocks
             blockMetaDiamond = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaDiamond",false);
             itemBlockMetaDiamond = new ItemBlockMetaCompressedOre(blockMetaDiamond);
             createRegistry(blockMetaDiamond,itemBlockMetaDiamond,"blockMetaDiamond");
-            GameRegistry.register(blockMetaDiamond);
-            GameRegistry.register(itemBlockMetaDiamond);
+            ForgeRegistries.BLOCKS.register(blockMetaDiamond);
+            ForgeRegistries.ITEMS.register(itemBlockMetaDiamond);
             initOreDict(blockMetaDiamond,"blockDiamond");
         }
         if(registerEmerald)
@@ -105,8 +106,8 @@ public class ModBlocks
             blockMetaEmerald = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaEmerald",false);
             itemBlockMetaEmerald = new ItemBlockMetaCompressedOre(blockMetaEmerald);
             createRegistry(blockMetaEmerald,itemBlockMetaEmerald,"blockMetaEmerald");
-            GameRegistry.register(blockMetaEmerald);
-            GameRegistry.register(itemBlockMetaEmerald);
+            ForgeRegistries.BLOCKS.register(blockMetaEmerald);
+            ForgeRegistries.ITEMS.register(itemBlockMetaEmerald);
             initOreDict(blockMetaEmerald,"blockEmerald");
         }
         if(registerRedstone)
@@ -114,8 +115,8 @@ public class ModBlocks
             blockMetaRedstone = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaRedstone",true);
             itemBlockMetaRedstone = new ItemBlockMetaCompressedOre(blockMetaRedstone);
             createRegistry(blockMetaRedstone,itemBlockMetaRedstone,"blockMetaRedstone");
-            GameRegistry.register(blockMetaRedstone);
-            GameRegistry.register(itemBlockMetaRedstone);
+            ForgeRegistries.BLOCKS.register(blockMetaRedstone);
+            ForgeRegistries.ITEMS.register(itemBlockMetaRedstone);
             initOreDict(blockMetaRedstone,"blockRedstone");
         }
         if(registerLapis)
@@ -123,8 +124,8 @@ public class ModBlocks
             blockMetaLapis = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaLapis",false);
             itemBlockMetaLapis = new ItemBlockMetaCompressedOre(blockMetaLapis);
             createRegistry(blockMetaLapis,itemBlockMetaLapis,"blockMetaLapis");
-            GameRegistry.register(blockMetaLapis);
-            GameRegistry.register(itemBlockMetaLapis);
+            ForgeRegistries.BLOCKS.register(blockMetaLapis);
+            ForgeRegistries.ITEMS.register(itemBlockMetaLapis);
             initOreDict(blockMetaLapis,"blockLapis");
         }
         if(registerCoal)
@@ -132,8 +133,8 @@ public class ModBlocks
             blockMetaCoal = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaCoal",false);
             itemBlockMetaCoal = new ItemBlockMetaCompressedOre(blockMetaCoal);
             createRegistry(blockMetaCoal,itemBlockMetaCoal,"blockMetaCoal");
-            GameRegistry.register(blockMetaCoal);
-            GameRegistry.register(itemBlockMetaCoal);
+            ForgeRegistries.BLOCKS.register(blockMetaCoal);
+            ForgeRegistries.ITEMS.register(itemBlockMetaCoal);
             initOreDict(blockMetaCoal,"blockCoal");
         }
         if(registerAndesite)
@@ -141,8 +142,8 @@ public class ModBlocks
             blockMetaAndesite = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaAndesite",false);
             itemBlockMetaAndesite = new ItemBlockMetaCompressedOre(blockMetaAndesite);
             createRegistry(blockMetaAndesite,itemBlockMetaAndesite,"blockMetaAndesite");
-            GameRegistry.register(blockMetaAndesite);
-            GameRegistry.register(itemBlockMetaAndesite);
+            ForgeRegistries.BLOCKS.register(blockMetaAndesite);
+            ForgeRegistries.ITEMS.register(itemBlockMetaAndesite);
             initOreDict(blockMetaAndesite,"blockAndesite");
         }
         if(registerDiorite)
@@ -150,8 +151,8 @@ public class ModBlocks
             blockMetaDiorite = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaDiorite",false);
             itemBlockMetaDiorite = new ItemBlockMetaCompressedOre(blockMetaDiorite);
             createRegistry(blockMetaDiorite,itemBlockMetaDiorite,"blockMetaDiorite");
-            GameRegistry.register(blockMetaDiorite);
-            GameRegistry.register(itemBlockMetaDiorite);
+            ForgeRegistries.BLOCKS.register(blockMetaDiorite);
+            ForgeRegistries.ITEMS.register(itemBlockMetaDiorite);
             initOreDict(blockMetaDiorite,"blockDiorite");
         }
         if(registerGranite)
@@ -159,8 +160,8 @@ public class ModBlocks
             blockMetaGranite = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaGranite",false);
             itemBlockMetaGranite = new ItemBlockMetaCompressedOre(blockMetaGranite);
             createRegistry(blockMetaGranite,itemBlockMetaGranite,"blockMetaGranite");
-            GameRegistry.register(blockMetaGranite);
-            GameRegistry.register(itemBlockMetaGranite);
+            ForgeRegistries.BLOCKS.register(blockMetaGranite);
+            ForgeRegistries.ITEMS.register(itemBlockMetaGranite);
             initOreDict(blockMetaGranite,"blockGranite");
         }
         if(registerCobblestone)
@@ -168,8 +169,8 @@ public class ModBlocks
             blockMetaCobble = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaCobble",false);
             itemBlockMetaCobble = new ItemBlockMetaCompressedOre(blockMetaCobble);
             createRegistry(blockMetaCobble,itemBlockMetaCobble,"blockMetaCobble");
-            GameRegistry.register(blockMetaCobble);
-            GameRegistry.register(itemBlockMetaCobble);
+            ForgeRegistries.BLOCKS.register(blockMetaCobble);
+            ForgeRegistries.ITEMS.register(itemBlockMetaCobble);
             initOreDict(blockMetaCobble,"blockCobble");
         }
         if(registerQuartz)
@@ -177,8 +178,8 @@ public class ModBlocks
             blockMetaQuartz = new BlockMetaCompressedOre(Material.IRON,3.0f,5.0f,"blockMetaQuartz",false);
             itemBlockMetaQuartz = new ItemBlockMetaCompressedOre(blockMetaQuartz);
             createRegistry(blockMetaQuartz,itemBlockMetaQuartz,"blockMetaQuartz");
-            GameRegistry.register(blockMetaQuartz);
-            GameRegistry.register(itemBlockMetaQuartz);
+            ForgeRegistries.BLOCKS.register(blockMetaQuartz);
+            ForgeRegistries.ITEMS.register(itemBlockMetaQuartz);
             initOreDict(blockMetaQuartz,"blockQuartz");
         }
         if(registerDirt)
@@ -186,8 +187,8 @@ public class ModBlocks
             blockMetaDirt = new BlockMetaCompressedOre(Material.GROUND,2.0f,5.0f,"blockMetaDirt",false);
             itemBlockMetaDirt = new ItemBlockMetaCompressedOre(blockMetaDirt);
             createRegistry(blockMetaDirt,itemBlockMetaDirt,"blockMetaDirt");
-            GameRegistry.register(blockMetaDirt);
-            GameRegistry.register(itemBlockMetaDirt);
+            ForgeRegistries.BLOCKS.register(blockMetaDirt);
+            ForgeRegistries.ITEMS.register(itemBlockMetaDirt);
             initOreDict(blockMetaDirt,"blockDirt");
         }
         if(registerSand)
@@ -195,8 +196,8 @@ public class ModBlocks
             blockMetaSand = new BlockMetaCompressedOre(Material.SAND,2.0f,5.0f,"blockMetaSand",false);
             itemBlockMetaSand = new ItemBlockMetaCompressedOre(blockMetaSand);
             createRegistry(blockMetaSand,itemBlockMetaSand,"blockMetaSand");
-            GameRegistry.register(blockMetaSand);
-            GameRegistry.register(itemBlockMetaSand);
+            ForgeRegistries.BLOCKS.register(blockMetaSand);
+            ForgeRegistries.ITEMS.register(itemBlockMetaSand);
             initOreDict(blockMetaSand,"blockSand");
         }
         if(registerGravel)
@@ -204,8 +205,8 @@ public class ModBlocks
             blockMetaGravel = new BlockMetaCompressedOre(Material.SAND,2.0f,5.0f,"blockMetaGravel",false);
             itemBlockMetaGravel = new ItemBlockMetaCompressedOre(blockMetaGravel);
             createRegistry(blockMetaGravel,itemBlockMetaGravel,"blockMetaGravel");
-            GameRegistry.register(blockMetaGravel);
-            GameRegistry.register(itemBlockMetaGravel);
+            ForgeRegistries.BLOCKS.register(blockMetaGravel);
+            ForgeRegistries.ITEMS.register(itemBlockMetaGravel);
             initOreDict(blockMetaGravel,"blockGravel");
         }
         if(registerClay)
@@ -213,8 +214,8 @@ public class ModBlocks
             blockMetaClay = new BlockMetaCompressedOre(Material.CLAY,2.0f,5.0f,"blockMetaClay",false);
             itemBlockMetaClay = new ItemBlockMetaCompressedOre(blockMetaClay);
             createRegistry(blockMetaClay,itemBlockMetaClay,"blockMetaClay");
-            GameRegistry.register(blockMetaClay);
-            GameRegistry.register(itemBlockMetaClay);
+            ForgeRegistries.BLOCKS.register(blockMetaClay);
+            ForgeRegistries.ITEMS.register(itemBlockMetaClay);
             initOreDict(blockMetaClay,"blockClay");
         }
     }

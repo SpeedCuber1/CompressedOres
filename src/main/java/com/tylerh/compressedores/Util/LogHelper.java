@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Util;
 
-
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 
