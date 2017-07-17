@@ -33,6 +33,11 @@ public class Recipes
         }
         if(ModBlocks.registerDiamond)
         {
+            location = ModInfo.MOD_ID + ":blockmetadiamond";
+            //Compressing
+            registerHelper(location, "Compress");
+            //Decompressing
+            registerHelper(location, "Decompress");
         }
         if(ModBlocks.registerEmerald)
         {
