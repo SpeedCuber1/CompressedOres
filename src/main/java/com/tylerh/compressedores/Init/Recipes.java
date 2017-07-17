@@ -41,6 +41,10 @@ public class Recipes
         }
         if(ModBlocks.registerEmerald)
         {
+            location = ModInfo.MOD_ID + ":blockmetaemerald";
+            //Compressing
+            registerHelper(location, "Compress");
+            //Decompressing
         }
         if(ModBlocks.registerRedstone)
         {

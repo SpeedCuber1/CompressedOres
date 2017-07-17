@@ -1,4 +1,5 @@
 {
+    "group": "Compressed Ores",
     "type": "forge:ore_shapeless",
     "result": {
         "item": "compressedores:blockMetaIron",

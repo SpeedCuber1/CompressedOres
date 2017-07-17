@@ -2,7 +2,7 @@
     "group": "Compressed Ores",
     "type": "forge:ore_shaped",
     "result": {
-        "item": "compressedores:blockMetaGold",
+        "item": "compressedores:blockMetaEmerald",
         "data": 5
     },
     "pattern": [
@@ -13,7 +13,7 @@
     "key": {
         "s": {
             "type": "forge:ore_dict",
-            "ore": "blockGoldQuintuple"
+            "ore": "blockEmeraldQuintuple"
         }
     }
 }

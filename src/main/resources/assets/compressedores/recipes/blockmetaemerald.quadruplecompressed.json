@@ -2,18 +2,18 @@
     "group": "Compressed Ores",
     "type": "forge:ore_shaped",
     "result": {
-        "item": "compressedores:blockMetaGold",
-        "data": 5
+        "item": "compressedores:blockMetaEmerald",
+        "data": 3
     },
     "pattern": [
-        "sss",
-        "sss",
-        "sss"
+        "qqq",
+        "qqq",
+        "qqq"
     ],
     "key": {
-        "s": {
+        "q": {
             "type": "forge:ore_dict",
-            "ore": "blockGoldQuintuple"
+            "ore": "blockEmeraldTriple"
         }
     }
 }
