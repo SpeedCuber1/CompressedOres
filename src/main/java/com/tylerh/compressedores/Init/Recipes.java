@@ -58,11 +58,15 @@ public class Recipes
         {
             location = ModInfo.MOD_ID + ":blockmetalapis";
             //Compressing
-            //registerHelper(location, "Compress");
+            registerHelper(location, "Compress");
             //Decompressing
         }
         if(ModBlocks.registerQuartz)
         {
+            location = ModInfo.MOD_ID + ":blockmetaquartz";
+            //Compressing
+            registerHelper(location, "Compress");
+            //Decompressing
         }
         if(ModBlocks.registerCoal)
         {
