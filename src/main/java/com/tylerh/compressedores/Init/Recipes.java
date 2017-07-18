@@ -95,9 +95,15 @@ public class Recipes
         }
         if(ModBlocks.registerCobblestone)
         {
+            location = ModInfo.MOD_ID + ":blockmetacobble";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerDirt)
         {
+            location = ModInfo.MOD_ID + ":blockmetadirt";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerSand)
         {
