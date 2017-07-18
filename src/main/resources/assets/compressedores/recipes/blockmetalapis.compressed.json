@@ -1,0 +1,19 @@
+{
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockMetaLapis",
+    "data": 0
+  },
+  "pattern": [
+    "lll",
+    "lll",
+    "lll"
+  ],
+  "key": {
+    "l": {
+      "type": "forge:ore_dict",
+      "ore": "blockLapis"
+    }
+  }
+}

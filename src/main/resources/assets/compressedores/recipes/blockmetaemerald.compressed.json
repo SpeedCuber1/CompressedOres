@@ -1,0 +1,19 @@
+{
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockMetaEmerald",
+    "data": 0
+  },
+  "pattern": [
+    "eee",
+    "eee",
+    "eee"
+  ],
+  "key": {
+    "e": {
+      "type": "forge:ore_dict",
+      "ore": "blockEmerald"
+    }
+  }
+}

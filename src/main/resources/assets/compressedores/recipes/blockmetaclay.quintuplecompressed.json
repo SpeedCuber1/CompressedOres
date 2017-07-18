@@ -1,0 +1,20 @@
+
+{
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockMetaClay",
+    "data": 4
+  },
+  "pattern": [
+    "qqq",
+    "qqq",
+    "qqq"
+  ],
+  "key": {
+    "q": {
+      "type": "forge:ore_dict",
+      "ore": "blockClayQuadruple"
+    }
+  }
+}

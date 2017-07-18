@@ -1,0 +1,19 @@
+{
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockMetaIron",
+    "data": 7
+  },
+  "pattern": [
+    "ooo",
+    "ooo",
+    "ooo"
+  ],
+  "key": {
+    "o": {
+      "type": "forge:ore_dict",
+      "ore": "blockIronSeptuple"
+    }
+  }
+}
