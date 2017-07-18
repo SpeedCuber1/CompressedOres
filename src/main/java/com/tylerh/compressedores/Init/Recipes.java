@@ -107,12 +107,21 @@ public class Recipes
         }
         if(ModBlocks.registerSand)
         {
+            location = ModInfo.MOD_ID + ":blockmetasand";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerGravel)
         {
+            location = ModInfo.MOD_ID + ":blockmetagravel";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerClay)
         {
+            location = ModInfo.MOD_ID + ":blockmetaclay";
+            //Compressing
+            registerHelper(location, "Compress");
         }
     }
     private static void registerHelper(String resource, String mode)
