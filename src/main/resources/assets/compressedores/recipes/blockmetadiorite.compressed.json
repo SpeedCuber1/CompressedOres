@@ -2,18 +2,18 @@
   "group": "Compressed Ores",
   "type": "forge:ore_shaped",
   "result": {
-    "item": "compressedores:blockMetaAndesite",
+    "item": "compressedores:blockMetaDiorite",
     "data": 0
   },
   "pattern": [
-    "aaa",
-    "aaa",
-    "aaa"
+    "ddd",
+    "ddd",
+    "ddd"
   ],
   "key": {
-    "a": {
+    "d": {
       "type": "forge:ore_dict",
-      "ore": "stoneAndesite"
+      "ore": "stoneDiorite"
     }
   }
 }

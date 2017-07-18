@@ -83,9 +83,15 @@ public class Recipes
         }
         if(ModBlocks.registerDiorite)
         {
+            location = ModInfo.MOD_ID + ":blockmetadiorite";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerGranite)
         {
+            location = ModInfo.MOD_ID + ":blockmetagranite";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerCobblestone)
         {
