@@ -1,19 +1,20 @@
+
 {
   "group": "Compressed Ores",
   "type": "forge:ore_shaped",
   "result": {
-    "item": "compressedores:blockMetaSand",
-    "data": 3
+    "item": "compressedores:blockMetaClay",
+    "data": 7
   },
   "pattern": [
-    "qqq",
-    "qqq",
-    "qqq"
+    "ooo",
+    "ooo",
+    "ooo"
   ],
   "key": {
-    "q": {
+    "o": {
       "type": "forge:ore_dict",
-      "ore": "blockSandTriple"
+      "ore": "blockClaySeptuple"
     }
   }
 }
