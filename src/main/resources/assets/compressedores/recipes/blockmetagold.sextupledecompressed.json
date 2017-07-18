@@ -1,15 +1,15 @@
 {
-    "group": "Compressed Ores",
-    "type": "forge:ore_shapeless",
-    "result": {
-        "item": "compressedores:blockMetaGold",
-        "data": 4,
-        "count": 9
-    },
-    "ingredients": [
-      {
-          "type": "forge:ore_dict",
-          "ore": "blockGoldSextuple"
-      }
-    ]
+  "group": "Compressed Ores",
+  "type": "forge:ore_shapeless",
+  "result": {
+    "item": "compressedores:blockMetaGold",
+    "data": 4,
+    "count": 9
+  },
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "blockGoldSextuple"
+    }
+  ]
 }

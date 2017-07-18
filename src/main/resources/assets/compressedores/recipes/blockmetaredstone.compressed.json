@@ -1,19 +1,19 @@
 {
-    "group": "Compressed Ores",
-    "type": "forge:ore_shaped",
-    "result": {
-        "item": "compressedores:blockMetaRedstone",
-        "data": 0
-    },
-    "pattern": [
-        "rrr",
-        "rrr",
-        "rrr"
-    ],
-    "key": {
-        "r": {
-            "type": "forge:ore_dict",
-            "ore": "blockRedstone"
-        }
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockMetaRedstone",
+    "data": 0
+  },
+  "pattern": [
+    "rrr",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "type": "forge:ore_dict",
+      "ore": "blockRedstone"
     }
+  }
 }

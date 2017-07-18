@@ -3,9 +3,7 @@ package com.tylerh.compressedores.Proxy;
 import com.tylerh.compressedores.Init.Recipes;
 import com.tylerh.compressedores.Util.CompressedOresFuelHandler;
 import com.tylerh.compressedores.Util.ConfigHandler;
-import com.tylerh.compressedores.Util.EventListener;
 import com.tylerh.compressedores.Init.ModBlocks;
-import com.tylerh.compressedores.Util.EventListener;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -22,13 +20,11 @@ public abstract class CommonProxy
     }
     public void init()
     {
-        MinecraftForge.EVENT_BUS.register(new EventListener());
         GameRegistry.registerFuelHandler(new CompressedOresFuelHandler());
         Recipes.init();
     }
     public void postInit()
     {
-        MinecraftForge.EVENT_BUS.register(new EventListener());
     }
 
     abstract boolean playerIsInCreativeMode(EntityPlayer player);
