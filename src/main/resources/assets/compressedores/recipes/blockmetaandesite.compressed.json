@@ -1,0 +1,19 @@
+{
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockMetaAndesite",
+    "data": 0
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "type": "forge:ore_dict",
+      "ore": "blockAndesite"
+    }
+  }
+}
