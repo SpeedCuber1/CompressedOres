@@ -1,0 +1,213 @@
+{
+  "parent": "compressedores:craftquadruple",
+  "criteria": {
+    "Quintuple Compressed Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaGold",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaIron",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaDiamond",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaEmerald",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaRedstone",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaLapis",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaQuartz",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaCoal",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaAndesite",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Diorite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaDiorite",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Granite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaGranite",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Cobble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaCobble",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaDirt",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaSand",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Gravel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaGravel",
+            "data": 4
+          }
+        ]
+      }
+    },
+    "Quintuple Compressed Clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaClay",
+            "data": 4
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Quintuple Compressed Gold",
+      "Quintuple Compressed Iron",
+      "Quintuple Compressed Diamond",
+      "Quintuple Compressed Emerald",
+      "Quintuple Compressed Redstone",
+      "Quintuple Compressed Lapis",
+      "Quintuple Compressed Quartz",
+      "Quintuple Compressed Coal",
+      "Quintuple Compressed Andesite",
+      "Quintuple Compressed Diorite",
+      "Quintuple Compressed Granite",
+      "Quintuple Compressed Cobble",
+      "Quintuple Compressed Dirt",
+      "Quintuple Compressed Sand",
+      "Quintuple Compressed Gravel",
+      "Quintuple Compressed Clay"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "compressedores:blockMetaGold",
+      "data": 4
+    },
+    "title": "Quintessential Quandry",
+    "description": "Reach Compression Level 5",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  }
+}
