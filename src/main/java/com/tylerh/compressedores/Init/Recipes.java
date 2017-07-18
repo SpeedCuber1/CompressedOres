@@ -45,6 +45,7 @@ public class Recipes
             //Compressing
             registerHelper(location, "Compress");
             //Decompressing
+            registerHelper(location, "Decompress");
         }
         if(ModBlocks.registerRedstone)
         {
