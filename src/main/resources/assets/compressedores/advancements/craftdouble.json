@@ -178,6 +178,26 @@
       }
     }
   },
+  "requirements": [
+    [
+      "Double Compressed Gold",
+      "Double Compressed Iron",
+      "Double Compressed Diamond",
+      "Double Compressed Emerald",
+      "Double Compressed Redstone",
+      "Double Compressed Lapis",
+      "Double Compressed Quartz",
+      "Double Compressed Coal",
+      "Double Compressed Andesite",
+      "Double Compressed Diorite",
+      "Double Compressed Granite",
+      "Double Compressed Cobble",
+      "Double Compressed Dirt",
+      "Double Compressed Sand",
+      "Double Compressed Gravel",
+      "Double Compressed Clay"
+    ]
+  ],
   "display": {
     "icon": {
       "item": "compressedores:blockMetaGold",
