@@ -70,10 +70,16 @@ public class Recipes
         }
         if(ModBlocks.registerCoal)
         {
-
+            location = ModInfo.MOD_ID + ":blockmetacoal";
+            //Compressing
+            registerHelper(location, "Compress");
+            //Decompressing
         }
         if(ModBlocks.registerAndesite)
         {
+            location = ModInfo.MOD_ID + ":blockmetaandesite";
+            //Compressing
+            registerHelper(location, "Compress");
         }
         if(ModBlocks.registerDiorite)
         {

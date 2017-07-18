@@ -21,6 +21,160 @@
           }
         ]
       }
+    },
+    "Compressed Diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaDiamond",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaEmerald",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaRedstone",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaLapis",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaQuartz",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaCoal",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaAndesite",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Diorite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaDiorite",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Granite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaGranite",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Cobble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaCobble",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaDirt",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaSand",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Gravel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaGravel",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaClay",
+            "data": 0
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -34,7 +188,13 @@
       "Compressed Quartz",
       "Compressed Coal",
       "Compressed Andesite",
-      "Compressed Diorite"
+      "Compressed Diorite",
+      "Compressed Granite",
+      "Compressed Cobble",
+      "Compressed Dirt",
+      "Compressed Sand",
+      "Compressed Gravel",
+      "Compressed Clay"
     ]
   ],
   "display": {
