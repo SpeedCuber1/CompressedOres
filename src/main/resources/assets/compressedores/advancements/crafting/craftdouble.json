@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:craftcompressed.json",
+  "parent": "compressedores:crafting/craftcompressed.json",
   "criteria": {
     "Double Compressed Gold": {
       "trigger": "minecraft:inventory_changed",
