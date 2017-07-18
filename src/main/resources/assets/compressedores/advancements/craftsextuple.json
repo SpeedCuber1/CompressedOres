@@ -1,178 +1,178 @@
 {
-  "parent": "compressedores:craftquadruple",
+  "parent": "compressedores:craftquintuple",
   "criteria": {
-    "Quintuple Compressed Gold": {
+    "Sextuple Compressed Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaGold",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Iron": {
+    "Sextuple Compressed Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaIron",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Diamond": {
+    "Sextuple Compressed Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaDiamond",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Emerald": {
+    "Sextuple Compressed Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaEmerald",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Redstone": {
+    "Sextuple Compressed Redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaRedstone",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Lapis": {
+    "Sextuple Compressed Lapis": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaLapis",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Quartz": {
+    "Sextuple Compressed Quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaQuartz",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Coal": {
+    "Sextuple Compressed Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaCoal",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Andesite": {
+    "Sextuple Compressed Andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaAndesite",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Diorite": {
+    "Sextuple Compressed Diorite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaDiorite",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Granite": {
+    "Sextuple Compressed Granite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaGranite",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Cobble": {
+    "Sextuple Compressed Cobble": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaCobble",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Dirt": {
+    "Sextuple Compressed Dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaDirt",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Sand": {
+    "Sextuple Compressed Sand": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaSand",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Gravel": {
+    "Sextuple Compressed Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaGravel",
-            "data": 4
+            "data": 5
           }
         ]
       }
     },
-    "Quintuple Compressed Clay": {
+    "Sextuple Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaClay",
-            "data": 4
+            "data": 5
           }
         ]
       }
@@ -180,31 +180,31 @@
   },
   "requirements": [
     [
-      "Quintuple Compressed Gold",
-      "Quintuple Compressed Iron",
-      "Quintuple Compressed Diamond",
-      "Quintuple Compressed Emerald",
-      "Quintuple Compressed Redstone",
-      "Quintuple Compressed Lapis",
-      "Quintuple Compressed Quartz",
-      "Quintuple Compressed Coal",
-      "Quintuple Compressed Andesite",
-      "Quintuple Compressed Diorite",
-      "Quintuple Compressed Granite",
-      "Quintuple Compressed Cobble",
-      "Quintuple Compressed Dirt",
-      "Quintuple Compressed Sand",
-      "Quintuple Compressed Gravel",
-      "Quintuple Compressed Clay"
+      "Sextuple Compressed Gold",
+      "Sextuple Compressed Iron",
+      "Sextuple Compressed Diamond",
+      "Sextuple Compressed Emerald",
+      "Sextuple Compressed Redstone",
+      "Sextuple Compressed Lapis",
+      "Sextuple Compressed Quartz",
+      "Sextuple Compressed Coal",
+      "Sextuple Compressed Andesite",
+      "Sextuple Compressed Diorite",
+      "Sextuple Compressed Granite",
+      "Sextuple Compressed Cobble",
+      "Sextuple Compressed Dirt",
+      "Sextuple Compressed Sand",
+      "Sextuple Compressed Gravel",
+      "Sextuple Compressed Clay"
     ]
   ],
   "display": {
     "icon": {
       "item": "compressedores:blockMetaGold",
-      "data": 4
+      "data": 5
     },
-    "title": "Quintessential Quandry",
-    "description": "Reach Compression Level 5",
+    "title": "Six-Pack",
+    "description": "Reach Compression Level 6",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "challenge",
     "show_toast": true,
