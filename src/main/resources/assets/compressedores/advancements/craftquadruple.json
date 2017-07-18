@@ -1,178 +1,178 @@
 {
   "parent": "compressedores:crafttriple",
   "criteria": {
-    "Triple Compressed Gold": {
+    "Quadruple Compressed Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaGold",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Iron": {
+    "Quadruple Compressed Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaIron",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Diamond": {
+    "Quadruple Compressed Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaDiamond",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Emerald": {
+    "Quadruple Compressed Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaEmerald",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Redstone": {
+    "Quadruple Compressed Redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaRedstone",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Lapis": {
+    "Quadruple Compressed Lapis": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaLapis",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Quartz": {
+    "Quadruple Compressed Quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaQuartz",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Coal": {
+    "Quadruple Compressed Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaCoal",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Andesite": {
+    "Quadruple Compressed Andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaAndesite",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Diorite": {
+    "Quadruple Compressed Diorite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaDiorite",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Granite": {
+    "Quadruple Compressed Granite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaGranite",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Cobble": {
+    "Quadruple Compressed Cobble": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaCobble",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Dirt": {
+    "Quadruple Compressed Dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaDirt",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Sand": {
+    "Quadruple Compressed Sand": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaSand",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Gravel": {
+    "Quadruple Compressed Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaGravel",
-            "data": 2
+            "data": 3
           }
         ]
       }
     },
-    "Triple Compressed Clay": {
+    "Quadruple Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "item": "compressedores:blockMetaClay",
-            "data": 2
+            "data": 3
           }
         ]
       }
@@ -180,31 +180,31 @@
   },
   "requirements": [
     [
-      "Triple Compressed Gold",
-      "Triple Compressed Iron",
-      "Triple Compressed Diamond",
-      "Triple Compressed Emerald",
-      "Triple Compressed Redstone",
-      "Triple Compressed Lapis",
-      "Triple Compressed Quartz",
-      "Triple Compressed Coal",
-      "Triple Compressed Andesite",
-      "Triple Compressed Diorite",
-      "Triple Compressed Granite",
-      "Triple Compressed Cobble",
-      "Triple Compressed Dirt",
-      "Triple Compressed Sand",
-      "Triple Compressed Gravel",
-      "Triple Compressed Clay"
+      "Quadruple Compressed Gold",
+      "Quadruple Compressed Iron",
+      "Quadruple Compressed Diamond",
+      "Quadruple Compressed Emerald",
+      "Quadruple Compressed Redstone",
+      "Quadruple Compressed Lapis",
+      "Quadruple Compressed Quartz",
+      "Quadruple Compressed Coal",
+      "Quadruple Compressed Andesite",
+      "Quadruple Compressed Diorite",
+      "Quadruple Compressed Granite",
+      "Quadruple Compressed Cobble",
+      "Quadruple Compressed Dirt",
+      "Quadruple Compressed Sand",
+      "Quadruple Compressed Gravel",
+      "Quadruple Compressed Clay"
     ]
   ],
   "display": {
     "icon": {
       "item": "compressedores:blockMetaGold",
-      "data": 2
+      "data": 3
     },
-    "title": "Triple Threat",
-    "description": "Reach Compression Level 3",
+    "title": "Quad-Core",
+    "description": "Reach Compression Level 4",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",
     "show_toast": true,
