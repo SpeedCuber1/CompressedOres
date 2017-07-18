@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:craftsextuple",
+  "parent": "compressedores:craftseptuple",
   "criteria": {
     "Octuple Compressed Gold": {
       "trigger": "minecraft:inventory_changed",
