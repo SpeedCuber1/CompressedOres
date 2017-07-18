@@ -1,0 +1,52 @@
+{
+  "criteria": {
+    "Compressed Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaGold",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Compressed Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockMetaIron",
+            "data": 0
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Compressed Gold",
+      "Compressed Iron",
+      "Compressed Diamond",
+      "Compressed Emerald",
+      "Compressed Redstone",
+      "Compressed Lapis",
+      "Compressed Quartz",
+      "Compressed Coal",
+      "Compressed Andesite",
+      "Compressed Diorite"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "compressedores:blockMetaGold",
+      "data": 0
+    },
+    "title": "Small Step of the Journey",
+    "description": "Craft a Compressed Block",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  }
+}
