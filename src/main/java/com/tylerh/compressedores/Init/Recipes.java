@@ -49,10 +49,17 @@ public class Recipes
         }
         if(ModBlocks.registerRedstone)
         {
+            location = ModInfo.MOD_ID + ":blockmetaredstone";
+            //Compressing
+            registerHelper(location, "Compress");
+            //Decompressing
         }
         if(ModBlocks.registerLapis)
         {
-
+            location = ModInfo.MOD_ID + ":blockmetalapis";
+            //Compressing
+            //registerHelper(location, "Compress");
+            //Decompressing
         }
         if(ModBlocks.registerQuartz)
         {
