@@ -203,7 +203,7 @@
       "item": "compressedores:blockMetaGold",
       "data": 7
     },
-    "title": "Compressing Master",
+    "title": "Compression Master",
     "description": "Reach Top Compression Level",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "goal",
