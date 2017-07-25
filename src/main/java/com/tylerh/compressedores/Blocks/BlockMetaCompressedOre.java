@@ -30,10 +30,11 @@ public class BlockMetaCompressedOre extends Block
     public BlockMetaCompressedOre(Material mat,float hardness, float resistance,String uName,boolean isRedstone)
     {
         super(mat);
-        this.setHardness(hardness);
-        this.setResistance(resistance);
-        this.setUnlocalizedName(uName);
-        this.setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
+        setHardness(hardness);
+        setResistance(resistance);
+        setUnlocalizedName(uName);
+        setHarvestLevel("pickaxe", 2);
+        setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.isRedstone = isRedstone;
     }
     @SideOnly(Side.CLIENT)
