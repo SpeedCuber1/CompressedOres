@@ -1,5 +1,7 @@
-package com.tylerh.compressedores.Util;
+package Gui;
 
+import com.tylerh.compressedores.Util.ConfigHandler;
+import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
@@ -15,7 +17,7 @@ public class CompressedOresGuiConfig extends GuiConfig
 {
     public CompressedOresGuiConfig(GuiScreen guiScreen)
     {
-        super(guiScreen,properties,ModInfo.MOD_ID,ModInfo.GUI_CATEGORY,false,true,"Compressed Ores");
+        super(guiScreen,properties, ModInfo.MOD_ID,ModInfo.GUI_CATEGORY,false,true,"Compressed Ores");
     }
     static Configuration configs = ConfigHandler.getConfig();
     static ConfigElement cat_blocks = new ConfigElement(configs.getCategory(ModInfo.GUI_CATEGORY));
