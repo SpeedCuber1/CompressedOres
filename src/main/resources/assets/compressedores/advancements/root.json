@@ -1,177 +1,176 @@
 {
-  "parent": "compressedores:root",
   "criteria": {
-    "Compressed Gold": {
+    "Mine Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGold",
+            "item": "minecraft:gold_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Iron": {
+    "Mine Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaIron",
+            "item": "minecraft:iron_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Diamond": {
+    "Mine Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiamond",
+            "item": "minecraft:diamond_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Emerald": {
+    "Mine Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaEmerald",
+            "item": "minecraft:emerald_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Redstone": {
+    "Mine Redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaRedstone",
+            "item": "minecraft:redstone_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Lapis": {
+    "Mine Lapis": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaLapis",
+            "item": "minecraft:lapis_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Quartz": {
+    "Mine Quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaQuartz",
+            "item": "minecraft:quartz_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Coal": {
+    "Mine Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaCoal",
+            "item": "minecraft:coal_block",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Andesite": {
+    "Mine Andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaAndesite",
+            "item": "minecraft:stone",
+            "data": 5
+          }
+        ]
+      }
+    },
+    "Mine Diorite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone",
+            "data": 3
+          }
+        ]
+      }
+    },
+    "Mine Granite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone",
+            "data": 1
+          }
+        ]
+      }
+    },
+    "Mine Cobble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobblestone",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Diorite": {
+    "Mine Dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiorite",
+            "item": "minecraft:dirt",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Granite": {
+    "Mine Sand": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGranite",
+            "item": "minecraft:sand",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Cobble": {
+    "Mine Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
+        "itemds": [
           {
-            "item": "compressedores:blockMetaCobble",
+            "item": "minecraft:gravel",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Dirt": {
+    "Mine Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDirt",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Compressed Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaSand",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Compressed Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaGravel",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Compressed Clay": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaClay",
+            "item": "minecraft:clay_ball",
             "data": 0
           }
         ]
@@ -180,34 +179,33 @@
   },
   "requirements": [
     [
-      "Compressed Gold",
-      "Compressed Iron",
-      "Compressed Diamond",
-      "Compressed Emerald",
-      "Compressed Redstone",
-      "Compressed Lapis",
-      "Compressed Quartz",
-      "Compressed Coal",
-      "Compressed Andesite",
-      "Compressed Diorite",
-      "Compressed Granite",
-      "Compressed Cobble",
-      "Compressed Dirt",
-      "Compressed Sand",
-      "Compressed Gravel",
-      "Compressed Clay"
+      "Mine Gold",
+      "Mine Iron",
+      "Mine Diamond",
+      "Mine Emerald",
+      "Mine Redstone",
+      "Mine Lapis",
+      "Mine Quartz",
+      "Mine Coal",
+      "Mine Andesite",
+      "Mine Diorite",
+      "Mine Granite",
+      "Mine Cobble",
+      "Mine Dirt",
+      "Mine Sand",
+      "Mine Gravel",
+      "Mine Clay"
     ]
   ],
   "display": {
     "icon": {
-      "item": "compressedores:blockMetaGold",
+      "item": "minecraft:gold_block",
       "data": 0
     },
-    "title": "Small Step of the Journey",
-    "description": "Craft a Compressed Block",
+    "title": "Compressed Ores",
+    "description": "Start Learning the art",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true
+    "show_toast": false,
+    "announce_to_chat": false
   }
 }
