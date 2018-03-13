@@ -1,5 +1,4 @@
 {
-  "parent": "compressedores:crafttriple",
   "criteria": {
     "Quadruple Compressed Gold": {
       "trigger": "minecraft:inventory_changed",
@@ -209,5 +208,6 @@
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
-  }
+  },
+  "parent": "compressedores:crafttriple"
 }
