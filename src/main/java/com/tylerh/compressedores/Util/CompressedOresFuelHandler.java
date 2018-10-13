@@ -15,7 +15,7 @@ public class CompressedOresFuelHandler implements IFuelHandler
     {
         if(fuel.getItem() == Item.getItemFromBlock(ModBlocks.blockMetaCoal))
         {
-            return (fuel.getMetadata() + 1) * 9 * 16000;
+            return (fuel.getItem().getMetadata(fuel) + 1) * 9 * 16000;
         }
         return 0;
     }

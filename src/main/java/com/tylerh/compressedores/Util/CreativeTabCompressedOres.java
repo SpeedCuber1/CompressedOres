@@ -1,5 +1,6 @@
 package com.tylerh.compressedores.Util;
 
+import com.tylerh.compressedores.Init.ModBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -13,16 +14,14 @@ public class CreativeTabCompressedOres
     public static final CreativeTabs COMPRESSED_ORES_TAB = new CreativeTabs(ModInfo.MOD_ID)
     {
         @Override
-        public ItemStack getTabIconItem()
+        public ItemStack createIcon()
         {
             return new ItemStack(Item.getItemFromBlock(Blocks.GOLD_BLOCK));
         }
-
         @Override
-        public String getTranslatedTabLabel()
+        public String getTranslationKey()
         {
-            return "Compressed Ores";
+            return ModInfo.MOD_NAME;
         }
-
     };
 }

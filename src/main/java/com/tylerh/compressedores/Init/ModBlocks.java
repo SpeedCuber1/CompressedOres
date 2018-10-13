@@ -225,97 +225,97 @@ public class ModBlocks
         if(registerGold)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaGold");
-            Item itemBlockMetaGold = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaGold = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaGold,location.toString(),"Assemble");
         }
         if(registerIron)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaIron");
-            Item itemBlockMetaIron = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaIron = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaIron,location.toString(),"Assemble");
         }
         if(registerDiamond)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaDiamond");
-            Item itemBlockMetaDiamond = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaDiamond = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaDiamond,location.toString(),"Assemble");
         }
         if(registerEmerald)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaEmerald");
-            Item itemBlockMetaEmerald = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaEmerald = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaEmerald,location.toString(),"Assemble");
         }
         if(registerRedstone)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaRedstone");
-            Item itemBlockMetaRedstone = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaRedstone = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaRedstone,location.toString(),"Assemble");
         }
         if(registerLapis)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaLapis");
-            Item itemBlockMetaLapis = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaLapis = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaLapis,location.toString(),"Assemble");
         }
         if(registerCoal)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaCoal");
-            Item itemBlockMetaCoal = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaCoal = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaCoal,location.toString(),"Assemble");
         }
         if(registerAndesite)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaAndesite");
-            Item itemBlockMetaAndesite = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaAndesite = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaAndesite,location.toString(),"Assemble");
         }
         if(registerDiorite)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaDiorite");
-            Item itemBlockMetaDiorite = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaDiorite = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaDiorite,location.toString(),"Assemble");
         }
         if(registerGranite)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaGranite");
-            Item itemBlockMetaGranite = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaGranite = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaGranite,location.toString(),"Assemble");
         }
         if(registerCobblestone)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaCobble");
-            Item itemBlockMetaCobble = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaCobble = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaCobble,location.toString(),"Assemble");
         }
         if(registerQuartz)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaQuartz");
-            Item itemBlockMetaQuartz = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaQuartz = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaQuartz,location.toString(),"Assemble");
         }
         if(registerDirt)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaDirt");
-            Item itemBlockMetaDirt = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaDirt = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaDirt,location.toString(),"Assemble");
         }
         if(registerSand)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaSand");
-            Item itemBlockMetaSand = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaSand = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaSand,location.toString(),"Assemble");
         }
         if(registerGravel)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaGravel");
-            Item itemBlockMetaGravel = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaGravel = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaGravel,location.toString(),"Assemble");
         }
         if(registerClay)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaClay");
-            Item itemBlockMetaClay = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaClay = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaClay,location.toString(),"Assemble");
         }
     }
@@ -324,98 +324,98 @@ public class ModBlocks
         if(registerGold)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaGold");
-            Item itemBlockMetaGold = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaGold = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaGold,location.toString(),"Bake");
         }
         if(registerIron)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaIron");
-            Item itemBlockMetaIron = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaIron = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaIron,location.toString(),"Bake");
         }
         if(registerDiamond)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaDiamond");
-            Item itemBlockMetaDiamond = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaDiamond = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaDiamond,location.toString(),"Bake");
         }
         if(registerEmerald)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaEmerald");
-            Item itemBlockMetaEmerald = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaEmerald = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaEmerald,location.toString(),"Bake");
         }
         if(registerRedstone)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaRedstone");
-            Item itemBlockMetaRedstone = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaRedstone = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaRedstone,location.toString(),"Bake");
         }
         if(registerLapis)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaLapis");
-            Item itemBlockMetaLapis = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaLapis = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaLapis,location.toString(),"Bake");
         }
         if(registerCoal)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaCoal");
-            Item itemBlockMetaCoal = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaCoal = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaCoal,location.toString(),"Bake");
         }
         if(registerAndesite)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaAndesite");
-            Item itemBlockMetaAndesite = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaAndesite = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaAndesite,location.toString(),"Bake");
         }
         if(registerDiorite)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaDiorite");
-            Item itemBlockMetaDiorite = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaDiorite = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaDiorite,location.toString(),"Bake");
         }
         if(registerGranite)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaGranite");
-            Item itemBlockMetaGranite = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaGranite = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaGranite,location.toString(),"Bake");
         }
         if(registerCobblestone)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaCobble");
-            Item itemBlockMetaCobble = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaCobble = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaCobble,location.toString(),"Bake");
         }
         if(registerQuartz)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaQuartz");
-            Item itemBlockMetaQuartz = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaQuartz = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaQuartz,location.toString(),"Bake");
         }
         if(registerDirt)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaDirt");
-            Item itemBlockMetaDirt = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaDirt = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaDirt,location.toString(),"Bake");
         }
 
         if(registerSand)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaSand");
-            Item itemBlockMetaSand = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaSand = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaSand,location.toString(),"Bake");
         }
         if(registerGravel)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaGravel");
-            Item itemBlockMetaGravel = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaGravel = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaGravel,location.toString(),"Bake");
         }
         if(registerClay)
         {
             ResourceLocation location = new ResourceLocation("compressedores:blockMetaClay");
-            Item itemBlockMetaClay = Item.REGISTRY.getObject(location);
+            Item itemBlockMetaClay = Item.REGISTRY.get(location);
             assembleModels(itemBlockMetaClay,location.toString(),"Bake");
         }
     }
@@ -439,7 +439,7 @@ public class ModBlocks
             }
             else if(mode == "Bake")
             {
-                Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item,i,location);
+                Minecraft.getInstance().getItemRenderer().getItemModelMesher().func_178086_a(item,i,location);
             }
         }
     }

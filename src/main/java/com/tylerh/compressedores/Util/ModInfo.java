@@ -17,4 +17,5 @@ public class ModInfo
 
     public static final String[] matCosts = {"9","81","729","6,561","59,049","531,441","4,782,969","43,046,721"};
     public static final String[] appendNames = {"Gold","Iron","Diamond","Emerald","Lapis","Quartz","Redstone","Coal","Clay"};
+    public static final String[] extraNames = {"Cobblestone","Dirt","Sand","Gravel","Diorite","Andesite","Granite"};
 }
