@@ -1,19 +1,15 @@
 package com.tylerh.compressedores.Items;
 
-import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
+import com.sun.jna.platform.win32.WinUser;
 import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.block.Block;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 /**
@@ -24,40 +20,36 @@ public class ItemBlockMetaCompressedOre extends ItemBlock
     public ItemBlockMetaCompressedOre(Block block)
     {
         super(block);
+        this.setHasSubtypes(true);
+    }
+    @Override
+    public int getMetadata(int meta)
+    {
+        return meta;
+    }
 
+    @Override
+    public String getUnlocalizedName(ItemStack stack)
+    {
+        EnumLevel level = EnumLevel.byMetadata(stack.getMetadata());
+        return super.getUnlocalizedName() + "." + level.toString();
     }
     @Override
-    public String getTranslationKey(ItemStack stack)
+    public void addInformation(ItemStack stack, World world, List<String> list, ITooltipFlag flag)
     {
-        EnumLevel level = EnumLevel.byMetadata(stack.getItem().getMetadata(stack));
-        return super.getTranslationKey() + "." + level.toString();
-    }
-    @Override
-    public void fillItemGroup(CreativeTabs group, NonNullList<ItemStack> items)
-    {
-        if(this.isInGroup(group))
+        boolean append = true;
+        for(int i = 0; i < ModInfo.appendNames.length; i++)
         {
-            this.block.fillItemGroup(group,items);
-        }
-    }
-    @Override
-    public void addInformation(ItemStack stack, @Nullable World world, List<String> tooltip, ITooltipFlag flag)
-    {
-        for(int i = 0; i < ModInfo.appendNames.length;i++)
-        {
-            if(stack.getTextComponent().getFormattedText().contains(ModInfo.appendNames[i]))
+            if(block.getUnlocalizedName().substring(14).equals(ModInfo.appendNames[i]))
             {
-                tooltip.add(ModInfo.matCosts[stack.getItem().getMetadata(stack)] + " Blocks of " + ModInfo.appendNames[i]);
+                list.add(ModInfo.matCosts[stack.getMetadata()] + " Blocks of " + block.getUnlocalizedName().substring(14));
+                append = false;
                 break;
             }
         }
-        for(int i = 0; i < ModInfo.extraNames.length;i++)
+        if(append)
         {
-            if(stack.getTextComponent().getFormattedText().contains(ModInfo.extraNames[i]))
-            {
-                tooltip.add(ModInfo.matCosts[stack.getItem().getMetadata(stack)] + " " + ModInfo.extraNames[i]);
-                break;
-            }
+            list.add(ModInfo.matCosts[stack.getMetadata()] + " " + block.getUnlocalizedName().substring(14));
         }
     }
 }

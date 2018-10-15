@@ -9,16 +9,18 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import java.util.List;
 
 /**
  * Created by IpodT on 4/30/2016.
@@ -29,11 +31,11 @@ public class BlockMetaCompressedOre extends Block
     public BlockMetaCompressedOre(Material mat,float hardness, float resistance,String uName,boolean isRedstone)
     {
         super(mat);
-        this.blockHardness = hardness;
-        this.blockResistance = resistance;
-        this.func_149647_a(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
-        this.func_149663_c(uName);
+        setHardness(hardness);
+        setResistance(resistance);
+        setUnlocalizedName(uName);
         setHarvestLevel("pickaxe", 2);
+        setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
         this.isRedstone = isRedstone;
     }
     @SideOnly(Side.CLIENT)
@@ -42,48 +44,53 @@ public class BlockMetaCompressedOre extends Block
         return BlockRenderLayer.SOLID;
     }
 
-    private static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
+    public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
 
-    @SideOnly(Side.CLIENT)
     @Override
-    public void fillItemGroup(CreativeTabs group,NonNullList<ItemStack> items)
+    public int damageDropped(IBlockState state)
+    {
+        EnumLevel enumLevel = (EnumLevel)state.getValue(PROPERTYLEVEL);
+        return enumLevel.getMetadata();
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack>list)
     {
         EnumLevel[] allLevels = EnumLevel.values();
-        for (EnumLevel level : allLevels)
+        for(EnumLevel level : allLevels)
         {
-            items.add(new ItemStack(this,1,level.getMetadata()));
+            list.add(new ItemStack(this, 1, level.getMetadata()));
         }
     }
     @Override
-    public int func_180651_a(IBlockState state)
-    {
-        EnumLevel enumLevel = (EnumLevel)state.get(PROPERTYLEVEL);
-        return  enumLevel.getMetadata();
-    }
-    @Override
-    public IBlockState func_176203_a(int meta)
+    public IBlockState getStateFromMeta(int meta)
     {
         int levelbits = meta;
         EnumLevel level = EnumLevel.byMetadata(levelbits);
-        return this.getDefaultState().func_177226_a(PROPERTYLEVEL,level);
-    }
-    @Override
-    public int func_176201_c(IBlockState state)
-    {
-        EnumLevel level = (EnumLevel)state.get(PROPERTYLEVEL);
-        return level.getMetadata();
-    }
-    @Override
-    protected BlockStateContainer func_180661_e()
-    {
-        return new BlockStateContainer(this,PROPERTYLEVEL);
+        return this.getDefaultState().withProperty(PROPERTYLEVEL, level);
     }
 
     @Override
-    public IBlockState func_180642_a(World world, BlockPos pos, EnumFacing levelPlaced, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    public int getMetaFromState(IBlockState state)
+    {
+        EnumLevel level = (EnumLevel)state.getValue(PROPERTYLEVEL);
+
+        int levelbits = level.getMetadata();
+        return levelbits;
+    }
+
+    @Override
+    protected BlockStateContainer createBlockState()
+    {
+        return new BlockStateContainer(this, PROPERTYLEVEL);
+    }
+
+    @Override
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing levelPlaced, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
         EnumLevel levels = EnumLevel.byMetadata(meta);
-        return this.getDefaultState().func_177226_a(PROPERTYLEVEL,levels);
+        return this.getDefaultState().withProperty(PROPERTYLEVEL, levels);
     }
     @Override
     public boolean canProvidePower(IBlockState state)

@@ -21,7 +21,7 @@ public enum EnumLevel implements IStringSerializable
     private final String name;
     private final String unlocalizedName;
 
-    private EnumLevel(int meta, String name, String unlocalizedName)
+    EnumLevel(int meta, String name, String unlocalizedName)
     {
         this.meta = meta;
         this.name = name;

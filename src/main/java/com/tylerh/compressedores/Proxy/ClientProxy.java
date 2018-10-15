@@ -37,7 +37,7 @@ public class ClientProxy extends CommonProxy
         }
         else if (player instanceof EntityPlayerSP)
         {
-            return Minecraft.getInstance().playerController.isInCreativeMode();
+            return Minecraft.getMinecraft().playerController.isInCreativeMode();
         }
         return false;
     }
