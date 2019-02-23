@@ -121,50 +121,6 @@
         ]
       }
     },
-    "Quadruple Compressed Cobble": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaCobble",
-            "data": 3
-          }
-        ]
-      }
-    },
-    "Quadruple Compressed Dirt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaDirt",
-            "data": 3
-          }
-        ]
-      }
-    },
-    "Quadruple Compressed Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaSand",
-            "data": 3
-          }
-        ]
-      }
-    },
-    "Quadruple Compressed Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaGravel",
-            "data": 3
-          }
-        ]
-      }
-    },
     "Quadruple Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -190,10 +146,6 @@
       "Quadruple Compressed Andesite",
       "Quadruple Compressed Diorite",
       "Quadruple Compressed Granite",
-      "Quadruple Compressed Cobble",
-      "Quadruple Compressed Dirt",
-      "Quadruple Compressed Sand",
-      "Quadruple Compressed Gravel",
       "Quadruple Compressed Clay"
     ]
   ],

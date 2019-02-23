@@ -2,6 +2,7 @@ package com.tylerh.compressedores.Blocks;
 
 import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
@@ -20,6 +21,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.Nonnull;
 import java.util.List;
 
 /**
@@ -70,7 +72,6 @@ public class BlockMetaCompressedOre extends Block
         EnumLevel level = EnumLevel.byMetadata(levelbits);
         return this.getDefaultState().withProperty(PROPERTYLEVEL, level);
     }
-
     @Override
     public int getMetaFromState(IBlockState state)
     {

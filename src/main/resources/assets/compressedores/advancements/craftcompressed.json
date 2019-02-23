@@ -121,50 +121,6 @@
         ]
       }
     },
-    "Compressed Cobble": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaCobble",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Compressed Dirt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaDirt",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Compressed Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaSand",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Compressed Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaGravel",
-            "data": 0
-          }
-        ]
-      }
-    },
     "Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -190,10 +146,6 @@
       "Compressed Andesite",
       "Compressed Diorite",
       "Compressed Granite",
-      "Compressed Cobble",
-      "Compressed Dirt",
-      "Compressed Sand",
-      "Compressed Gravel",
       "Compressed Clay"
     ]
   ],

@@ -121,50 +121,6 @@
         ]
       }
     },
-    "Septuple Compressed Cobble": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaCobble",
-            "data": 6
-          }
-        ]
-      }
-    },
-    "Septuple Compressed Dirt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaDirt",
-            "data": 6
-          }
-        ]
-      }
-    },
-    "Septuple Compressed Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaSand",
-            "data": 6
-          }
-        ]
-      }
-    },
-    "Septuple Compressed Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaGravel",
-            "data": 6
-          }
-        ]
-      }
-    },
     "Septuple Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -190,10 +146,6 @@
       "Septuple Compressed Andesite",
       "Septuple Compressed Diorite",
       "Septuple Compressed Granite",
-      "Septuple Compressed Cobble",
-      "Septuple Compressed Dirt",
-      "Septuple Compressed Sand",
-      "Septuple Compressed Gravel",
       "Septuple Compressed Clay"
     ]
   ],

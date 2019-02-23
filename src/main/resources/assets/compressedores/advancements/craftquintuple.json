@@ -121,50 +121,6 @@
         ]
       }
     },
-    "Quintuple Compressed Cobble": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaCobble",
-            "data": 4
-          }
-        ]
-      }
-    },
-    "Quintuple Compressed Dirt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaDirt",
-            "data": 4
-          }
-        ]
-      }
-    },
-    "Quintuple Compressed Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaSand",
-            "data": 4
-          }
-        ]
-      }
-    },
-    "Quintuple Compressed Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaGravel",
-            "data": 4
-          }
-        ]
-      }
-    },
     "Quintuple Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -190,10 +146,6 @@
       "Quintuple Compressed Andesite",
       "Quintuple Compressed Diorite",
       "Quintuple Compressed Granite",
-      "Quintuple Compressed Cobble",
-      "Quintuple Compressed Dirt",
-      "Quintuple Compressed Sand",
-      "Quintuple Compressed Gravel",
       "Quintuple Compressed Clay"
     ]
   ],

@@ -157,7 +157,7 @@
     "Mine Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "itemds": [
+        "items": [
           {
             "item": "minecraft:gravel",
             "data": 0

@@ -121,50 +121,6 @@
         ]
       }
     },
-    "Double Compressed Cobble": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaCobble",
-            "data": 1
-          }
-        ]
-      }
-    },
-    "Double Compressed Dirt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaDirt",
-            "data": 1
-          }
-        ]
-      }
-    },
-    "Double Compressed Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaSand",
-            "data": 1
-          }
-        ]
-      }
-    },
-    "Double Compressed Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "compressedores:blockMetaGravel",
-            "data": 1
-          }
-        ]
-      }
-    },
     "Double Compressed Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -190,10 +146,6 @@
       "Double Compressed Andesite",
       "Double Compressed Diorite",
       "Double Compressed Granite",
-      "Double Compressed Cobble",
-      "Double Compressed Dirt",
-      "Double Compressed Sand",
-      "Double Compressed Gravel",
       "Double Compressed Clay"
     ]
   ],
