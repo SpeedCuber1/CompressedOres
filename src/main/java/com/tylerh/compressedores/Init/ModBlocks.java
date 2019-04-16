@@ -55,22 +55,22 @@ public class ModBlocks
     public static Block blockMetaSand;
 
     //ItemBlocks
-    static ItemBlock itemBlockMetaAndesite;
-    static ItemBlock itemBlockMetaClay;
-    static ItemBlock itemBlockMetaCoal;
-    static ItemBlock itemBlockMetaCobble;
-    static ItemBlock itemBlockMetaDiamond;
-    static ItemBlock itemBlockMetaDiorite;
-    static ItemBlock itemBlockMetaDirt;
-    static ItemBlock itemBlockMetaEmerald;
-    static ItemBlock itemBlockMetaGold;
-    static ItemBlock itemBlockMetaGranite;
-    static ItemBlock itemBlockMetaGravel;
-    static ItemBlock itemBlockMetaIron;
-    static ItemBlock itemBlockMetaLapis;
-    static ItemBlock itemBlockMetaQuartz;
-    static ItemBlock itemBlockMetaRedstone;
-    static ItemBlock itemBlockMetaSand;
+    private static ItemBlock itemBlockMetaAndesite;
+    private static ItemBlock itemBlockMetaClay;
+    private static ItemBlock itemBlockMetaCoal;
+    private static ItemBlock itemBlockMetaCobble;
+    private static ItemBlock itemBlockMetaDiamond;
+    private static ItemBlock itemBlockMetaDiorite;
+    private static ItemBlock itemBlockMetaDirt;
+    private static ItemBlock itemBlockMetaEmerald;
+    private static ItemBlock itemBlockMetaGold;
+    private static ItemBlock itemBlockMetaGranite;
+    private static ItemBlock itemBlockMetaGravel;
+    private static ItemBlock itemBlockMetaIron;
+    private static ItemBlock itemBlockMetaLapis;
+    private static ItemBlock itemBlockMetaQuartz;
+    private static ItemBlock itemBlockMetaRedstone;
+    private static ItemBlock itemBlockMetaSand;
 
     public static void preInitCommon()
     {
