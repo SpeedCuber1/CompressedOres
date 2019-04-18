@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "compressedores:blockclay.octuple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockclay.septuple",
+    "count": 9
+  }
+}

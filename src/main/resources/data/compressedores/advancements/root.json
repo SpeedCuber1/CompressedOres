@@ -1,0 +1,42 @@
+{
+  "criteria": {
+    "Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gold_block"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_block"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Gold",
+      "Iron"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": "Compressed Ores",
+    "description": "Craft A Block",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  }
+}

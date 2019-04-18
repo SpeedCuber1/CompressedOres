@@ -1,114 +1,40 @@
 package com.tylerh.compressedores.Blocks;
 
-import com.tylerh.compressedores.Util.CreativeTabCompressedOres;
 import com.tylerh.compressedores.Util.EnumLevel;
-import mcp.MethodsReturnNonnullByDefault;
+import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyEnum;
-import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
+import net.minecraftforge.event.ForgeEventFactory;
 
-import javax.annotation.Nonnull;
-import java.util.List;
-
-/**
- * Created by IpodT on 4/30/2016.
- */
 public class BlockMetaCompressedOre extends Block
 {
-    private boolean isRedstone;
-    public BlockMetaCompressedOre(Material mat,float hardness, float resistance,String uName,boolean isRedstone)
+    private static int id;
+    private static boolean redstone;
+    public BlockMetaCompressedOre(Material mat, float hardness, float resistance,String uName,boolean isRedstone,int meta)
     {
-        super(mat);
-        setHardness(hardness);
-        setResistance(resistance);
-        setUnlocalizedName(uName);
-        setHarvestLevel("pickaxe", 2);
-        setCreativeTab(CreativeTabCompressedOres.COMPRESSED_ORES_TAB);
-        this.isRedstone = isRedstone;
+        super(Block.Properties.create(mat).hardnessAndResistance(hardness,resistance));
+        id = meta;
+        redstone = isRedstone;
+        setRegistryName(ModInfo.MOD_ID,uName + "." + getLevel());
     }
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
+    private String getLevel()
     {
-        return BlockRenderLayer.SOLID;
-    }
-
-    public static final PropertyEnum PROPERTYLEVEL = PropertyEnum.create("level", EnumLevel.class);
-
-    @Override
-    public int damageDropped(IBlockState state)
-    {
-        EnumLevel enumLevel = (EnumLevel)state.getValue(PROPERTYLEVEL);
-        return enumLevel.getMetadata();
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack>list)
-    {
-        EnumLevel[] allLevels = EnumLevel.values();
-        for(EnumLevel level : allLevels)
-        {
-            list.add(new ItemStack(this, 1, level.getMetadata()));
-        }
-    }
-    @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
-        int levelbits = meta;
-        EnumLevel level = EnumLevel.byMetadata(levelbits);
-        return this.getDefaultState().withProperty(PROPERTYLEVEL, level);
-    }
-    @Override
-    public int getMetaFromState(IBlockState state)
-    {
-        EnumLevel level = (EnumLevel)state.getValue(PROPERTYLEVEL);
-
-        int levelbits = level.getMetadata();
-        return levelbits;
-    }
-
-    @Override
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, PROPERTYLEVEL);
-    }
-
-    @Override
-    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing levelPlaced, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
-        EnumLevel levels = EnumLevel.byMetadata(meta);
-        return this.getDefaultState().withProperty(PROPERTYLEVEL, levels);
+        return EnumLevel.byMetadata(id).getName();
     }
     @Override
     public boolean canProvidePower(IBlockState state)
     {
-        if(isRedstone)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return redstone;
     }
     @Override
-    public int getWeakPower(IBlockState state, IBlockAccess access,BlockPos pos, EnumFacing side)
+    public int getWeakPower(IBlockState state, IBlockReader reader, BlockPos pos, EnumFacing side)
     {
-        if(isRedstone)
+        if(redstone)
         {
             return 15;
         }
