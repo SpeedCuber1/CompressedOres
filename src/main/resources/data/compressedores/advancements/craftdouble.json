@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgold.double"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockiron.double"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Gold",
+      "Iron"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold.double"
+    },
+    "title": "Double Down",
+    "description": "Reach Compression Level 2",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "compressedores:craftcompressed"
+}

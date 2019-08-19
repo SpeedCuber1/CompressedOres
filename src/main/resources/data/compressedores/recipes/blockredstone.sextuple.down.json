@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "compressedores:blockredstone.sextuple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockredstone.quintuple",
+    "count": 9
+  }
+}

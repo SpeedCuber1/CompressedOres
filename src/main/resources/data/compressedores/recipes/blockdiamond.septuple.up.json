@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "compressedores:blockdiamond.sextuple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockdiamond.septuple",
+    "count": 1
+  }
+}

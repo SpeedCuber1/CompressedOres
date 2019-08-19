@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgold.quadruple"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockiron.quadruple"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Gold",
+      "Iron"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold.quadruple"
+    },
+    "title": "Quad-Core",
+    "description": "Reach Compression Level 4",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "compressedores:crafttriple"
+}

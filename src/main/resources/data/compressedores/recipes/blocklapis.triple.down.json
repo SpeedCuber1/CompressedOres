@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "compressedores:blocklapis.triple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blocklapis.double",
+    "count": 9
+  }
+}

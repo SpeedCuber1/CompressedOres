@@ -1,11 +1,21 @@
 {
   "criteria": {
-    "Andesite": {
+    "Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:andesite"
+            "item": "minecraft:gold_block"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_block"
           }
         ]
       }
@@ -13,17 +23,18 @@
   },
   "requirements": [
     [
-      "Andesite"
+      "Gold",
+      "Iron"
     ]
   ],
   "display": {
     "icon": {
       "item": "minecraft:gold_block"
     },
-    "title": "Compressesd Ores",
+    "title": "Compressed Ores",
     "description": "Craft A Block",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-    "frane": "task",
+    "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

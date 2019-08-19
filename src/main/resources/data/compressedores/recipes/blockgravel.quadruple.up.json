@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "compressedores:blockgravel.triple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockgravel.quadruple",
+    "count": 1
+  }
+}

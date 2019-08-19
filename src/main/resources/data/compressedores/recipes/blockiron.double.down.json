@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "compressedores:blockiron.double"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockiron.compressed",
+    "count": 9
+  }
+}

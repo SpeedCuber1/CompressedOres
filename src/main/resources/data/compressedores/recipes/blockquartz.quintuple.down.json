@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "compressedores:blockquartz.quintuple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockquartz.quadruple",
+    "count": 9
+  }
+}

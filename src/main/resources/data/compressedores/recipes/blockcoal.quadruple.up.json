@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "compressedores:blockcoal.triple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockcoal.quadruple",
+    "count": 1
+  }
+}
