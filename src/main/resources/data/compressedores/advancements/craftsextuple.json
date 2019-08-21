@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgold.sextuple"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockiron.sextuple"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Gold",
+      "Iron"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold.sextuple"
+    },
+    "title": "Six-Pack",
+    "description": "Reach Compression Level 6",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "compressedores:craftquintuple"
+}

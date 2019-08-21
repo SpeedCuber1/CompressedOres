@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgold.octuple"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockiron.octuple"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Gold",
+      "Iron"
+    ]
+  ],
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold.octuple"
+    },
+    "title": "Compression Master",
+    "description": "Reach the Top Compression Level",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "compressedores:craftseptuple"
+}
