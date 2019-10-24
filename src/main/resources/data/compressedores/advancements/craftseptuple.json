@@ -12,7 +12,7 @@
     },
     "Iron": {
       "trigger": "minecraft:inventory_changed",
-      "conditons": {
+      "conditions": {
         "items": [
           {
             "item": "compressedores:blockiron.septuple"
