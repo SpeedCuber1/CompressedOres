@@ -42,11 +42,10 @@ public enum EnumLevel implements IStringSerializable
         }
         return META_LOOKUP[meta];
     }
-
     public String toString() {
         return this.unlocalizedName;
     }
-
+    @Override
     public String getName() {
         return this.name;
     }
