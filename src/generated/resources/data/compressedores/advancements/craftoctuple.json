@@ -1,0 +1,201 @@
+{
+  "parent": "compressedores:craftseptuple",
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold.octuple"
+    },
+    "title": {
+      "translate": "Compression Master"
+    },
+    "description": {
+      "translate": "Reach Top Compression Level"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "Andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockandesite.octuple"
+          }
+        ]
+      }
+    },
+    "Clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockclay.octuple"
+          }
+        ]
+      }
+    },
+    "Coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockcoal.octuple"
+          }
+        ]
+      }
+    },
+    "Cobble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockcobble.octuple"
+          }
+        ]
+      }
+    },
+    "Diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockdiamond.octuple"
+          }
+        ]
+      }
+    },
+    "Diorite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockdiorite.octuple"
+          }
+        ]
+      }
+    },
+    "Dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockdirt.octuple"
+          }
+        ]
+      }
+    },
+    "Emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockemerald.octuple"
+          }
+        ]
+      }
+    },
+    "Gold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgold.octuple"
+          }
+        ]
+      }
+    },
+    "Granite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgranite.octuple"
+          }
+        ]
+      }
+    },
+    "Gravel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgravel.octuple"
+          }
+        ]
+      }
+    },
+    "Iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockiron.octuple"
+          }
+        ]
+      }
+    },
+    "Lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocklapis.octuple"
+          }
+        ]
+      }
+    },
+    "Quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockquartz.octuple"
+          }
+        ]
+      }
+    },
+    "Redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockredstone.octuple"
+          }
+        ]
+      }
+    },
+    "Sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocksand.octuple"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Andesite",
+      "Clay",
+      "Coal",
+      "Cobble",
+      "Diamond",
+      "Diorite",
+      "Dirt",
+      "Emerald",
+      "Gold",
+      "Granite",
+      "Gravel",
+      "Iron",
+      "Lapis",
+      "Quartz",
+      "Redstone",
+      "Sand"
+    ]
+  ]
+}

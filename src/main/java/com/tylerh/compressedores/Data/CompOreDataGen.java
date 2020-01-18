@@ -12,7 +12,7 @@ public class CompOreDataGen
     public static void gatherData(GatherDataEvent event)
     {
         DataGenerator generator = event.getGenerator();
-        generator.addProvider(new LootTables(generator));
+        //generator.addProvider(new LootTables(generator));
         generator.addProvider(new BaseAdvancementProvider(generator));
     }
 }
