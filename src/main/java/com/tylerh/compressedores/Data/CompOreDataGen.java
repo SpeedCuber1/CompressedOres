@@ -13,5 +13,6 @@ public class CompOreDataGen
     {
         DataGenerator generator = event.getGenerator();
         generator.addProvider(new LootTables(generator));
+        generator.addProvider(new BaseAdvancementProvider(generator));
     }
 }

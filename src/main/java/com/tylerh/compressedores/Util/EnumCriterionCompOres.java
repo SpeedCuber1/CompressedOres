@@ -4,22 +4,22 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumCriterionCompOres implements IStringSerializable
 {
-    ANDESITE(0,"andesite"),
-    CLAY(1,"clay"),
-    COAL(2,"coal"),
-    COBBLE(3,"cobble"),
-    DIAMOND(4,"diamond"),
-    DIORITE(5,"diorite"),
-    DIRT(6,"dirt"),
-    EMERALD(7,"emerald"),
-    GOLD(8,"gold"),
-    GRANITE(9,"granite"),
-    GRAVEL(10,"gravel"),
-    IRON(11,"iron"),
-    LAPIS(12,"lapis"),
-    QUARTZ(13,"quartz"),
-    REDSTONE(14,"redstone"),
-    SAND(15,"sand")
+    ANDESITE(0,"Andesite"),
+    CLAY(1,"Clay"),
+    COAL(2,"Coal"),
+    COBBLE(3,"Cobble"),
+    DIAMOND(4,"Diamond"),
+    DIORITE(5,"Diorite"),
+    DIRT(6,"Dirt"),
+    EMERALD(7,"Emerald"),
+    GOLD(8,"Gold"),
+    GRANITE(9,"Granite"),
+    GRAVEL(10,"Gravel"),
+    IRON(11,"Iron"),
+    LAPIS(12,"Lapis"),
+    QUARTZ(13,"Quartz"),
+    REDSTONE(14,"Redstone"),
+    SAND(15,"Sand")
     ;
     private static final EnumCriterionCompOres[] META_LOOKUP = new EnumCriterionCompOres[values().length];
     private final String name;
