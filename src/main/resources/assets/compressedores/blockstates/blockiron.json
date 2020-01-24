@@ -1,0 +1,28 @@
+{
+  "variants":{
+    "level=compressed":{
+      "model":"compressedores:blockiron.compressed"
+    },
+    "level=double":{
+      "model":"compressedores:blockiron.double"
+    },
+    "level=triple":{
+      "model":"compressedores:blockiron.triple"
+    },
+    "level=quadruple":{
+      "model":"compressedores:blockiron.quadruple"
+    },
+    "level=quintuple":{
+      "model": "compressedores:blockiron.quintuple"
+    },
+    "level=sextuple":{
+      "model":"compressedores:blockiron.sextuple"
+    },
+    "level=septuple":{
+      "model":"compressedores:blockiron.septuple"
+    },
+    "level=octuple":{
+      "model":"compressedores:blockiron.octuple"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "Compressed Ores",
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "compressedores:blockcoal",
+    "data": 5
+  },
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "type": "forge:ore_dict",
+      "ore":"blockCoalQuintuple"
+    }
+  }
+}

@@ -1,132 +1,194 @@
 {
+  "parent": "compressedores:craftseptuple",
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold",
+      "data": 7
+    },
+    "title": {
+      "translate": "Compression Master"
+    },
+    "description": {
+      "translate": "Reach Top Compression Level"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
   "criteria": {
-    "Octuple Compressed Gold": {
+    "Andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGold",
+            "item": "compressedores:blockandesite",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Iron": {
+    "Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaIron",
+            "item": "compressedores:blockclay",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Diamond": {
+    "Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiamond",
+            "item": "compressedores:blockcoal",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Emerald": {
+    "Cobble": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaEmerald",
+            "item": "compressedores:blockcobble",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Redstone": {
+    "Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaRedstone",
+            "item": "compressedores:blockdiamond",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Lapis": {
+    "Diorite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaLapis",
+            "item": "compressedores:blockdiorite",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Quartz": {
+    "Dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaQuartz",
+            "item": "compressedores:blockdirt",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Coal": {
+    "Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaCoal",
+            "item": "compressedores:blockemerald",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Andesite": {
+    "Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaAndesite",
+            "item": "compressedores:blockgold",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Diorite": {
+    "Granite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiorite",
+            "item": "compressedores:blockgranite",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Granite": {
+    "Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGranite",
+            "item": "compressedores:blockgravel",
             "data": 7
           }
         ]
       }
     },
-    "Octuple Compressed Clay": {
+    "Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaClay",
+            "item": "compressedores:blockiron",
+            "data": 7
+          }
+        ]
+      }
+    },
+    "Lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocklapis",
+            "data": 7
+          }
+        ]
+      }
+    },
+    "Quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockquartz",
+            "data": 7
+          }
+        ]
+      }
+    },
+    "Redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockredstone",
+            "data": 7
+          }
+        ]
+      }
+    },
+    "Sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocksand",
             "data": 7
           }
         ]
@@ -135,31 +197,22 @@
   },
   "requirements": [
     [
-      "Octuple Compressed Gold",
-      "Octuple Compressed Iron",
-      "Octuple Compressed Diamond",
-      "Octuple Compressed Emerald",
-      "Octuple Compressed Redstone",
-      "Octuple Compressed Lapis",
-      "Octuple Compressed Quartz",
-      "Octuple Compressed Coal",
-      "Octuple Compressed Andesite",
-      "Octuple Compressed Diorite",
-      "Octuple Compressed Granite",
-      "Octuple Compressed Clay"
+      "Andesite",
+      "Clay",
+      "Coal",
+      "Cobble",
+      "Diamond",
+      "Diorite",
+      "Dirt",
+      "Emerald",
+      "Gold",
+      "Granite",
+      "Gravel",
+      "Iron",
+      "Lapis",
+      "Quartz",
+      "Redstone",
+      "Sand"
     ]
-  ],
-  "display": {
-    "icon": {
-      "item": "compressedores:blockMetaGold",
-      "data": 7
-    },
-    "title": "Compression Master",
-    "description": "Reach Top Compression Level",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-    "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true
-  },
-  "parent": "compressedores:craftseptuple"
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "variants":{
+    "level=compressed":{
+      "model":"compressedores:blockdiorite.compressed"
+    },
+    "level=double":{
+      "model":"compressedores:blockdiorite.double"
+    },
+    "level=triple":{
+      "model":"compressedores:blockdiorite.triple"
+    },
+    "level=quadruple":{
+      "model":"compressedores:blockdiorite.quadruple"
+    },
+    "level=quintuple":{
+      "model": "compressedores:blockdiorite.quintuple"
+    },
+    "level=sextuple":{
+      "model":"compressedores:blockdiorite.sextuple"
+    },
+    "level=septuple":{
+      "model":"compressedores:blockdiorite.septuple"
+    },
+    "level=octuple":{
+      "model":"compressedores:blockdiorite.octuple"
+    }
+  }
+}

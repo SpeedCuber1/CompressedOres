@@ -1,177 +1,108 @@
 {
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": {
+      "translate": "Compressed Ores"
+    },
+    "description": {
+      "translate": "Start Collecting Ores"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
   "criteria": {
-    "Mine Gold": {
+    "Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:gold_block",
-            "data": 0
+            "item": "minecraft:clay_ball"
           }
         ]
       }
     },
-    "Mine Iron": {
+    "Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:iron_block",
-            "data": 0
+            "item": "minecraft:coal"
           }
         ]
       }
     },
-    "Mine Diamond": {
+    "Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:diamond_block",
-            "data": 0
+            "item": "minecraft:diamond"
           }
         ]
       }
     },
-    "Mine Emerald": {
+    "Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:emerald_block",
-            "data": 0
+            "item": "minecraft:emerald"
           }
         ]
       }
     },
-    "Mine Redstone": {
+    "Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:redstone_block",
-            "data": 0
+            "item": "minecraft:gold_ore"
           }
         ]
       }
     },
-    "Mine Lapis": {
+    "Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:lapis_block",
-            "data": 0
+            "item": "minecraft:iron_ore"
           }
         ]
       }
     },
-    "Mine Quartz": {
+    "Lapis": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:quartz_block",
-            "data": 0
+            "item": "minecraft:dye",
+            "data": 4
           }
         ]
       }
     },
-    "Mine Coal": {
+    "Quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:coal_block",
-            "data": 0
+            "item": "minecraft:quartz"
           }
         ]
       }
     },
-    "Mine Andesite": {
+    "Redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:stone",
-            "data": 5
-          }
-        ]
-      }
-    },
-    "Mine Diorite": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:stone",
-            "data": 3
-          }
-        ]
-      }
-    },
-    "Mine Granite": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:stone",
-            "data": 1
-          }
-        ]
-      }
-    },
-    "Mine Cobble": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:cobblestone",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Mine Dirt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:dirt",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Mine Sand": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:sand",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Mine Gravel": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:gravel",
-            "data": 0
-          }
-        ]
-      }
-    },
-    "Mine Clay": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:clay_ball",
-            "data": 0
+            "item": "minecraft:redstone"
           }
         ]
       }
@@ -179,33 +110,15 @@
   },
   "requirements": [
     [
-      "Mine Gold",
-      "Mine Iron",
-      "Mine Diamond",
-      "Mine Emerald",
-      "Mine Redstone",
-      "Mine Lapis",
-      "Mine Quartz",
-      "Mine Coal",
-      "Mine Andesite",
-      "Mine Diorite",
-      "Mine Granite",
-      "Mine Cobble",
-      "Mine Dirt",
-      "Mine Sand",
-      "Mine Gravel",
-      "Mine Clay"
+      "Clay",
+      "Coal",
+      "Diamond",
+      "Emerald",
+      "Gold",
+      "Iron",
+      "Lapis",
+      "Quartz",
+      "Redstone"
     ]
-  ],
-  "display": {
-    "icon": {
-      "item": "minecraft:gold_block",
-      "data": 0
-    },
-    "title": "Compressed Ores",
-    "description": "Start Learning the art",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-    "show_toast": false,
-    "announce_to_chat": false
-  }
+  ]
 }

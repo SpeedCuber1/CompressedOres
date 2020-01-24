@@ -18,7 +18,7 @@ public class CreativeTabCompressedOres
         @Override
         public ItemStack getTabIconItem()
         {
-            return new ItemStack(ModBlocks.blockMetaGold,1,0);
+            return new ItemStack(ModBlocks.blockGold,1,0);
         }
         @Override
         public String getTranslatedTabLabel()

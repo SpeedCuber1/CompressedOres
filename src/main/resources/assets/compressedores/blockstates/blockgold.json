@@ -1,0 +1,28 @@
+{
+  "variants":{
+    "level=compressed":{
+      "model":"compressedores:blockgold.compressed"
+    },
+    "level=double":{
+      "model":"compressedores:blockgold.double"
+    },
+    "level=triple":{
+      "model":"compressedores:blockgold.triple"
+    },
+    "level=quadruple":{
+      "model":"compressedores:blockgold.quadruple"
+    },
+    "level=quintuple":{
+      "model": "compressedores:blockgold.quintuple"
+    },
+    "level=sextuple":{
+      "model":"compressedores:blockgold.sextuple"
+    },
+    "level=septuple":{
+      "model":"compressedores:blockgold.septuple"
+    },
+    "level=octuple":{
+      "model":"compressedores:blockgold.octuple"
+    }
+  }
+}

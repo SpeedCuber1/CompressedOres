@@ -1,132 +1,194 @@
 {
+  "parent": "compressedores:root",
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold",
+      "data": 0
+    },
+    "title": {
+      "translate": "Small Step of the Journey"
+    },
+    "description": {
+      "translate": "Craft a Compressed Block"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
   "criteria": {
-    "Compressed Gold": {
+    "Andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGold",
+            "item": "compressedores:blockandesite",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Iron": {
+    "Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaIron",
+            "item": "compressedores:blockclay",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Diamond": {
+    "Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiamond",
+            "item": "compressedores:blockcoal",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Emerald": {
+    "Cobble": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaEmerald",
+            "item": "compressedores:blockcobble",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Redstone": {
+    "Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaRedstone",
+            "item": "compressedores:blockdiamond",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Lapis": {
+    "Diorite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaLapis",
+            "item": "compressedores:blockdiorite",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Quartz": {
+    "Dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaQuartz",
+            "item": "compressedores:blockdirt",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Coal": {
+    "Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaCoal",
+            "item": "compressedores:blockemerald",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Andesite": {
+    "Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaAndesite",
+            "item": "compressedores:blockgold",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Diorite": {
+    "Granite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiorite",
+            "item": "compressedores:blockgranite",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Granite": {
+    "Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGranite",
+            "item": "compressedores:blockgravel",
             "data": 0
           }
         ]
       }
     },
-    "Compressed Clay": {
+    "Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaClay",
+            "item": "compressedores:blockiron",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocklapis",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockquartz",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockredstone",
+            "data": 0
+          }
+        ]
+      }
+    },
+    "Sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocksand",
             "data": 0
           }
         ]
@@ -135,31 +197,22 @@
   },
   "requirements": [
     [
-      "Compressed Gold",
-      "Compressed Iron",
-      "Compressed Diamond",
-      "Compressed Emerald",
-      "Compressed Redstone",
-      "Compressed Lapis",
-      "Compressed Quartz",
-      "Compressed Coal",
-      "Compressed Andesite",
-      "Compressed Diorite",
-      "Compressed Granite",
-      "Compressed Clay"
+      "Andesite",
+      "Clay",
+      "Coal",
+      "Cobble",
+      "Diamond",
+      "Diorite",
+      "Dirt",
+      "Emerald",
+      "Gold",
+      "Granite",
+      "Gravel",
+      "Iron",
+      "Lapis",
+      "Quartz",
+      "Redstone",
+      "Sand"
     ]
-  ],
-  "display": {
-    "icon": {
-      "item": "compressedores:blockMetaGold",
-      "data": 0
-    },
-    "title": "Small Step of the Journey",
-    "description": "Craft a Compressed Block",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true
-  },
-  "parent": "compressedores:root"
+  ]
 }

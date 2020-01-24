@@ -1,0 +1,18 @@
+{
+  "group": "Compressed Ores",
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "compressedores:blockclay",
+    "data": 0
+  },
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:clay"
+    }
+  }
+}

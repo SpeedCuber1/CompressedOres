@@ -1,0 +1,28 @@
+{
+  "variants":{
+    "level=compressed":{
+      "model":"compressedores:blockredstone.compressed"
+    },
+    "level=double":{
+      "model":"compressedores:blockredstone.double"
+    },
+    "level=triple":{
+      "model":"compressedores:blockredstone.triple"
+    },
+    "level=quadruple":{
+      "model":"compressedores:blockredstone.quadruple"
+    },
+    "level=quintuple":{
+      "model": "compressedores:blockredstone.quintuple"
+    },
+    "level=sextuple":{
+      "model":"compressedores:blockredstone.sextuple"
+    },
+    "level=septuple":{
+      "model":"compressedores:blockredstone.septuple"
+    },
+    "level=octuple":{
+      "model":"compressedores:blockredstone.octuple"
+    }
+  }
+}

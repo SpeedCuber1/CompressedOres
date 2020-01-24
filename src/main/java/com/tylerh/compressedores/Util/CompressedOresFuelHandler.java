@@ -13,7 +13,7 @@ public class CompressedOresFuelHandler implements IFuelHandler
     @Override
     public int getBurnTime(ItemStack fuel)
     {
-        if(fuel.getItem() == Item.getItemFromBlock(ModBlocks.blockMetaCoal))
+        if(fuel.getItem() == Item.getItemFromBlock(ModBlocks.blockCoal))
         {
             return (fuel.getItem().getMetadata(fuel) + 1) * 9 * 16000;
         }

@@ -1,132 +1,194 @@
 {
+  "parent": "compressedores:craftdouble",
+  "display": {
+    "icon": {
+      "item": "compressedores:blockgold",
+      "data": 2
+    },
+    "title": {
+      "translate": "Triple Threat"
+    },
+    "description": {
+      "translate": "Reach Compression Level 3"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
   "criteria": {
-    "Triple Compressed Gold": {
+    "Andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGold",
+            "item": "compressedores:blockandesite",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Iron": {
+    "Clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaIron",
+            "item": "compressedores:blockclay",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Diamond": {
+    "Coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiamond",
+            "item": "compressedores:blockcoal",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Emerald": {
+    "Cobble": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaEmerald",
+            "item": "compressedores:blockcobble",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Redstone": {
+    "Diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaRedstone",
+            "item": "compressedores:blockdiamond",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Lapis": {
+    "Diorite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaLapis",
+            "item": "compressedores:blockdiorite",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Quartz": {
+    "Dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaQuartz",
+            "item": "compressedores:blockdirt",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Coal": {
+    "Emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaCoal",
+            "item": "compressedores:blockemerald",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Andesite": {
+    "Gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaAndesite",
+            "item": "compressedores:blockgold",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Diorite": {
+    "Granite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaDiorite",
+            "item": "compressedores:blockgranite",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Granite": {
+    "Gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaGranite",
+            "item": "compressedores:blockgravel",
             "data": 2
           }
         ]
       }
     },
-    "Triple Compressed Clay": {
+    "Iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "compressedores:blockMetaClay",
+            "item": "compressedores:blockiron",
+            "data": 2
+          }
+        ]
+      }
+    },
+    "Lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocklapis",
+            "data": 2
+          }
+        ]
+      }
+    },
+    "Quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockquartz",
+            "data": 2
+          }
+        ]
+      }
+    },
+    "Redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockredstone",
+            "data": 2
+          }
+        ]
+      }
+    },
+    "Sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocksand",
             "data": 2
           }
         ]
@@ -135,31 +197,22 @@
   },
   "requirements": [
     [
-      "Triple Compressed Gold",
-      "Triple Compressed Iron",
-      "Triple Compressed Diamond",
-      "Triple Compressed Emerald",
-      "Triple Compressed Redstone",
-      "Triple Compressed Lapis",
-      "Triple Compressed Quartz",
-      "Triple Compressed Coal",
-      "Triple Compressed Andesite",
-      "Triple Compressed Diorite",
-      "Triple Compressed Granite",
-      "Triple Compressed Clay"
+      "Andesite",
+      "Clay",
+      "Coal",
+      "Cobble",
+      "Diamond",
+      "Diorite",
+      "Dirt",
+      "Emerald",
+      "Gold",
+      "Granite",
+      "Gravel",
+      "Iron",
+      "Lapis",
+      "Quartz",
+      "Redstone",
+      "Sand"
     ]
-  ],
-  "display": {
-    "icon": {
-      "item": "compressedores:blockMetaGold",
-      "data": 2
-    },
-    "title": "Triple Threat",
-    "description": "Reach Compression Level 3",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true
-  },
-  "parent": "compressedores:craftdouble"
+  ]
 }

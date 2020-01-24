@@ -32,24 +32,26 @@ public class ItemBlockMetaCompressedOre extends ItemBlock
     public String getUnlocalizedName(ItemStack stack)
     {
         EnumLevel level = EnumLevel.byMetadata(stack.getMetadata());
-        return super.getUnlocalizedName() + "." + level.toString();
+        return super.getUnlocalizedName() + "." + level.toString().toLowerCase();
     }
     @Override
     public void addInformation(ItemStack stack, World world, List<String> list, ITooltipFlag flag)
     {
-        boolean append = true;
-        for(int i = 0; i < ModInfo.appendNames.length; i++)
+        for(int i = 0; i < ModInfo.appendNames.length;i++)
         {
-            if(block.getUnlocalizedName().substring(14).equals(ModInfo.appendNames[i]))
+            if(stack.getDisplayName().endsWith(ModInfo.appendNames[i]))
             {
-                list.add(ModInfo.matCosts[stack.getMetadata()] + " Blocks of " + block.getUnlocalizedName().substring(14));
-                append = false;
+                list.add(ModInfo.matCosts[stack.getMetadata()] + " Blocks of " + ModInfo.appendNames[i]);
                 break;
             }
         }
-        if(append)
+        for(int i = 0; i < ModInfo.extraNames.length; i++)
         {
-            list.add(ModInfo.matCosts[stack.getMetadata()] + " " + block.getUnlocalizedName().substring(14));
+            if(stack.getDisplayName().endsWith(ModInfo.extraNames[i]))
+            {
+                list.add(ModInfo.matCosts[stack.getMetadata()] + " " + ModInfo.extraNames[i]);
+                break;
+            }
         }
     }
 }
