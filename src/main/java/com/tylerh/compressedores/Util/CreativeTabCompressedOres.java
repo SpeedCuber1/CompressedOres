@@ -1,12 +1,8 @@
 package com.tylerh.compressedores.Util;
 
-import com.tylerh.compressedores.Init.ModBlocks;
+import com.tylerh.compressedores.Init.InitBlocks;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Created by tyler on 5/5/15.
@@ -18,7 +14,7 @@ public class CreativeTabCompressedOres
         @Override
         public ItemStack getTabIconItem()
         {
-            return new ItemStack(ModBlocks.blockGold,1,0);
+            return new ItemStack(InitBlocks.blockGold,1,0);
         }
         @Override
         public String getTranslatedTabLabel()

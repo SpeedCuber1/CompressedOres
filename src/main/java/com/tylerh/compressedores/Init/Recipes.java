@@ -14,7 +14,7 @@ public class Recipes
     public static void init()
     {
         String location;
-        if(ModBlocks.registerGold)
+        if(InitBlocks.registerGold)
         {
             location = ModInfo.MOD_ID + ":blockgold";
             //Compressing
@@ -23,7 +23,7 @@ public class Recipes
             registerHelper(location, "Decompress");
 
         }
-        if(ModBlocks.registerIron)
+        if(InitBlocks.registerIron)
         {
             location = ModInfo.MOD_ID + ":blockiron";
             //Compressing
@@ -31,7 +31,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerDiamond)
+        if(InitBlocks.registerDiamond)
         {
             location = ModInfo.MOD_ID + ":blockdiamond";
             //Compressing
@@ -39,7 +39,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerEmerald)
+        if(InitBlocks.registerEmerald)
         {
             location = ModInfo.MOD_ID + ":blockemerald";
             //Compressing
@@ -47,7 +47,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerRedstone)
+        if(InitBlocks.registerRedstone)
         {
             location = ModInfo.MOD_ID + ":blockredstone";
             //Compressing
@@ -55,7 +55,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerLapis)
+        if(InitBlocks.registerLapis)
         {
             location = ModInfo.MOD_ID + ":blocklapis";
             //Compressing
@@ -63,7 +63,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerQuartz)
+        if(InitBlocks.registerQuartz)
         {
             location = ModInfo.MOD_ID + ":blockquartz";
             //Compressing
@@ -71,7 +71,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerCoal)
+        if(InitBlocks.registerCoal)
         {
             location = ModInfo.MOD_ID + ":blockcoal";
             //Compressing
@@ -79,7 +79,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerAndesite)
+        if(InitBlocks.registerAndesite)
         {
             location = ModInfo.MOD_ID + ":blockandesite";
             //Compressing
@@ -87,7 +87,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerDiorite)
+        if(InitBlocks.registerDiorite)
         {
             location = ModInfo.MOD_ID + ":blockdiorite";
             //Compressing
@@ -95,7 +95,7 @@ public class Recipes
             //Decompress
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerGranite)
+        if(InitBlocks.registerGranite)
         {
             location = ModInfo.MOD_ID + ":blockgranite";
             //Compressing
@@ -103,13 +103,13 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerCobblestone)
+        if(InitBlocks.registerCobblestone)
         {
             location = ModInfo.MOD_ID + ":blockcobble";
             //Compressing
             registerHelper(location, "Compress");
         }
-        if(ModBlocks.registerDirt)
+        if(InitBlocks.registerDirt)
         {
             location = ModInfo.MOD_ID + ":blockdirt";
             //Compressing
@@ -117,7 +117,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerSand)
+        if(InitBlocks.registerSand)
         {
             location = ModInfo.MOD_ID + ":blocksand";
             //Compressing
@@ -125,7 +125,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerGravel)
+        if(InitBlocks.registerGravel)
         {
             location = ModInfo.MOD_ID + ":blockgravel";
             //Compressing
@@ -133,7 +133,7 @@ public class Recipes
             //Decompressing
             registerHelper(location, "Decompress");
         }
-        if(ModBlocks.registerClay)
+        if(InitBlocks.registerClay)
         {
             location = ModInfo.MOD_ID + ":blockclay";
             //Compressing

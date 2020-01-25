@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class ModBlocks
+public class InitBlocks
 {
     public static boolean registerAndesite;
     public static boolean registerClay;

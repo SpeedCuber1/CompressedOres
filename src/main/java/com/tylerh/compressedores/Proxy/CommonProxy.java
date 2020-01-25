@@ -3,9 +3,8 @@ package com.tylerh.compressedores.Proxy;
 import com.tylerh.compressedores.Init.Recipes;
 import com.tylerh.compressedores.Util.CompressedOresFuelHandler;
 import com.tylerh.compressedores.Util.ConfigHandler;
-import com.tylerh.compressedores.Init.ModBlocks;
+import com.tylerh.compressedores.Init.InitBlocks;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -16,7 +15,7 @@ public abstract class CommonProxy
     public void preInit()
     {
         ConfigHandler.preInit();
-        ModBlocks.preInitCommon();
+        InitBlocks.preInitCommon();
     }
     public void init()
     {

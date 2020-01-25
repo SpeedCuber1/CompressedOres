@@ -1,5 +1,5 @@
 package com.tylerh.compressedores.Util;
-import com.tylerh.compressedores.Init.ModBlocks;
+import com.tylerh.compressedores.Init.InitBlocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
@@ -83,40 +83,40 @@ public class ConfigHandler
 
         if(readFields)
         {
-            ModBlocks.registerAndesite = propAndesite.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerClay = propClay.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerCoal = propCoal.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerCobblestone = propCobble.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerDiamond = propDiamond.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerDiorite = propDiorite.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerDirt = propDirt.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerEmerald = propEmerald.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerGold = propGold.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerGranite = propGranite.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerGravel = propGravel.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerIron = propIron.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerLapis = propLapis.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerQuartz = propQuartz.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerRedstone = propRedstone.getBoolean(ModInfo.GUI_DEFAULT);
-            ModBlocks.registerSand = propSand.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerAndesite = propAndesite.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerClay = propClay.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerCoal = propCoal.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerCobblestone = propCobble.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerDiamond = propDiamond.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerDiorite = propDiorite.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerDirt = propDirt.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerEmerald = propEmerald.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerGold = propGold.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerGranite = propGranite.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerGravel = propGravel.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerIron = propIron.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerLapis = propLapis.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerQuartz = propQuartz.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerRedstone = propRedstone.getBoolean(ModInfo.GUI_DEFAULT);
+            InitBlocks.registerSand = propSand.getBoolean(ModInfo.GUI_DEFAULT);
 
         }
-        propAndesite.set(ModBlocks.registerAndesite);
-        propClay.set(ModBlocks.registerClay);
-        propCoal.set(ModBlocks.registerCoal);
-        propCobble.set(ModBlocks.registerCobblestone);
-        propDiamond.set(ModBlocks.registerDiamond);
-        propDiorite.set(ModBlocks.registerDiorite);
-        propDirt.set(ModBlocks.registerDirt);
-        propEmerald.set(ModBlocks.registerEmerald);
-        propGold.set(ModBlocks.registerGold);
-        propGranite.set(ModBlocks.registerGranite);
-        propGravel.set(ModBlocks.registerGravel);
-        propIron.set(ModBlocks.registerIron);
-        propLapis.set(ModBlocks.registerLapis);
-        propQuartz.set(ModBlocks.registerQuartz);
-        propRedstone.set(ModBlocks.registerRedstone);
-        propSand.set(ModBlocks.registerSand);
+        propAndesite.set(InitBlocks.registerAndesite);
+        propClay.set(InitBlocks.registerClay);
+        propCoal.set(InitBlocks.registerCoal);
+        propCobble.set(InitBlocks.registerCobblestone);
+        propDiamond.set(InitBlocks.registerDiamond);
+        propDiorite.set(InitBlocks.registerDiorite);
+        propDirt.set(InitBlocks.registerDirt);
+        propEmerald.set(InitBlocks.registerEmerald);
+        propGold.set(InitBlocks.registerGold);
+        propGranite.set(InitBlocks.registerGranite);
+        propGravel.set(InitBlocks.registerGravel);
+        propIron.set(InitBlocks.registerIron);
+        propLapis.set(InitBlocks.registerLapis);
+        propQuartz.set(InitBlocks.registerQuartz);
+        propRedstone.set(InitBlocks.registerRedstone);
+        propSand.set(InitBlocks.registerSand);
         if(config.hasChanged())
         {
             config.save();
