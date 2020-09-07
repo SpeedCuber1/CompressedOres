@@ -4,35 +4,41 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumCriterionCompOres implements IStringSerializable
 {
-    ANDESITE(0,"Andesite"),
-    CLAY(1,"Clay"),
-    COAL(2,"Coal"),
-    COBBLE(3,"Cobble"),
-    DIAMOND(4,"Diamond"),
-    DIORITE(5,"Diorite"),
-    DIRT(6,"Dirt"),
-    EMERALD(7,"Emerald"),
-    GOLD(8,"Gold"),
-    GRANITE(9,"Granite"),
-    GRAVEL(10,"Gravel"),
-    IRON(11,"Iron"),
-    LAPIS(12,"Lapis"),
-    QUARTZ(13,"Quartz"),
-    REDSTONE(14,"Redstone"),
-    SAND(15,"Sand")
+    ANDESITE(0,"andesite","Andesite"),
+    CLAY(1,"clay","Clay"),
+    COAL(2,"coal","Coal"),
+    COBBLE(3,"cobble","Cobble"),
+    DIAMOND(4,"diamond","Diamond"),
+    DIORITE(5,"diorite","Diorite"),
+    DIRT(6,"dirt","Dirt"),
+    EMERALD(7,"emerald","Emerald"),
+    GOLD(8,"gold","Gold"),
+    GRANITE(9,"granite","Granite"),
+    GRAVEL(10,"gravel","Gravel"),
+    IRON(11,"iron","Iron"),
+    LAPIS(12,"lapis","Lapis"),
+    QUARTZ(13,"quartz","Quartz"),
+    REDSTONE(14,"redstone","Redstone"),
+    SAND(15,"sand","Sand")
     ;
     private static final EnumCriterionCompOres[] META_LOOKUP = new EnumCriterionCompOres[values().length];
     private final String name;
     private final int meta;
-    EnumCriterionCompOres(int meta,String name)
+    private final String uName;
+    EnumCriterionCompOres(int meta,String name,String uName)
     {
         this.name = name;
+        this.uName = uName;
         this.meta = meta;
     }
     @Override
     public String getName()
     {
         return this.name;
+    }
+    public String getUnlocalizedName()
+    {
+        return this.uName;
     }
     public int getMeta()
     {

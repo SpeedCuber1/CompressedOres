@@ -17,7 +17,7 @@
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
   },
   "criteria": {
-    "Andesite": {
+    "andesite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -27,7 +27,7 @@
         ]
       }
     },
-    "Clay": {
+    "clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -37,7 +37,7 @@
         ]
       }
     },
-    "Coal": {
+    "coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -47,7 +47,7 @@
         ]
       }
     },
-    "Cobble": {
+    "cobble": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -57,7 +57,7 @@
         ]
       }
     },
-    "Diamond": {
+    "diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -67,7 +67,7 @@
         ]
       }
     },
-    "Diorite": {
+    "diorite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -77,7 +77,7 @@
         ]
       }
     },
-    "Dirt": {
+    "dirt": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -87,7 +87,7 @@
         ]
       }
     },
-    "Emerald": {
+    "emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -97,7 +97,7 @@
         ]
       }
     },
-    "Gold": {
+    "gold": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -107,7 +107,7 @@
         ]
       }
     },
-    "Granite": {
+    "granite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -117,7 +117,7 @@
         ]
       }
     },
-    "Gravel": {
+    "gravel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -127,7 +127,7 @@
         ]
       }
     },
-    "Iron": {
+    "iron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -137,7 +137,7 @@
         ]
       }
     },
-    "Lapis": {
+    "lapis": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -147,7 +147,7 @@
         ]
       }
     },
-    "Quartz": {
+    "quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -157,7 +157,7 @@
         ]
       }
     },
-    "Redstone": {
+    "redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -167,7 +167,7 @@
         ]
       }
     },
-    "Sand": {
+    "sand": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -180,22 +180,22 @@
   },
   "requirements": [
     [
-      "Andesite",
-      "Clay",
-      "Coal",
-      "Cobble",
-      "Diamond",
-      "Diorite",
-      "Dirt",
-      "Emerald",
-      "Gold",
-      "Granite",
-      "Gravel",
-      "Iron",
-      "Lapis",
-      "Quartz",
-      "Redstone",
-      "Sand"
+      "andesite",
+      "clay",
+      "coal",
+      "cobble",
+      "diamond",
+      "diorite",
+      "dirt",
+      "emerald",
+      "gold",
+      "granite",
+      "gravel",
+      "iron",
+      "lapis",
+      "quartz",
+      "redstone",
+      "sand"
     ]
   ]
 }
