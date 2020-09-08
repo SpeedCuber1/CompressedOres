@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockandesite.sextuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockandesite.quintuple",
+    "count": 9
+  }
+}

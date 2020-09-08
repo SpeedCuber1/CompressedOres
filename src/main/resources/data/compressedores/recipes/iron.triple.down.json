@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockiron.triple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockiron.double",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockgold.double"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockgold.compressed",
+    "count": 9
+  }
+}
