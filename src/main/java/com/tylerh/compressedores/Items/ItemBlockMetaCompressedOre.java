@@ -30,7 +30,7 @@ public class ItemBlockMetaCompressedOre extends BlockItem
         boolean append = true;
         for(int i = 0; i < ModInfo.appendNames.length; i++)
         {
-            if(stack.getDisplayName().getFormattedText().endsWith(ModInfo.appendNames[i]))
+            if(stack.getDisplayName().getString().endsWith(ModInfo.appendNames[i]))
             {
                 list.add(new TranslationTextComponent(ModInfo.matCosts[this.meta] + " Blocks of " + ModInfo.appendNames[i]));
                 break;
@@ -38,7 +38,7 @@ public class ItemBlockMetaCompressedOre extends BlockItem
         }
         for(int i = 0; i < ModInfo.extraNames.length;i++)
         {
-            if(stack.getDisplayName().getFormattedText().endsWith(ModInfo.extraNames[i]))
+            if(stack.getDisplayName().getString().endsWith(ModInfo.extraNames[i]))
             {
                 list.add(new TranslationTextComponent(ModInfo.matCosts[this.meta] + " " + ModInfo.extraNames[i]));
                 break;

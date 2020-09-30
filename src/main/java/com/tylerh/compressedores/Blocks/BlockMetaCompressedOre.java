@@ -23,7 +23,7 @@ public class BlockMetaCompressedOre extends Block
     }
     private String getLevel()
     {
-        return EnumLevel.byMetadata(id).getName();
+        return EnumLevel.byMetadata(id).getString();
     }
     @Override
     public boolean canProvidePower(BlockState state)

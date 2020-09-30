@@ -7,33 +7,27 @@ import net.minecraft.util.IStringSerializable;
  */
 public enum EnumLevel implements IStringSerializable
 {
-    COMPRESSED(0, "compressed", "Compressed"),
-    DOUBLE(1, "double", "Double"),
-    TRIPLE(2, "triple", "Triple"),
-    QUADRUPLE(3, "quadruple", "Quadruple"),
-    QUINTUPLE(4, "quintuple", "Quintuple"),
-    SEXTUPLE(5, "sextuple", "Sextuple"),
-    SEPTUPLE(6, "septuple", "Septuple"),
-    OCTUPLE(7, "octuple", "Octuple");
+    COMPRESSED(0, "compressed"),
+    DOUBLE(1, "double"),
+    TRIPLE(2, "triple"),
+    QUADRUPLE(3, "quadruple"),
+    QUINTUPLE(4, "quintuple"),
+    SEXTUPLE(5, "sextuple"),
+    SEPTUPLE(6, "septuple"),
+    OCTUPLE(7, "octuple");
 
     private static final EnumLevel[] META_LOOKUP = new EnumLevel[values().length];
     private final int meta;
     private final String name;
-    private final String unlocalizedName;
 
-    EnumLevel(int meta, String name, String unlocalizedName)
+    EnumLevel(int meta, String name)
     {
         this.meta = meta;
         this.name = name;
-        this.unlocalizedName = unlocalizedName;
     }
 
     public int getMetadata() {
         return this.meta;
-    }
-
-    public String getUnlocalizedName() {
-        return this.unlocalizedName;
     }
 
     public static EnumLevel byMetadata(int meta) {
@@ -42,11 +36,8 @@ public enum EnumLevel implements IStringSerializable
         }
         return META_LOOKUP[meta];
     }
-    public String toString() {
-        return this.unlocalizedName;
-    }
     @Override
-    public String getName() {
+    public String getString() {
         return this.name;
     }
 
