@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:coal.double.up"
+    ]
+  },
+  "criteria": {
+    "coal.double.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockcoal.double"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:coal.double.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "coal.double.up",
+      "has_the_recipe"
+    ]
+  ]
+}

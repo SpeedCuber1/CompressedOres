@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:gold.double.down"
+    ]
+  },
+  "criteria": {
+    "gold.double.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgold.double"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:gold.double.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gold.double.down",
+      "has_the_recipe"
+    ]
+  ]
+}

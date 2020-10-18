@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blocknetherrack.septuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blocknetherrack.sextuple",
+    "count": 9
+  }
+}

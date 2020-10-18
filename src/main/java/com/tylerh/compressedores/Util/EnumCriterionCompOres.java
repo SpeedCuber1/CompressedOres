@@ -17,9 +17,10 @@ public enum EnumCriterionCompOres implements IStringSerializable
     GRAVEL(10,"gravel"),
     IRON(11,"iron"),
     LAPIS(12,"lapis"),
-    QUARTZ(13,"quartz"),
-    REDSTONE(14,"redstone"),
-    SAND(15,"sand")
+    NETHERRACK(13,"netherrack"),
+    QUARTZ(14,"quartz"),
+    REDSTONE(15,"redstone"),
+    SAND(16,"sand")
     ;
     private static final EnumCriterionCompOres[] META_LOOKUP = new EnumCriterionCompOres[values().length];
     private final String name;

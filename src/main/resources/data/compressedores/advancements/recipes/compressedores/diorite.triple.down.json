@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:diorite.triple.down"
+    ]
+  },
+  "criteria": {
+    "diorite.triple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockdiorite.triple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:diorite.triple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diorite.triple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

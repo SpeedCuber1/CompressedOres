@@ -108,6 +108,14 @@ public class BlockList
     public static Block blockLapisSextuple;
     public static Block blockLapisSeptuple;
     public static Block blockLapisOctuple;
+    public static Block blockNetherrackCompressed;
+    public static Block blockNetherrackDouble;
+    public static Block blockNetherrackTriple;
+    public static Block blockNetherrackQuadruple;
+    public static Block blockNetherrackQuintuple;
+    public static Block blockNetherrackSextuple;
+    public static Block blockNetherrackSeptuple;
+    public static Block blockNetherrackOctuple;
     public static Block blockQuartzCompressed;
     public static Block blockQuartzDouble;
     public static Block blockQuartzTriple;

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:granite.quadruple.up"
+    ]
+  },
+  "criteria": {
+    "granite.quadruple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgranite.quadruple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:granite.quadruple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "granite.quadruple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

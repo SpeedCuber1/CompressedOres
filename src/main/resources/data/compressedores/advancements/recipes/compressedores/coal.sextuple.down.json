@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:coal.sextuple.down"
+    ]
+  },
+  "criteria": {
+    "coal.sextuple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockcoal.sextuple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:coal.sextuple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "coal.sextuple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

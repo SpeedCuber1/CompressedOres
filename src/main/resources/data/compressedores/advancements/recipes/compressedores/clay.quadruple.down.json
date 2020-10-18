@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:clay.quadruple.down"
+    ]
+  },
+  "criteria": {
+    "clay.quadruple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockclay.quadruple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:clay.quadruple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "clay.quadruple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

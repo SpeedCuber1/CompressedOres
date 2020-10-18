@@ -108,6 +108,14 @@ public class ItemBlockList
     public static Item itemBlockLapisSextuple;
     public static Item itemBlockLapisSeptuple;
     public static Item itemBlockLapisOctuple;
+    public static Item itemBlockNetherrackCompressed;
+    public static Item itemBlockNetherrackDouble;
+    public static Item itemBlockNetherrackTriple;
+    public static Item itemBlockNetherrackQuadruple;
+    public static Item itemBlockNetherrackQuintuple;
+    public static Item itemBlockNetherrackSextuple;
+    public static Item itemBlockNetherrackSeptuple;
+    public static Item itemBlockNetherrackOctuple;
     public static Item itemBlockQuartzCompressed;
     public static Item itemBlockQuartzDouble;
     public static Item itemBlockQuartzTriple;

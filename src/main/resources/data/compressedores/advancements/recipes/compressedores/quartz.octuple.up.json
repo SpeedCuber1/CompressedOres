@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:quartz.octuple.up"
+    ]
+  },
+  "criteria": {
+    "quartz.octuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockquartz.octuple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:quartz.octuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "quartz.octuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

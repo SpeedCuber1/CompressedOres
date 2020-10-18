@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:granite.sextuple.down"
+    ]
+  },
+  "criteria": {
+    "granite.sextuple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockgranite.sextuple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:granite.sextuple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "granite.sextuple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

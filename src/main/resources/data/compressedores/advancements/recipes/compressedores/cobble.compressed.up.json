@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:cobble.compressed.up"
+    ]
+  },
+  "criteria": {
+    "cobble.compressed.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockcobble.compressed"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:cobble.compressed.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cobble.compressed.up",
+      "has_the_recipe"
+    ]
+  ]
+}

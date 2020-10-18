@@ -118,6 +118,14 @@ public class LootTables extends BaseLootTableProvider
         lootTables.put(BlockList.blockLapisSextuple,createStandardTable("blocklapis.sextuple",BlockList.blockLapisSextuple));
         lootTables.put(BlockList.blockLapisSeptuple,createStandardTable("blocklapis.septuple",BlockList.blockLapisSeptuple));
         lootTables.put(BlockList.blockLapisOctuple,createStandardTable("blocklapis.octuple",BlockList.blockLapisOctuple));
+        lootTables.put(BlockList.blockNetherrackCompressed,createStandardTable("blocknetherrack.compressed",BlockList.blockNetherrackCompressed));
+        lootTables.put(BlockList.blockNetherrackDouble,createStandardTable("blocknetherrack.double",BlockList.blockNetherrackDouble));
+        lootTables.put(BlockList.blockNetherrackTriple,createStandardTable("blocknetherrack.triple",BlockList.blockNetherrackTriple));
+        lootTables.put(BlockList.blockNetherrackQuadruple,createStandardTable("blocknetherrack.quadruple",BlockList.blockNetherrackQuadruple));
+        lootTables.put(BlockList.blockNetherrackQuintuple,createStandardTable("blocknetherrack.quintuple",BlockList.blockNetherrackQuintuple));
+        lootTables.put(BlockList.blockNetherrackSextuple,createStandardTable("blocknetherrack.sextuple",BlockList.blockNetherrackSextuple));
+        lootTables.put(BlockList.blockNetherrackSeptuple,createStandardTable("blocknetherrack.septuple",BlockList.blockNetherrackSeptuple));
+        lootTables.put(BlockList.blockNetherrackOctuple,createStandardTable("blocknetherrack.octuple",BlockList.blockNetherrackOctuple));
         lootTables.put(BlockList.blockQuartzCompressed,createStandardTable("blockquartz.compressed",BlockList.blockQuartzCompressed));
         lootTables.put(BlockList.blockQuartzDouble,createStandardTable("blockquartz.double",BlockList.blockQuartzDouble));
         lootTables.put(BlockList.blockQuartzTriple,createStandardTable("blockquartz.triple",BlockList.blockQuartzTriple));

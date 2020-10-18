@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:dirt.triple.up"
+    ]
+  },
+  "criteria": {
+    "dirt.triple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockdirt.triple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:dirt.triple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dirt.triple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

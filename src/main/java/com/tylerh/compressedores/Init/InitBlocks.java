@@ -265,6 +265,25 @@ public class InitBlocks
             blockRegistry(BlockList.blockLapisSeptuple,event);
             blockRegistry(BlockList.blockLapisOctuple,event);
         }
+        if(ConfigRegistryList.registerNetherrack.get())
+        {
+            BlockList.blockNetherrackCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 0);
+            BlockList.blockNetherrackDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 1);
+            BlockList.blockNetherrackTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 2);
+            BlockList.blockNetherrackQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 3);
+            BlockList.blockNetherrackQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 4);
+            BlockList.blockNetherrackSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 5);
+            BlockList.blockNetherrackSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 6);
+            BlockList.blockNetherrackOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 7);
+            blockRegistry(BlockList.blockNetherrackCompressed,event);
+            blockRegistry(BlockList.blockNetherrackDouble,event);
+            blockRegistry(BlockList.blockNetherrackTriple,event);
+            blockRegistry(BlockList.blockNetherrackQuadruple,event);
+            blockRegistry(BlockList.blockNetherrackQuintuple,event);
+            blockRegistry(BlockList.blockNetherrackSextuple,event);
+            blockRegistry(BlockList.blockNetherrackSeptuple,event);
+            blockRegistry(BlockList.blockNetherrackOctuple,event);
+        }
         if(ConfigRegistryList.registerQuartz.get())
         {
             BlockList.blockQuartzCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 0);
@@ -572,6 +591,25 @@ public class InitBlocks
             itemRegistry(ItemBlockList.itemBlockLapisSextuple,event);
             itemRegistry(ItemBlockList.itemBlockLapisSeptuple,event);
             itemRegistry(ItemBlockList.itemBlockLapisOctuple,event);
+        }
+        if(ConfigRegistryList.registerNetherrack.get())
+        {
+            ItemBlockList.itemBlockNetherrackCompressed = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackCompressed, COMPORES,0);
+            ItemBlockList.itemBlockNetherrackDouble = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackDouble,COMPORES,1);
+            ItemBlockList.itemBlockNetherrackTriple = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackTriple,COMPORES,2);
+            ItemBlockList.itemBlockNetherrackQuadruple = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackQuadruple,COMPORES,3);
+            ItemBlockList.itemBlockNetherrackQuintuple = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackQuintuple,COMPORES,4);
+            ItemBlockList.itemBlockNetherrackSextuple = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackSextuple,COMPORES,5);
+            ItemBlockList.itemBlockNetherrackSeptuple = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackSeptuple,COMPORES,6);
+            ItemBlockList.itemBlockNetherrackOctuple = new ItemBlockMetaCompressedOre(BlockList.blockNetherrackOctuple,COMPORES,7);
+            itemRegistry(ItemBlockList.itemBlockNetherrackCompressed, event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackDouble,event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackTriple,event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackQuadruple,event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackQuintuple,event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackSextuple,event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackSeptuple,event);
+            itemRegistry(ItemBlockList.itemBlockNetherrackOctuple,event);
         }
         if(ConfigRegistryList.registerQuartz.get())
         {

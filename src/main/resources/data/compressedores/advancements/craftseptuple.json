@@ -147,6 +147,16 @@
         ]
       }
     },
+    "netherrack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blocknetherrack.septuple"
+          }
+        ]
+      }
+    },
     "quartz": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -193,6 +203,7 @@
       "gravel",
       "iron",
       "lapis",
+      "netherrack",
       "quartz",
       "redstone",
       "sand"

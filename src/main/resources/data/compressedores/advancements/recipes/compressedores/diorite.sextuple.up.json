@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:diorite.sextuple.up"
+    ]
+  },
+  "criteria": {
+    "diorite.sextuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockdiorite.sextuple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:diorite.sextuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diorite.sextuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

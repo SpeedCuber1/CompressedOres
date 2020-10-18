@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:emerald.septuple.up"
+    ]
+  },
+  "criteria": {
+    "emerald.septuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockemerald.septuple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:emerald.septuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "emerald.septuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

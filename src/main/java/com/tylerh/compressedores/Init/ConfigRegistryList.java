@@ -18,6 +18,7 @@ public class ConfigRegistryList
     public static ForgeConfigSpec.BooleanValue registerGravel;
     public static ForgeConfigSpec.BooleanValue registerIron;
     public static ForgeConfigSpec.BooleanValue registerLapis;
+    public static ForgeConfigSpec.BooleanValue registerNetherrack;
     public static ForgeConfigSpec.BooleanValue registerQuartz;
     public static ForgeConfigSpec.BooleanValue registerRedstone;
     public static ForgeConfigSpec.BooleanValue registerSand;
@@ -36,6 +37,7 @@ public class ConfigRegistryList
         registerGravel = builder.comment("Enable/Disable Gravel Compression").define("Gravel",ModInfo.GUI_DEFAULT);
         registerIron = builder.comment("Enable/Disable Iron Compression").define("Iron",ModInfo.GUI_DEFAULT);
         registerLapis = builder.comment("Enable/Disable Lapis Compression").define("Lapis",ModInfo.GUI_DEFAULT);
+        registerNetherrack = builder.comment("Enable/Disable Netherrack Compression").define("Netherrack",ModInfo.GUI_DEFAULT);
         registerQuartz = builder.comment("Enable/Disable Quartz Compression").define("Quartz",ModInfo.GUI_DEFAULT);
         registerRedstone = builder.comment("Enable/Disable Redstone Compression").define("Redstone",ModInfo.GUI_DEFAULT);
         registerSand = builder.comment("Enable/Disable Sand Compression").define("Sand",ModInfo.GUI_DEFAULT);

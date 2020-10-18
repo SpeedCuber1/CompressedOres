@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:redstone.sextuple.up"
+    ]
+  },
+  "criteria": {
+    "redstone.sextuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "compressedores:blockredstone.sextuple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:redstone.sextuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "redstone.sextuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}
