@@ -1,11 +1,10 @@
 package com.tylerh.compressedores.Util;
 
-import com.tylerh.compressedores.Init.BlockList;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 
-public class ItemGroupCompOres extends ItemGroup
+public class ItemGroupCompOres extends CreativeModeTab
 {
     public ItemGroupCompOres()
     {
@@ -13,7 +12,7 @@ public class ItemGroupCompOres extends ItemGroup
     }
 
     @Override
-    public ItemStack createIcon()
+    public ItemStack makeIcon()
     {
         return new ItemStack(Blocks.GOLD_BLOCK);
     }

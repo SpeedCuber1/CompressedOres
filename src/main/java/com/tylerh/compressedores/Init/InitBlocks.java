@@ -3,10 +3,10 @@ package com.tylerh.compressedores.Init;
 import com.tylerh.compressedores.Blocks.BlockMetaCompressedOre;
 import com.tylerh.compressedores.Items.ItemBlockMetaCompressedOre;
 import com.tylerh.compressedores.Util.ItemGroupCompOres;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,20 +14,20 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class InitBlocks
 {
-    private static final ItemGroup COMPORES = new ItemGroupCompOres();
+    private static final CreativeModeTab COMPORES = new ItemGroupCompOres();
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> event)
     {
         if(ConfigRegistryList.registerAndesite.get())
         {
-            BlockList.blockAndesiteCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 0);
-            BlockList.blockAndesiteDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 1);
-            BlockList.blockAndesiteTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 2);
-            BlockList.blockAndesiteQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 3);
-            BlockList.blockAndesiteQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 4);
-            BlockList.blockAndesiteSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 5);
-            BlockList.blockAndesiteSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 6);
-            BlockList.blockAndesiteOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockandesite", false, 7);
+            BlockList.blockAndesiteCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 0);
+            BlockList.blockAndesiteDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 1);
+            BlockList.blockAndesiteTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 2);
+            BlockList.blockAndesiteQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 3);
+            BlockList.blockAndesiteQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 4);
+            BlockList.blockAndesiteSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 5);
+            BlockList.blockAndesiteSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 6);
+            BlockList.blockAndesiteOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockandesite", false, 7);
             blockRegistry(BlockList.blockAndesiteCompressed,event);
             blockRegistry(BlockList.blockAndesiteDouble,event);
             blockRegistry(BlockList.blockAndesiteTriple,event);
@@ -39,14 +39,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerClay.get())
         {
-            BlockList.blockClayCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 0);
-            BlockList.blockClayDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 1);
-            BlockList.blockClayTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 2);
-            BlockList.blockClayQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 3);
-            BlockList.blockClayQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 4);
-            BlockList.blockClaySextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 5);
-            BlockList.blockClaySeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 6);
-            BlockList.blockClayOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockclay", false, 7);
+            BlockList.blockClayCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 0);
+            BlockList.blockClayDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 1);
+            BlockList.blockClayTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 2);
+            BlockList.blockClayQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 3);
+            BlockList.blockClayQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 4);
+            BlockList.blockClaySextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 5);
+            BlockList.blockClaySeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 6);
+            BlockList.blockClayOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockclay", false, 7);
             blockRegistry(BlockList.blockClayCompressed,event);
             blockRegistry(BlockList.blockClayDouble,event);
             blockRegistry(BlockList.blockClayTriple,event);
@@ -58,14 +58,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerCoal.get())
         {
-            BlockList.blockCoalCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 0);
-            BlockList.blockCoalDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 1);
-            BlockList.blockCoalTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 2);
-            BlockList.blockCoalQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 3);
-            BlockList.blockCoalQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 4);
-            BlockList.blockCoalSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 5);
-            BlockList.blockCoalSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 6);
-            BlockList.blockCoalOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcoal", false, 7);
+            BlockList.blockCoalCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 0);
+            BlockList.blockCoalDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 1);
+            BlockList.blockCoalTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 2);
+            BlockList.blockCoalQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 3);
+            BlockList.blockCoalQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 4);
+            BlockList.blockCoalSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 5);
+            BlockList.blockCoalSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 6);
+            BlockList.blockCoalOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcoal", false, 7);
             blockRegistry(BlockList.blockCoalCompressed,event);
             blockRegistry(BlockList.blockCoalDouble,event);
             blockRegistry(BlockList.blockCoalTriple,event);
@@ -77,14 +77,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerCobble.get())
         {
-            BlockList.blockCobbleCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 0);
-            BlockList.blockCobbleDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 1);
-            BlockList.blockCobbleTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 2);
-            BlockList.blockCobbleQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 3);
-            BlockList.blockCobbleQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 4);
-            BlockList.blockCobbleSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 5);
-            BlockList.blockCobbleSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 6);
-            BlockList.blockCobbleOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockcobble", false, 7);
+            BlockList.blockCobbleCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 0);
+            BlockList.blockCobbleDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 1);
+            BlockList.blockCobbleTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 2);
+            BlockList.blockCobbleQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 3);
+            BlockList.blockCobbleQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 4);
+            BlockList.blockCobbleSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 5);
+            BlockList.blockCobbleSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 6);
+            BlockList.blockCobbleOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockcobble", false, 7);
             blockRegistry(BlockList.blockCobbleCompressed,event);
             blockRegistry(BlockList.blockCobbleDouble,event);
             blockRegistry(BlockList.blockCobbleTriple,event);
@@ -96,14 +96,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerDiamond.get())
         {
-            BlockList.blockDiamondCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 0);
-            BlockList.blockDiamondDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 1);
-            BlockList.blockDiamondTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 2);
-            BlockList.blockDiamondQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 3);
-            BlockList.blockDiamondQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 4);
-            BlockList.blockDiamondSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 5);
-            BlockList.blockDiamondSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 6);
-            BlockList.blockDiamondOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiamond", false, 7);
+            BlockList.blockDiamondCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 0);
+            BlockList.blockDiamondDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 1);
+            BlockList.blockDiamondTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 2);
+            BlockList.blockDiamondQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 3);
+            BlockList.blockDiamondQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 4);
+            BlockList.blockDiamondSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 5);
+            BlockList.blockDiamondSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 6);
+            BlockList.blockDiamondOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 7);
             blockRegistry(BlockList.blockDiamondCompressed,event);
             blockRegistry(BlockList.blockDiamondDouble,event);
             blockRegistry(BlockList.blockDiamondTriple,event);
@@ -115,14 +115,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerDiorite.get())
         {
-            BlockList.blockDioriteCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 0);
-            BlockList.blockDioriteDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 1);
-            BlockList.blockDioriteTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 2);
-            BlockList.blockDioriteQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 3);
-            BlockList.blockDioriteQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 4);
-            BlockList.blockDioriteSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 5);
-            BlockList.blockDioriteSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 6);
-            BlockList.blockDioriteOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdiorite", false, 7);
+            BlockList.blockDioriteCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 0);
+            BlockList.blockDioriteDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 1);
+            BlockList.blockDioriteTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 2);
+            BlockList.blockDioriteQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 3);
+            BlockList.blockDioriteQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 4);
+            BlockList.blockDioriteSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 5);
+            BlockList.blockDioriteSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 6);
+            BlockList.blockDioriteOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiorite", false, 7);
             blockRegistry(BlockList.blockDioriteCompressed,event);
             blockRegistry(BlockList.blockDioriteDouble,event);
             blockRegistry(BlockList.blockDioriteTriple,event);
@@ -134,14 +134,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerDirt.get())
         {
-            BlockList.blockDirtCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 0);
-            BlockList.blockDirtDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 1);
-            BlockList.blockDirtTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 2);
-            BlockList.blockDirtQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 3);
-            BlockList.blockDirtQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 4);
-            BlockList.blockDirtSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 5);
-            BlockList.blockDirtSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 6);
-            BlockList.blockDirtOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockdirt", false, 7);
+            BlockList.blockDirtCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 0);
+            BlockList.blockDirtDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 1);
+            BlockList.blockDirtTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 2);
+            BlockList.blockDirtQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 3);
+            BlockList.blockDirtQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 4);
+            BlockList.blockDirtSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 5);
+            BlockList.blockDirtSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 6);
+            BlockList.blockDirtOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdirt", false, 7);
             blockRegistry(BlockList.blockDirtCompressed,event);
             blockRegistry(BlockList.blockDirtDouble,event);
             blockRegistry(BlockList.blockDirtTriple,event);
@@ -153,14 +153,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerEmerald.get())
         {
-            BlockList.blockEmeraldCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 0);
-            BlockList.blockEmeraldDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 1);
-            BlockList.blockEmeraldTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 2);
-            BlockList.blockEmeraldQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 3);
-            BlockList.blockEmeraldQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 4);
-            BlockList.blockEmeraldSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 5);
-            BlockList.blockEmeraldSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 6);
-            BlockList.blockEmeraldOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockemerald", false, 7);
+            BlockList.blockEmeraldCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 0);
+            BlockList.blockEmeraldDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 1);
+            BlockList.blockEmeraldTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 2);
+            BlockList.blockEmeraldQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 3);
+            BlockList.blockEmeraldQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 4);
+            BlockList.blockEmeraldSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 5);
+            BlockList.blockEmeraldSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 6);
+            BlockList.blockEmeraldOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockemerald", false, 7);
             blockRegistry(BlockList.blockEmeraldCompressed,event);
             blockRegistry(BlockList.blockEmeraldDouble,event);
             blockRegistry(BlockList.blockEmeraldTriple,event);
@@ -172,14 +172,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerGold.get())
         {
-            BlockList.blockGoldCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 0);
-            BlockList.blockGoldDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 1);
-            BlockList.blockGoldTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 2);
-            BlockList.blockGoldQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 3);
-            BlockList.blockGoldQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 4);
-            BlockList.blockGoldSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 5);
-            BlockList.blockGoldSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 6);
-            BlockList.blockGoldOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgold", false, 7);
+            BlockList.blockGoldCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 0);
+            BlockList.blockGoldDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 1);
+            BlockList.blockGoldTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 2);
+            BlockList.blockGoldQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 3);
+            BlockList.blockGoldQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 4);
+            BlockList.blockGoldSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 5);
+            BlockList.blockGoldSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 6);
+            BlockList.blockGoldOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgold", false, 7);
             blockRegistry(BlockList.blockGoldCompressed,event);
             blockRegistry(BlockList.blockGoldDouble,event);
             blockRegistry(BlockList.blockGoldTriple,event);
@@ -191,14 +191,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerGranite.get())
         {
-            BlockList.blockGraniteCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 0);
-            BlockList.blockGraniteDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 1);
-            BlockList.blockGraniteTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 2);
-            BlockList.blockGraniteQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 3);
-            BlockList.blockGraniteQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 4);
-            BlockList.blockGraniteSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 5);
-            BlockList.blockGraniteSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 6);
-            BlockList.blockGraniteOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgranite", false, 7);
+            BlockList.blockGraniteCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 0);
+            BlockList.blockGraniteDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 1);
+            BlockList.blockGraniteTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 2);
+            BlockList.blockGraniteQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 3);
+            BlockList.blockGraniteQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 4);
+            BlockList.blockGraniteSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 5);
+            BlockList.blockGraniteSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 6);
+            BlockList.blockGraniteOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgranite", false, 7);
             blockRegistry(BlockList.blockGraniteCompressed,event);
             blockRegistry(BlockList.blockGraniteDouble,event);
             blockRegistry(BlockList.blockGraniteTriple,event);
@@ -210,14 +210,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerGravel.get())
         {
-            BlockList.blockGravelCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 0);
-            BlockList.blockGravelDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 1);
-            BlockList.blockGravelTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 2);
-            BlockList.blockGravelQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 3);
-            BlockList.blockGravelQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 4);
-            BlockList.blockGravelSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 5);
-            BlockList.blockGravelSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 6);
-            BlockList.blockGravelOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockgravel", false, 7);
+            BlockList.blockGravelCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 0);
+            BlockList.blockGravelDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 1);
+            BlockList.blockGravelTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 2);
+            BlockList.blockGravelQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 3);
+            BlockList.blockGravelQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 4);
+            BlockList.blockGravelSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 5);
+            BlockList.blockGravelSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 6);
+            BlockList.blockGravelOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockgravel", false, 7);
             blockRegistry(BlockList.blockGravelCompressed,event);
             blockRegistry(BlockList.blockGravelDouble,event);
             blockRegistry(BlockList.blockGravelTriple,event);
@@ -229,14 +229,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerIron.get())
         {
-            BlockList.blockIronCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 0);
-            BlockList.blockIronDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 1);
-            BlockList.blockIronTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 2);
-            BlockList.blockIronQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 3);
-            BlockList.blockIronQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 4);
-            BlockList.blockIronSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 5);
-            BlockList.blockIronSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 6);
-            BlockList.blockIronOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockiron", false, 7);
+            BlockList.blockIronCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 0);
+            BlockList.blockIronDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 1);
+            BlockList.blockIronTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 2);
+            BlockList.blockIronQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 3);
+            BlockList.blockIronQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 4);
+            BlockList.blockIronSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 5);
+            BlockList.blockIronSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 6);
+            BlockList.blockIronOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockiron", false, 7);
             blockRegistry(BlockList.blockIronCompressed,event);
             blockRegistry(BlockList.blockIronDouble,event);
             blockRegistry(BlockList.blockIronTriple,event);
@@ -248,14 +248,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerLapis.get())
         {
-            BlockList.blockLapisCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 0);
-            BlockList.blockLapisDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 1);
-            BlockList.blockLapisTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 2);
-            BlockList.blockLapisQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 3);
-            BlockList.blockLapisQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 4);
-            BlockList.blockLapisSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 5);
-            BlockList.blockLapisSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 6);
-            BlockList.blockLapisOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocklapis", false, 7);
+            BlockList.blockLapisCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 0);
+            BlockList.blockLapisDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 1);
+            BlockList.blockLapisTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 2);
+            BlockList.blockLapisQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 3);
+            BlockList.blockLapisQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 4);
+            BlockList.blockLapisSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 5);
+            BlockList.blockLapisSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 6);
+            BlockList.blockLapisOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocklapis", false, 7);
             blockRegistry(BlockList.blockLapisCompressed,event);
             blockRegistry(BlockList.blockLapisDouble,event);
             blockRegistry(BlockList.blockLapisTriple,event);
@@ -267,14 +267,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerNetherrack.get())
         {
-            BlockList.blockNetherrackCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 0);
-            BlockList.blockNetherrackDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 1);
-            BlockList.blockNetherrackTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 2);
-            BlockList.blockNetherrackQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 3);
-            BlockList.blockNetherrackQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 4);
-            BlockList.blockNetherrackSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 5);
-            BlockList.blockNetherrackSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 6);
-            BlockList.blockNetherrackOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocknetherrack", false, 7);
+            BlockList.blockNetherrackCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 0);
+            BlockList.blockNetherrackDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 1);
+            BlockList.blockNetherrackTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 2);
+            BlockList.blockNetherrackQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 3);
+            BlockList.blockNetherrackQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 4);
+            BlockList.blockNetherrackSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 5);
+            BlockList.blockNetherrackSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 6);
+            BlockList.blockNetherrackOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocknetherrack", false, 7);
             blockRegistry(BlockList.blockNetherrackCompressed,event);
             blockRegistry(BlockList.blockNetherrackDouble,event);
             blockRegistry(BlockList.blockNetherrackTriple,event);
@@ -286,14 +286,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerQuartz.get())
         {
-            BlockList.blockQuartzCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 0);
-            BlockList.blockQuartzDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 1);
-            BlockList.blockQuartzTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 2);
-            BlockList.blockQuartzQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 3);
-            BlockList.blockQuartzQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 4);
-            BlockList.blockQuartzSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 5);
-            BlockList.blockQuartzSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 6);
-            BlockList.blockQuartzOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockquartz", false, 7);
+            BlockList.blockQuartzCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 0);
+            BlockList.blockQuartzDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 1);
+            BlockList.blockQuartzTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 2);
+            BlockList.blockQuartzQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 3);
+            BlockList.blockQuartzQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 4);
+            BlockList.blockQuartzSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 5);
+            BlockList.blockQuartzSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 6);
+            BlockList.blockQuartzOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockquartz", false, 7);
             blockRegistry(BlockList.blockQuartzCompressed,event);
             blockRegistry(BlockList.blockQuartzDouble,event);
             blockRegistry(BlockList.blockQuartzTriple,event);
@@ -305,14 +305,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerRedstone.get())
         {
-            BlockList.blockRedstoneCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 0);
-            BlockList.blockRedstoneDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 1);
-            BlockList.blockRedstoneTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 2);
-            BlockList.blockRedstoneQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 3);
-            BlockList.blockRedstoneQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 4);
-            BlockList.blockRedstoneSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 5);
-            BlockList.blockRedstoneSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 6);
-            BlockList.blockRedstoneOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blockredstone", true, 7);
+            BlockList.blockRedstoneCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 0);
+            BlockList.blockRedstoneDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 1);
+            BlockList.blockRedstoneTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 2);
+            BlockList.blockRedstoneQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 3);
+            BlockList.blockRedstoneQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 4);
+            BlockList.blockRedstoneSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 5);
+            BlockList.blockRedstoneSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 6);
+            BlockList.blockRedstoneOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockredstone", true, 7);
             blockRegistry(BlockList.blockRedstoneCompressed,event);
             blockRegistry(BlockList.blockRedstoneDouble,event);
             blockRegistry(BlockList.blockRedstoneTriple,event);
@@ -324,14 +324,14 @@ public class InitBlocks
         }
         if(ConfigRegistryList.registerSand.get())
         {
-            BlockList.blockSandCompressed = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 0);
-            BlockList.blockSandDouble = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 1);
-            BlockList.blockSandTriple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 2);
-            BlockList.blockSandQuadruple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 3);
-            BlockList.blockSandQuintuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 4);
-            BlockList.blockSandSextuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 5);
-            BlockList.blockSandSeptuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 6);
-            BlockList.blockSandOctuple = new BlockMetaCompressedOre(Material.IRON, 3.0f, 5.0f, "blocksand", false, 7);
+            BlockList.blockSandCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 0);
+            BlockList.blockSandDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 1);
+            BlockList.blockSandTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 2);
+            BlockList.blockSandQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 3);
+            BlockList.blockSandQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 4);
+            BlockList.blockSandSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 5);
+            BlockList.blockSandSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 6);
+            BlockList.blockSandOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blocksand", false, 7);
             blockRegistry(BlockList.blockSandCompressed,event);
             blockRegistry(BlockList.blockSandDouble,event);
             blockRegistry(BlockList.blockSandTriple,event);

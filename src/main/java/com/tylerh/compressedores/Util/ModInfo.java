@@ -2,11 +2,8 @@ package com.tylerh.compressedores.Util;
 
 
 import com.tylerh.compressedores.Init.BlockList;
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.Block;
 
-/**
- * Created by tyler on 5/4/15.
- */
 public class ModInfo
 {
     public static final String MOD_ID = "compressedores";

@@ -4,16 +4,14 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.tylerh.compressedores.Data.Advancements.CompOresAdvancement;
 import net.minecraft.advancements.Advancement;
-import net.minecraft.data.AdvancementProvider;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.DirectoryCache;
-import net.minecraft.data.IDataProvider;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.data.DataProvider;
+import net.minecraft.data.HashCache;
+import net.minecraft.data.advancements.AdvancementProvider;
+import net.minecraft.resources.ResourceLocation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
@@ -32,7 +30,7 @@ public class BaseAdvancementProvider extends AdvancementProvider
         this.generator = generator;
     }
     @Override
-    public void act(DirectoryCache cache)
+    public void run(HashCache cache)
     {
         Path path = this.generator.getOutputFolder();
         Set<ResourceLocation> set = Sets.newHashSet();
@@ -43,7 +41,7 @@ public class BaseAdvancementProvider extends AdvancementProvider
                 Path path1 = getPath(path, p_204017_3_);
 
                 try {
-                    IDataProvider.save(GSON, cache, p_204017_3_.copy().serialize(), path1);
+                    DataProvider.save(GSON, cache, p_204017_3_.deconstruct().serializeToJson(), path1);
                 } catch (IOException ioexception) {
                     LOGGER.error("Couldn't save advancement {}", path1, ioexception);
                 }

@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Util;
 
-import net.minecraft.util.IStringSerializable;
 
 public enum EnumCriterionCompOres implements IStringSerializable
 {

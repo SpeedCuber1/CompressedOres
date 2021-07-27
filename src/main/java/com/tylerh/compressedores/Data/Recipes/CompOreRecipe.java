@@ -3,11 +3,16 @@ package com.tylerh.compressedores.Data.Recipes;
 import com.tylerh.compressedores.Util.EnumCriterionCompOres;
 import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.*;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.function.Consumer;
+
 
 public class CompOreRecipe extends RecipeProvider
 {
@@ -16,7 +21,7 @@ public class CompOreRecipe extends RecipeProvider
         super(generator);
     }
     @Override
-    protected void registerRecipes(Consumer<IFinishedRecipe> consumer)
+    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
     {
         for(EnumCriterionCompOres ores : EnumCriterionCompOres.values())
         {
@@ -29,290 +34,290 @@ public class CompOreRecipe extends RecipeProvider
                         case "andesite":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.andesiteBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.ANDESITE)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.andesiteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.andesiteBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i', Blocks.ANDESITE)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.andesiteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.ANDESITE,9)
-                                    .addIngredient(ModInfo.andesiteBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.andesiteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.ANDESITE,9)
+                                    .requires(ModInfo.andesiteBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.andesiteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "clay":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.clayBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.CLAY)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.clayBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.clayBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.CLAY)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.clayBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.CLAY,9)
-                                    .addIngredient(ModInfo.clayBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.clayBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.CLAY,9)
+                                    .requires(ModInfo.clayBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.clayBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "coal":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.coalBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.COAL_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.coalBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.coalBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.COAL_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.coalBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.COAL_BLOCK,9)
-                                    .addIngredient(ModInfo.coalBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.coalBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.COAL_BLOCK,9)
+                                    .requires(ModInfo.coalBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.coalBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "cobble":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.cobbleBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.COBBLESTONE)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.cobbleBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.cobbleBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.COBBLESTONE)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.cobbleBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.COBBLESTONE,9)
-                                    .addIngredient(ModInfo.cobbleBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.cobbleBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.COBBLESTONE,9)
+                                    .requires(ModInfo.cobbleBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.cobbleBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "diamond":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.diamondBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.DIAMOND_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.diamondBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.diamondBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.DIAMOND_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.diamondBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.DIAMOND_BLOCK,9)
-                                    .addIngredient(ModInfo.diamondBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.diamondBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.DIAMOND_BLOCK,9)
+                                    .requires(ModInfo.diamondBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.diamondBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "diorite":
                         {
                             //Compressed
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.dioriteBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.DIORITE)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.dioriteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.dioriteBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.DIORITE)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.dioriteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.DIORITE,9)
-                                    .addIngredient(ModInfo.dioriteBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.dioriteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.DIORITE,9)
+                                    .requires(ModInfo.dioriteBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.dioriteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "dirt":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.dirtBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.DIRT)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.dirtBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.dirtBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.DIRT)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.dirtBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.DIRT,9)
-                                    .addIngredient(ModInfo.dirtBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.dirtBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.DIRT,9)
+                                    .requires(ModInfo.dirtBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.dirtBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "emerald":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.emeraldBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.EMERALD_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.emeraldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.emeraldBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.EMERALD_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.emeraldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.EMERALD_BLOCK,9)
-                                    .addIngredient(ModInfo.emeraldBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.emeraldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.EMERALD_BLOCK,9)
+                                    .requires(ModInfo.emeraldBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.emeraldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "gold":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.goldBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.GOLD_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.goldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.goldBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.GOLD_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.goldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.GOLD_BLOCK,9)
-                                    .addIngredient(ModInfo.goldBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.goldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.GOLD_BLOCK,9)
+                                    .requires(ModInfo.goldBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.goldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "granite":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.graniteBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.GRANITE)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.graniteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.graniteBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.GRANITE)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.graniteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.GRANITE,9)
-                                    .addIngredient(ModInfo.graniteBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.graniteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.GRANITE,9)
+                                    .requires(ModInfo.graniteBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.graniteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "gravel":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.gravelBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.GRAVEL)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.gravelBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.gravelBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.GRAVEL)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.gravelBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.GRAVEL,9)
-                                    .addIngredient(ModInfo.gravelBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.gravelBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.GRAVEL,9)
+                                    .requires(ModInfo.gravelBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.gravelBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "iron":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.ironBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.IRON_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.ironBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.ironBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.IRON_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.ironBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.IRON_BLOCK,9)
-                                    .addIngredient(ModInfo.ironBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.ironBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.IRON_BLOCK,9)
+                                    .requires(ModInfo.ironBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.ironBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "lapis":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.lapisBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.LAPIS_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.lapisBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.lapisBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.LAPIS_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.lapisBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.LAPIS_BLOCK,9)
-                                    .addIngredient(ModInfo.lapisBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.lapisBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.LAPIS_BLOCK,9)
+                                    .requires(ModInfo.lapisBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.lapisBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "netherrack":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.netherrackBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.NETHERRACK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.netherrackBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.netherrackBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.NETHERRACK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.netherrackBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.NETHERRACK,9)
-                                    .addIngredient(ModInfo.netherrackBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.netherrackBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.NETHERRACK,9)
+                                    .requires(ModInfo.netherrackBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.netherrackBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "quartz":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.quartzBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.QUARTZ_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.quartzBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.quartzBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.QUARTZ_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.quartzBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.QUARTZ_BLOCK,9)
-                                    .addIngredient(ModInfo.quartzBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.quartzBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.QUARTZ_BLOCK,9)
+                                    .requires(ModInfo.quartzBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.quartzBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "redstone":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.redstoneBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.REDSTONE_BLOCK)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.redstoneBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.redstoneBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.REDSTONE_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.redstoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.REDSTONE_BLOCK,9)
-                                    .addIngredient(ModInfo.redstoneBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.redstoneBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.REDSTONE_BLOCK,9)
+                                    .requires(ModInfo.redstoneBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.redstoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "sand":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.sandBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',Blocks.SAND)
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.sandBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.sandBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.SAND)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.sandBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(Blocks.SAND,9)
-                                    .addIngredient(ModInfo.sandBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.sandBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(Blocks.SAND,9)
+                                    .requires(ModInfo.sandBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.sandBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                     }
@@ -324,290 +329,290 @@ public class CompOreRecipe extends RecipeProvider
                         case "andesite":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.andesiteBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.andesiteBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.andesiteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.andesiteBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.andesiteBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.andesiteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.andesiteBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.andesiteBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.andesiteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.andesiteBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.andesiteBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.andesiteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "clay":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.clayBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.clayBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.clayBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.clayBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.clayBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.clayBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.clayBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.clayBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.clayBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.clayBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.clayBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.clayBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "coal":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.coalBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.coalBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.coalBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.coalBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.coalBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.coalBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.coalBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.coalBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.coalBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.coalBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.coalBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.coalBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "cobble":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.cobbleBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.cobbleBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.cobbleBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.cobbleBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.cobbleBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.cobbleBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.cobbleBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.cobbleBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.cobbleBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.cobbleBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.cobbleBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.cobbleBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "diamond":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.diamondBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.diamondBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.diamondBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.diamondBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.diamondBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.diamondBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.diamondBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.diamondBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.diamondBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.diamondBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.diamondBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.diamondBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "diorite":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.dioriteBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.dioriteBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.dioriteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.dioriteBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.dioriteBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.dioriteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.dioriteBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.dioriteBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.dioriteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.dioriteBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.dioriteBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.dioriteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "dirt":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.dirtBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.dirtBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.dirtBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.dirtBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.dirtBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.dirtBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.dirtBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.dirtBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.dirtBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.dirtBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.dirtBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.dirtBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "emerald":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.emeraldBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.emeraldBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.emeraldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.emeraldBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.emeraldBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.emeraldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.emeraldBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.emeraldBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.emeraldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.emeraldBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.emeraldBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.emeraldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "gold":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.goldBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.goldBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.goldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.goldBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.goldBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.goldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.goldBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.goldBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.goldBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.goldBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.goldBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.goldBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "granite":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.graniteBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.graniteBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.graniteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.graniteBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.graniteBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.graniteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.graniteBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.graniteBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.graniteBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.graniteBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.graniteBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.graniteBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "gravel":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.gravelBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.gravelBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.gravelBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.gravelBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.gravelBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.gravelBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.gravelBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.gravelBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.gravelBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.gravelBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.gravelBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.gravelBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "iron":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.ironBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.ironBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.ironBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.ironBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.ironBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.ironBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.ironBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.ironBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.ironBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.ironBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.ironBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.ironBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "lapis":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.lapisBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.lapisBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.lapisBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.lapisBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.lapisBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.lapisBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.lapisBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.lapisBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.lapisBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.lapisBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.lapisBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.lapisBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "netherrack":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.netherrackBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.netherrackBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.netherrackBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.netherrackBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.netherrackBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.netherrackBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.netherrackBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.netherrackBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.netherrackBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.netherrackBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.netherrackBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.netherrackBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "quartz":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.quartzBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.quartzBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.quartzBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.quartzBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.quartzBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.quartzBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.quartzBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.quartzBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.quartzBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.quartzBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.quartzBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.quartzBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "redstone":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.redstoneBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.redstoneBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.redstoneBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.redstoneBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.redstoneBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.redstoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.redstoneBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.redstoneBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.redstoneBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.redstoneBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.redstoneBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.redstoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                         case "sand":
                         {
                             //Compressing
-                            ShapedRecipeBuilder.shapedRecipe(ModInfo.sandBlocks[levels.getMetadata()])
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .patternLine("iii")
-                                    .key('i',ModInfo.sandBlocks[levels.getMetadata() - 1])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".up",hasItem(ModInfo.sandBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            ShapedRecipeBuilder.shaped(ModInfo.sandBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.sandBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.sandBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
                             //Decompressing
-                            ShapelessRecipeBuilder.shapelessRecipe(ModInfo.sandBlocks[levels.getMetadata() - 1],9)
-                                    .addIngredient(ModInfo.sandBlocks[levels.getMetadata()])
-                                    .addCriterion(ores.getString() + "." + levels.getString() + ".down",hasItem(ModInfo.sandBlocks[levels.getMetadata()]))
-                                    .build(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                            ShapelessRecipeBuilder.shapeless(ModInfo.sandBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.sandBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.sandBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                             break;
                         }
                     }

@@ -1,10 +1,5 @@
 package com.tylerh.compressedores.Util;
 
-import net.minecraft.util.IStringSerializable;
-
-/**
- * Created by stephen on 11/1/15.
- */
 public enum EnumLevel implements IStringSerializable
 {
     COMPRESSED(0, "compressed"),

@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Data.Loot_Tables;
 
-import com.tylerh.compressedores.Data.Loot_Tables.BaseLootTableProvider;
 import com.tylerh.compressedores.Init.BlockList;
 import net.minecraft.data.DataGenerator;
 
