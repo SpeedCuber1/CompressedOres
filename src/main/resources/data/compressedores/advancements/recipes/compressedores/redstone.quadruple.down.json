@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:redstone.quadruple.down"
+    ]
+  },
+  "criteria": {
+    "redstone.quadruple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockredstone.quadruple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:redstone.quadruple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "redstone.quadruple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

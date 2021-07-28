@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blocksand.quadruple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blocksand.triple",
+    "count": 9
+  }
+}

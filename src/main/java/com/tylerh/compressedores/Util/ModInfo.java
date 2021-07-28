@@ -6,7 +6,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModInfo
 {
-    public static final String MOD_ID = "compressedores";
+    public static final String MOD_ID = "data/compressedores";
     public static final boolean GUI_DEFAULT = true;
 
     public static final String[] matCosts = {"9","81","729","6,561","59,049","531,441","4,782,969","43,046,721"};

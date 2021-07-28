@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockredstone.quadruple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockredstone.triple",
+    "count": 9
+  }
+}

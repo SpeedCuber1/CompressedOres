@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:emerald.triple.down"
+    ]
+  },
+  "criteria": {
+    "emerald.triple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockemerald.triple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:emerald.triple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "emerald.triple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

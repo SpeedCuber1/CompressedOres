@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:andesite.quintuple.down"
+    ]
+  },
+  "criteria": {
+    "andesite.quintuple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockandesite.quintuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:andesite.quintuple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "andesite.quintuple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

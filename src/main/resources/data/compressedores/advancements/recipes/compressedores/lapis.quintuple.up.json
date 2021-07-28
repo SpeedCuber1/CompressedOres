@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:lapis.quintuple.up"
+    ]
+  },
+  "criteria": {
+    "lapis.quintuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocklapis.quintuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:lapis.quintuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lapis.quintuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

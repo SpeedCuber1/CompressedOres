@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:redstone.octuple.down"
+    ]
+  },
+  "criteria": {
+    "redstone.octuple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockredstone.octuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:redstone.octuple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "redstone.octuple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

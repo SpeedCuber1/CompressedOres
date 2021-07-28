@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:cobble.sextuple.up"
+    ]
+  },
+  "criteria": {
+    "cobble.sextuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcobble.sextuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:cobble.sextuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cobble.sextuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

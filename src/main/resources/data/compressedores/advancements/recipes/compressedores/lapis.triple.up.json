@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:lapis.triple.up"
+    ]
+  },
+  "criteria": {
+    "lapis.triple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocklapis.triple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:lapis.triple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lapis.triple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

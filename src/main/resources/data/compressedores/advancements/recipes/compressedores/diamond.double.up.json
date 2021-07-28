@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:diamond.double.up"
+    ]
+  },
+  "criteria": {
+    "diamond.double.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdiamond.double"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:diamond.double.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamond.double.up",
+      "has_the_recipe"
+    ]
+  ]
+}

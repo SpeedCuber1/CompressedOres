@@ -1,9 +1,11 @@
 package com.tylerh.compressedores.Items;
 
+import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ToolType;
@@ -37,6 +39,19 @@ public class ItemBlockMetaCompressedOre extends BlockItem
                 list.add(new TranslatableComponent(ModInfo.matCosts[this.meta] + " " + ModInfo.extraNames[i]));
                 break;
             }
+        }
+    }
+
+    @Override
+    public int getBurnTime(ItemStack stack, @Nullable RecipeType<?> recipeType)
+    {
+        if(stack.getItem().equals(ModInfo.coalBlocks[meta].asItem()))
+        {
+            return (meta + 1) * 9 * 16000;
+        }
+        else
+        {
+            return 0;
         }
     }
 }

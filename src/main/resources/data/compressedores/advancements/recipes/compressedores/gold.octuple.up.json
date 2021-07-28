@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:gold.octuple.up"
+    ]
+  },
+  "criteria": {
+    "gold.octuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockgold.octuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:gold.octuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gold.octuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

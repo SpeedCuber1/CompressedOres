@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockgold.sextuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockgold.quintuple",
+    "count": 9
+  }
+}

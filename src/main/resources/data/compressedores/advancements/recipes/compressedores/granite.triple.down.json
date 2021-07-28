@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:granite.triple.down"
+    ]
+  },
+  "criteria": {
+    "granite.triple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockgranite.triple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:granite.triple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "granite.triple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

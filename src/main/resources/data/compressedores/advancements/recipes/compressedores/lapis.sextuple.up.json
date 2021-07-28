@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:lapis.sextuple.up"
+    ]
+  },
+  "criteria": {
+    "lapis.sextuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocklapis.sextuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:lapis.sextuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lapis.sextuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

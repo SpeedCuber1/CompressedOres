@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockgranite.double"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockgranite.compressed",
+    "count": 9
+  }
+}

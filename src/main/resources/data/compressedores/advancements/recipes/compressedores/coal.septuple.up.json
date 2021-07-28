@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:coal.septuple.up"
+    ]
+  },
+  "criteria": {
+    "coal.septuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcoal.septuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:coal.septuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "coal.septuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

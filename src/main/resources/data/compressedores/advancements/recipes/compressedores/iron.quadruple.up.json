@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:iron.quadruple.up"
+    ]
+  },
+  "criteria": {
+    "iron.quadruple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockiron.quadruple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:iron.quadruple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "iron.quadruple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

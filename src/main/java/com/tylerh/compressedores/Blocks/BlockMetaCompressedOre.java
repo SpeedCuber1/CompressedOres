@@ -4,6 +4,7 @@ import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,24 +25,5 @@ public class BlockMetaCompressedOre extends Block
     private String getLevel()
     {
         return EnumLevel.byMetadata(id).getString();
-    }
-
-    @Override
-    public boolean shouldCheckWeakPower(BlockState state, LevelReader world, BlockPos pos, Direction side)
-    {
-        return redstone;
-    }
-
-    @Override
-    public boolean getWeakChanges(BlockState state, LevelReader world, BlockPos pos)
-    {
-        if(redstone)
-        {
-            return super.getWeakChanges(state,world,pos);
-        }
-        else
-        {
-            return false;
-        }
     }
 }

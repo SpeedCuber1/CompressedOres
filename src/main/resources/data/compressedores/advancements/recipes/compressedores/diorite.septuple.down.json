@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:diorite.septuple.down"
+    ]
+  },
+  "criteria": {
+    "diorite.septuple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdiorite.septuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:diorite.septuple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diorite.septuple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

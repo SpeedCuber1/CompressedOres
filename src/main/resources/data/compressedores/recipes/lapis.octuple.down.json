@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blocklapis.octuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blocklapis.septuple",
+    "count": 9
+  }
+}

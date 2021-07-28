@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:gravel.compressed.up"
+    ]
+  },
+  "criteria": {
+    "gravel.compressed.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockgravel.compressed"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:gravel.compressed.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gravel.compressed.up",
+      "has_the_recipe"
+    ]
+  ]
+}

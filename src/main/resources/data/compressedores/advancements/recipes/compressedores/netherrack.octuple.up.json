@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:netherrack.octuple.up"
+    ]
+  },
+  "criteria": {
+    "netherrack.octuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocknetherrack.octuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:netherrack.octuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherrack.octuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}
