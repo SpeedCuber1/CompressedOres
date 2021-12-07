@@ -3,6 +3,7 @@ package com.tylerh.compressedores.Data;
 import com.tylerh.compressedores.Data.Advancements.BaseAdvancementProvider;
 import com.tylerh.compressedores.Data.Loot_Tables.LootTables;
 import com.tylerh.compressedores.Data.Recipes.CompOreRecipe;
+import com.tylerh.compressedores.Data.Tags.CompOreBlockTag;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -18,5 +19,6 @@ public class CompOreDataGen
         generator.addProvider(new LootTables(generator));
         generator.addProvider(new BaseAdvancementProvider(generator));
         generator.addProvider(new CompOreRecipe(generator));
+        generator.addProvider(new CompOreBlockTag(generator,event.getExistingFileHelper()));
     }
 }
