@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "compressedores:blockdeepslatecobble.septuple"
+    }
+  },
+  "result": {
+    "item": "compressedores:blockdeepslatecobble.octuple"
+  }
+}

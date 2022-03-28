@@ -94,6 +94,25 @@ public class InitBlocks
             blockRegistry(BlockList.blockCobbleSeptuple,event);
             blockRegistry(BlockList.blockCobbleOctuple,event);
         }
+        if(ConfigRegistryList.registerDeepslate.get())
+        {
+            BlockList.blockDeepslateCobbleCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 0);
+            BlockList.blockDeepslateCobbleDouble = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 1);
+            BlockList.blockDeepslateCobbleTriple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 2);
+            BlockList.blockDeepslateCobbleQuadruple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 3);
+            BlockList.blockDeepslateCobbleQuintuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 4);
+            BlockList.blockDeepslateCobbleSextuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 5);
+            BlockList.blockDeepslateCobbleSeptuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 6);
+            BlockList.blockDeepslateCobbleOctuple = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdeepslatecobble", false, 7);
+            blockRegistry(BlockList.blockDeepslateCobbleCompressed,event);
+            blockRegistry(BlockList.blockDeepslateCobbleDouble,event);
+            blockRegistry(BlockList.blockDeepslateCobbleTriple,event);
+            blockRegistry(BlockList.blockDeepslateCobbleQuadruple,event);
+            blockRegistry(BlockList.blockDeepslateCobbleQuintuple,event);
+            blockRegistry(BlockList.blockDeepslateCobbleSextuple,event);
+            blockRegistry(BlockList.blockDeepslateCobbleSeptuple,event);
+            blockRegistry(BlockList.blockDeepslateCobbleOctuple,event);
+        }
         if(ConfigRegistryList.registerDiamond.get())
         {
             BlockList.blockDiamondCompressed = new BlockMetaCompressedOre(Material.METAL, 3.0f, 5.0f, "blockdiamond", false, 0);
@@ -420,6 +439,25 @@ public class InitBlocks
             itemRegistry(ItemBlockList.itemBlockCobbleSextuple,event);
             itemRegistry(ItemBlockList.itemBlockCobbleSeptuple,event);
             itemRegistry(ItemBlockList.itemBlockCobbleOctuple,event);
+        }
+        if(ConfigRegistryList.registerDeepslate.get())
+        {
+            ItemBlockList.itemBlockDeepslateCobbleCompressed = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleCompressed, COMPORES,0);
+            ItemBlockList.itemBlockDeepslateCobbleDouble = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleDouble,COMPORES,1);
+            ItemBlockList.itemBlockDeepslateCobbleTriple = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleTriple,COMPORES,2);
+            ItemBlockList.itemBlockDeepslateCobbleQuadruple = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleQuadruple,COMPORES,3);
+            ItemBlockList.itemBlockDeepslateCobbleQuintuple = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleQuintuple,COMPORES,4);
+            ItemBlockList.itemBlockDeepslateCobbleSextuple = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleSextuple,COMPORES,5);
+            ItemBlockList.itemBlockDeepslateCobbleSeptuple = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleSeptuple,COMPORES,6);
+            ItemBlockList.itemBlockDeepslateCobbleOctuple = new ItemBlockMetaCompressedOre(BlockList.blockDeepslateCobbleOctuple,COMPORES,7);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleCompressed, event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleDouble,event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleTriple,event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleQuadruple,event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleQuintuple,event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleSextuple,event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleSeptuple,event);
+            itemRegistry(ItemBlockList.itemBlockDeepslateCobbleOctuple,event);
         }
         if(ConfigRegistryList.registerDiamond.get())
         {

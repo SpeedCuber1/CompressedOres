@@ -7,19 +7,20 @@ public enum EnumCriterionCompOres implements IStringSerializable
     CLAY(1,"clay"),
     COAL(2,"coal"),
     COBBLE(3,"cobble"),
-    DIAMOND(4,"diamond"),
-    DIORITE(5,"diorite"),
-    DIRT(6,"dirt"),
-    EMERALD(7,"emerald"),
-    GOLD(8,"gold"),
-    GRANITE(9,"granite"),
-    GRAVEL(10,"gravel"),
-    IRON(11,"iron"),
-    LAPIS(12,"lapis"),
-    NETHERRACK(13,"netherrack"),
-    QUARTZ(14,"quartz"),
-    REDSTONE(15,"redstone"),
-    SAND(16,"sand")
+    DEEPSLATE(4,"deepslate"),
+    DIAMOND(5,"diamond"),
+    DIORITE(6,"diorite"),
+    DIRT(7,"dirt"),
+    EMERALD(8,"emerald"),
+    GOLD(9,"gold"),
+    GRANITE(10,"granite"),
+    GRAVEL(11,"gravel"),
+    IRON(12,"iron"),
+    LAPIS(13,"lapis"),
+    NETHERRACK(14,"netherrack"),
+    QUARTZ(15,"quartz"),
+    REDSTONE(16,"redstone"),
+    SAND(17,"sand")
     ;
     private static final EnumCriterionCompOres[] META_LOOKUP = new EnumCriterionCompOres[values().length];
     private final String name;

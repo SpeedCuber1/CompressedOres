@@ -21,6 +21,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.clayBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.coalBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.cobbleBlocks[i]);
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.deepslateCobbleBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.diamondBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.dioriteBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.dirtBlocks[i]);
@@ -37,6 +38,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.clayBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.coalBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.cobbleBlocks[i]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.deepslateCobbleBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.diamondBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.dioriteBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.dirtBlocks[i]);

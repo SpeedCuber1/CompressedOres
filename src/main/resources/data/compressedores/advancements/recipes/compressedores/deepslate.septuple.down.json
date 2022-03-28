@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:deepslate.septuple.down"
+    ]
+  },
+  "criteria": {
+    "deepslate.septuple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdeepslatecobble.septuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:deepslate.septuple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "deepslate.septuple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

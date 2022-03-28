@@ -65,6 +65,18 @@
         ]
       }
     },
+    "deepslate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdeepslatecobble.quintuple"
+            ]
+          }
+        ]
+      }
+    },
     "diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -228,6 +240,7 @@
       "clay",
       "coal",
       "cobble",
+      "deepslate",
       "diamond",
       "diorite",
       "dirt",

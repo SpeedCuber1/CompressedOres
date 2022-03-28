@@ -36,6 +36,14 @@ public class BlockList
     public static Block blockCobbleSextuple;
     public static Block blockCobbleSeptuple;
     public static Block blockCobbleOctuple;
+    public static Block blockDeepslateCobbleCompressed;
+    public static Block blockDeepslateCobbleDouble;
+    public static Block blockDeepslateCobbleTriple;
+    public static Block blockDeepslateCobbleQuadruple;
+    public static Block blockDeepslateCobbleQuintuple;
+    public static Block blockDeepslateCobbleSextuple;
+    public static Block blockDeepslateCobbleSeptuple;
+    public static Block blockDeepslateCobbleOctuple;
     public static Block blockDiamondCompressed;
     public static Block blockDiamondDouble;
     public static Block blockDiamondTriple;

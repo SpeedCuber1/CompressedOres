@@ -45,6 +45,14 @@ public class LootTables extends BaseLootTableProvider
         lootTables.put(BlockList.blockCobbleSextuple,createStandardTable("blockcobble.sextuple",BlockList.blockCobbleSextuple));
         lootTables.put(BlockList.blockCobbleSeptuple,createStandardTable("blockcobble.septuple",BlockList.blockCobbleSeptuple));
         lootTables.put(BlockList.blockCobbleOctuple,createStandardTable("blockcobble.octuple",BlockList.blockCobbleOctuple));
+        lootTables.put(BlockList.blockDeepslateCobbleCompressed,createStandardTable("blockdeepslatecobble.compressed",BlockList.blockDeepslateCobbleCompressed));
+        lootTables.put(BlockList.blockDeepslateCobbleDouble,createStandardTable("blockdeepslatecobble.double",BlockList.blockDeepslateCobbleDouble));
+        lootTables.put(BlockList.blockDeepslateCobbleTriple,createStandardTable("blockdeepslatecobble.triple",BlockList.blockDeepslateCobbleTriple));
+        lootTables.put(BlockList.blockDeepslateCobbleQuadruple,createStandardTable("blockdeepslatecobble.quadruple",BlockList.blockDeepslateCobbleQuadruple));
+        lootTables.put(BlockList.blockDeepslateCobbleQuintuple,createStandardTable("blockdeepslatecobble.quintuple",BlockList.blockDeepslateCobbleQuintuple));
+        lootTables.put(BlockList.blockDeepslateCobbleSextuple,createStandardTable("blockdeepslatecobble.sextuple",BlockList.blockDeepslateCobbleSextuple));
+        lootTables.put(BlockList.blockDeepslateCobbleSeptuple,createStandardTable("blockdeepslatecobble.septuple",BlockList.blockDeepslateCobbleSeptuple));
+        lootTables.put(BlockList.blockDeepslateCobbleOctuple,createStandardTable("blockdeepslatecobble.octuple",BlockList.blockDeepslateCobbleOctuple));
         lootTables.put(BlockList.blockDiamondCompressed,createStandardTable("blockdiamond.compressed",BlockList.blockDiamondCompressed));
         lootTables.put(BlockList.blockDiamondDouble,createStandardTable("blockdiamond.double",BlockList.blockDiamondDouble));
         lootTables.put(BlockList.blockDiamondTriple,createStandardTable("blockdiamond.triple",BlockList.blockDiamondTriple));

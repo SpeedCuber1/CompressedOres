@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockdeepslatecobble.quintuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockdeepslatecobble.quadruple",
+    "count": 9
+  }
+}

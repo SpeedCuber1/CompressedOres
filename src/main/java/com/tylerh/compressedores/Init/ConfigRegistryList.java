@@ -9,6 +9,7 @@ public class ConfigRegistryList
     public static ForgeConfigSpec.BooleanValue registerClay;
     public static ForgeConfigSpec.BooleanValue registerCoal;
     public static ForgeConfigSpec.BooleanValue registerCobble;
+    public static ForgeConfigSpec.BooleanValue registerDeepslate;
     public static ForgeConfigSpec.BooleanValue registerDiamond;
     public static ForgeConfigSpec.BooleanValue registerDiorite;
     public static ForgeConfigSpec.BooleanValue registerDirt;
@@ -28,6 +29,7 @@ public class ConfigRegistryList
         registerClay = builder.comment("Enable/Disable Clay Compression").define("Clay",ModInfo.GUI_DEFAULT);
         registerCoal = builder.comment("Enable/Disable Coal Compression").define("Coal",ModInfo.GUI_DEFAULT);
         registerCobble = builder.comment("Enable/Disable Cobblestone Compression").define("Cobblestone",ModInfo.GUI_DEFAULT);
+        registerDeepslate = builder.comment("Enable/Disable Cobbled Deepslate Compression").define("Deepslate",ModInfo.GUI_DEFAULT);
         registerDiamond = builder.comment("Enable/Disable Diamond Compression").define("Diamond",ModInfo.GUI_DEFAULT);
         registerDiorite = builder.comment("Enable/Disable Diorite Compression").define("Diorite",ModInfo.GUI_DEFAULT);
         registerDirt = builder.comment("Enable/Disable Dirt Compression").define("Dirt",ModInfo.GUI_DEFAULT);

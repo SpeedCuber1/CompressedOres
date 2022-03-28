@@ -37,6 +37,14 @@ public class ItemBlockList
     public static Item itemBlockCobbleSextuple;
     public static Item itemBlockCobbleSeptuple;
     public static Item itemBlockCobbleOctuple;
+    public static Item itemBlockDeepslateCobbleCompressed;
+    public static Item itemBlockDeepslateCobbleDouble;
+    public static Item itemBlockDeepslateCobbleTriple;
+    public static Item itemBlockDeepslateCobbleQuadruple;
+    public static Item itemBlockDeepslateCobbleQuintuple;
+    public static Item itemBlockDeepslateCobbleSextuple;
+    public static Item itemBlockDeepslateCobbleSeptuple;
+    public static Item itemBlockDeepslateCobbleOctuple;
     public static Item itemBlockDiamondCompressed;
     public static Item itemBlockDiamondDouble;
     public static Item itemBlockDiamondTriple;
