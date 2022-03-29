@@ -149,4 +149,12 @@ public class ItemBlockList
     public static Item itemBlockSandSextuple;
     public static Item itemBlockSandSeptuple;
     public static Item itemBlockSandOctuple;
+    public static Item itemBlockTuffCompressed;
+    public static Item itemBlockTuffDouble;
+    public static Item itemBlockTuffTriple;
+    public static Item itemBlockTuffQuadruple;
+    public static Item itemBlockTuffQuintuple;
+    public static Item itemBlockTuffSextuple;
+    public static Item itemBlockTuffSeptuple;
+    public static Item itemBlockTuffOctuple;
 }

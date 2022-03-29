@@ -143,5 +143,13 @@
   "block.compressedores.blocksand.quintuple": "Quintuple Compressed Sand",
   "block.compressedores.blocksand.sextuple": "Sextuple Compressed Sand",
   "block.compressedores.blocksand.septuple": "Septuple Compressed Sand",
-  "block.compressedores.blocksand.octuple": "Octuple Compressed Sand"
+  "block.compressedores.blocksand.octuple": "Octuple Compressed Sand",
+  "block.compressedores.blocktuff.compressed": "Compressed Tuff",
+  "block.compressedores.blocktuff.double": "Double Compressed Tuff",
+  "block.compressedores.blocktuff.triple": "Triple Compressed Tuff",
+  "block.compressedores.blocktuff.quadruple": "Quadruple Compressed Tuff",
+  "block.compressedores.blocktuff.quintuple": "Quintuple Compressed Tuff",
+  "block.compressedores.blocktuff.sextuple": "Sextuple Compressed Tuff",
+  "block.compressedores.blocktuff.septuple": "Septuple Compressed Tuff",
+  "block.compressedores.blocktuff.octuple": "Octuple Compressed Tuff"
 }

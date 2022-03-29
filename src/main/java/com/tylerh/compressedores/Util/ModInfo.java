@@ -11,7 +11,7 @@ public class ModInfo
 
     public static final String[] matCosts = {"9","81","729","6,561","59,049","531,441","4,782,969","43,046,721"};
     public static final String[] appendNames = {"Gold","Iron","Diamond","Emerald","Lapis","Quartz","Redstone","Coal","Clay"};
-    public static final String[] extraNames = {"Andesite","Cobblestone","Cobbled Deepslate","Diorite","Dirt","Granite","Gravel","Netherrack","Sand"};
+    public static final String[] extraNames = {"Andesite","Cobblestone","Cobbled Deepslate","Diorite","Dirt","Granite","Gravel","Netherrack","Sand","Tuff"};
     public static final Block[] andesiteBlocks = {BlockList.blockAndesiteCompressed,BlockList.blockAndesiteDouble,BlockList.blockAndesiteTriple,BlockList.blockAndesiteQuadruple,BlockList.blockAndesiteQuintuple,BlockList.blockAndesiteSextuple,BlockList.blockAndesiteSeptuple,BlockList.blockAndesiteOctuple};
     public static final Block[] clayBlocks = {BlockList.blockClayCompressed,BlockList.blockClayDouble,BlockList.blockClayTriple,BlockList.blockClayQuadruple,BlockList.blockClayQuintuple,BlockList.blockClaySextuple,BlockList.blockClaySeptuple,BlockList.blockClayOctuple};
     public static final Block[] coalBlocks = {BlockList.blockCoalCompressed,BlockList.blockCoalDouble,BlockList.blockCoalTriple,BlockList.blockCoalQuadruple,BlockList.blockCoalQuintuple,BlockList.blockCoalSextuple,BlockList.blockCoalSeptuple,BlockList.blockCoalOctuple};
@@ -30,5 +30,6 @@ public class ModInfo
     public static final Block[] quartzBlocks = {BlockList.blockQuartzCompressed,BlockList.blockQuartzDouble,BlockList.blockQuartzTriple,BlockList.blockQuartzQuadruple,BlockList.blockQuartzQuintuple,BlockList.blockQuartzSextuple,BlockList.blockQuartzSeptuple,BlockList.blockQuartzOctuple};
     public static final Block[] redstoneBlocks = {BlockList.blockRedstoneCompressed,BlockList.blockRedstoneDouble,BlockList.blockRedstoneTriple,BlockList.blockRedstoneQuadruple,BlockList.blockRedstoneQuintuple,BlockList.blockRedstoneSextuple,BlockList.blockRedstoneSeptuple,BlockList.blockRedstoneOctuple};
     public static final Block[] sandBlocks = {BlockList.blockSandCompressed,BlockList.blockSandDouble,BlockList.blockSandTriple,BlockList.blockSandQuadruple,BlockList.blockSandQuintuple,BlockList.blockSandSextuple,BlockList.blockSandSeptuple,BlockList.blockSandOctuple};
+    public static final Block[] tuffBlocks = {BlockList.blockTuffCompressed,BlockList.blockTuffDouble,BlockList.blockTuffTriple,BlockList.blockTuffQuadruple,BlockList.blockTuffQuintuple,BlockList.blockTuffSextuple,BlockList.blockTuffSeptuple,BlockList.blockTuffOctuple};
     public static final String ADVANCEMENT_BACKGROUND = "minecraft:textures/gui/advancements/backgrounds/stone.png";
 }

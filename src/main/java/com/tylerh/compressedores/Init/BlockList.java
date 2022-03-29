@@ -148,5 +148,13 @@ public class BlockList
     public static Block blockSandSextuple;
     public static Block blockSandSeptuple;
     public static Block blockSandOctuple;
+    public static Block blockTuffCompressed;
+    public static Block blockTuffDouble;
+    public static Block blockTuffTriple;
+    public static Block blockTuffQuadruple;
+    public static Block blockTuffQuintuple;
+    public static Block blockTuffSextuple;
+    public static Block blockTuffSeptuple;
+    public static Block blockTuffOctuple;
 
 }

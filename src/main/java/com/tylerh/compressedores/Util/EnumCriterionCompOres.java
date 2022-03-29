@@ -20,7 +20,8 @@ public enum EnumCriterionCompOres implements IStringSerializable
     NETHERRACK(14,"netherrack"),
     QUARTZ(15,"quartz"),
     REDSTONE(16,"redstone"),
-    SAND(17,"sand")
+    SAND(17,"sand"),
+    TUFF(18,"tuff")
     ;
     private static final EnumCriterionCompOres[] META_LOOKUP = new EnumCriterionCompOres[values().length];
     private final String name;
