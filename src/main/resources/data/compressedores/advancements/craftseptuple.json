@@ -232,6 +232,18 @@
           }
         ]
       }
+    },
+    "tuff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocktuff.septuple"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -253,7 +265,8 @@
       "netherrack",
       "quartz",
       "redstone",
-      "sand"
+      "sand",
+      "tuff"
     ]
   ]
 }

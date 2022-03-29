@@ -157,5 +157,13 @@ public class LootTables extends BaseLootTableProvider
         lootTables.put(BlockList.blockSandSextuple,createStandardTable("blocksand.sextuple",BlockList.blockSandSextuple));
         lootTables.put(BlockList.blockSandSeptuple,createStandardTable("blocksand.septuple",BlockList.blockSandSeptuple));
         lootTables.put(BlockList.blockSandOctuple,createStandardTable("blocksand.octuple",BlockList.blockSandOctuple));
+        lootTables.put(BlockList.blockTuffCompressed,createStandardTable("blocktuff.compressed",BlockList.blockTuffCompressed));
+        lootTables.put(BlockList.blockTuffDouble,createStandardTable("blocktuff.double",BlockList.blockTuffDouble));
+        lootTables.put(BlockList.blockTuffTriple,createStandardTable("blocktuff.triple",BlockList.blockTuffTriple));
+        lootTables.put(BlockList.blockTuffQuadruple,createStandardTable("blocktuff.quadruple",BlockList.blockTuffQuadruple));
+        lootTables.put(BlockList.blockTuffQuintuple,createStandardTable("blocktuff.quintuple",BlockList.blockTuffQuintuple));
+        lootTables.put(BlockList.blockTuffSextuple,createStandardTable("blocktuff.sextuple",BlockList.blockTuffSextuple));
+        lootTables.put(BlockList.blockTuffSeptuple,createStandardTable("blocktuff.septuple",BlockList.blockTuffSeptuple));
+        lootTables.put(BlockList.blockTuffOctuple,createStandardTable("blocktuff.octuple",BlockList.blockTuffOctuple));
     }
 }

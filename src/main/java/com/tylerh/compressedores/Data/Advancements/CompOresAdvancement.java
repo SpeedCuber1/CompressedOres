@@ -54,6 +54,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzCompressed))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneCompressed))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandCompressed))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffCompressed))
                 .parent(root)
                 .save(advancementConsumer,"compressedores:craftcompressed");
         Advancement craftDouble = Advancement.Builder.advancement()
@@ -77,6 +78,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzDouble))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneDouble))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandDouble))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffDouble))
                 .parent(craftCompressed)
                 .save(advancementConsumer,"compressedores:craftdouble");
         Advancement craftTriple = Advancement.Builder.advancement()
@@ -100,6 +102,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzTriple))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneTriple))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandTriple))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffTriple))
                 .parent(craftDouble)
                 .save(advancementConsumer,"compressedores:crafttriple");
         Advancement craftQuadruple = Advancement.Builder.advancement()
@@ -123,6 +126,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzQuadruple))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneQuadruple))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandQuadruple))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffQuadruple))
                 .parent(craftTriple)
                 .save(advancementConsumer,"compressedores:craftquadruple");
         Advancement craftQuintuple = Advancement.Builder.advancement()
@@ -146,6 +150,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzQuintuple))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneQuintuple))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandQuintuple))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffQuintuple))
                 .parent(craftQuadruple)
                 .save(advancementConsumer,"compressedores:craftquintuple");
         Advancement craftSextuple = Advancement.Builder.advancement()
@@ -169,6 +174,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzSextuple))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneSextuple))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandSextuple))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffSextuple))
                 .parent(craftQuintuple)
                 .save(advancementConsumer,"compressedores:craftsextuple");
         Advancement craftSeptuple = Advancement.Builder.advancement()
@@ -192,6 +198,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzSeptuple))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneSeptuple))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandSeptuple))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffSeptuple))
                 .parent(craftSextuple)
                 .save(advancementConsumer,"compressedores:craftseptuple");
         Advancement craftOctuple = Advancement.Builder.advancement()
@@ -215,6 +222,7 @@ public class CompOresAdvancement implements Consumer<Consumer<Advancement>>
                 .addCriterion(EnumCriterionCompOres.QUARTZ.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockQuartzOctuple))
                 .addCriterion(EnumCriterionCompOres.REDSTONE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockRedstoneOctuple))
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandOctuple))
+                .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffOctuple))
                 .parent(craftSeptuple)
                 .save(advancementConsumer,"compressedores:craftoctuple");
     }

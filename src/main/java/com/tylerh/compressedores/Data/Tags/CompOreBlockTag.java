@@ -34,6 +34,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.quartzBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.redstoneBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.sandBlocks[i]);
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.tuffBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.andesiteBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.clayBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.coalBlocks[i]);
@@ -51,6 +52,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.quartzBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.redstoneBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.sandBlocks[i]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.tuffBlocks[i]);
         }
     }
 }

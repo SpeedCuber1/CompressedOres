@@ -23,6 +23,7 @@ public class ConfigRegistryList
     public static ForgeConfigSpec.BooleanValue registerQuartz;
     public static ForgeConfigSpec.BooleanValue registerRedstone;
     public static ForgeConfigSpec.BooleanValue registerSand;
+    public static ForgeConfigSpec.BooleanValue registerTuff;
     public static void initConfig(ForgeConfigSpec.Builder builder)
     {
         registerAndesite = builder.comment("Enable/Disable Andesite Compression").define("Andesite",ModInfo.GUI_DEFAULT);
@@ -43,5 +44,6 @@ public class ConfigRegistryList
         registerQuartz = builder.comment("Enable/Disable Quartz Compression").define("Quartz",ModInfo.GUI_DEFAULT);
         registerRedstone = builder.comment("Enable/Disable Redstone Compression").define("Redstone",ModInfo.GUI_DEFAULT);
         registerSand = builder.comment("Enable/Disable Sand Compression").define("Sand",ModInfo.GUI_DEFAULT);
+        registerTuff = builder.comment("Enable/Disble Tuff Compression").define("Tuff",ModInfo.GUI_DEFAULT);
     }
 }

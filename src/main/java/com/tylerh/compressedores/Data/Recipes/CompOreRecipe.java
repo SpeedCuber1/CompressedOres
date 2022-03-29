@@ -301,6 +301,21 @@ public class CompOreRecipe extends RecipeProvider
                                     .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.sandBlocks[levels.getMetadata()]))
                                     .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                         }
+                        case "tuff" -> {
+                            //Compressing
+                            ShapedRecipeBuilder.shaped(ModInfo.tuffBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.TUFF)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up", has(ModInfo.tuffBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            //Decompressing
+                            ShapelessRecipeBuilder.shapeless(Blocks.TUFF, 9)
+                                    .requires(ModInfo.tuffBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.tuffBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                        }
                     }
                 }
                 else
@@ -576,6 +591,21 @@ public class CompOreRecipe extends RecipeProvider
                                     .requires(ModInfo.sandBlocks[levels.getMetadata()])
                                     .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.sandBlocks[levels.getMetadata()]))
                                     .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                        }
+                        case "tuff" -> {
+                            //Compressing
+                            ShapedRecipeBuilder.shaped(ModInfo.tuffBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',ModInfo.tuffBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up", has(ModInfo.tuffBlocks[levels.getMetadata()]))
+                                    .save(consumer, new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            //Decompressing
+                            ShapelessRecipeBuilder.shapeless(ModInfo.tuffBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.tuffBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.tuffBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                         }
                     }
                 }

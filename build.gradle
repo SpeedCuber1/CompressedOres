@@ -14,7 +14,7 @@ apply plugin: 'idea'
 apply plugin: 'maven-publish'
 apply from: 'https://raw.githubusercontent.com/SizableShrimp/Forge-Class-Remapper/main/classremapper.gradle'
 
-version = '1.18.2'
+version = '1.18.1'
 group = 'com.tylerh.compressedores' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'compressedores'
 
