@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:blackstone.triple.down"
+    ]
+  },
+  "criteria": {
+    "blackstone.triple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockblackstone.triple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:blackstone.triple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blackstone.triple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

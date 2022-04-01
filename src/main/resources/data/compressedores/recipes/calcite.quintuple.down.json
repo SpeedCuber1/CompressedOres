@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockcalcite.quintuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockcalcite.quadruple",
+    "count": 9
+  }
+}

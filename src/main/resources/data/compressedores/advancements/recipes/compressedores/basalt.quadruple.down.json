@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:basalt.quadruple.down"
+    ]
+  },
+  "criteria": {
+    "basalt.quadruple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockbasalt.quadruple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:basalt.quadruple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "basalt.quadruple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

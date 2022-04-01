@@ -29,6 +29,42 @@
         ]
       }
     },
+    "basalt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockbasalt.sextuple"
+            ]
+          }
+        ]
+      }
+    },
+    "blackstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockblackstone.sextuple"
+            ]
+          }
+        ]
+      }
+    },
+    "calcite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcalcite.sextuple"
+            ]
+          }
+        ]
+      }
+    },
     "clay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -249,6 +285,9 @@
   "requirements": [
     [
       "andesite",
+      "basalt",
+      "blackstone",
+      "calcite",
       "clay",
       "coal",
       "cobble",

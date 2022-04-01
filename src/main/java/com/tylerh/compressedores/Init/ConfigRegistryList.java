@@ -6,6 +6,9 @@ import net.minecraftforge.common.ForgeConfigSpec;
 public class ConfigRegistryList
 {
     public static ForgeConfigSpec.BooleanValue registerAndesite;
+    public static ForgeConfigSpec.BooleanValue registerBasalt;
+    public static ForgeConfigSpec.BooleanValue registerBlackstone;
+    public static ForgeConfigSpec.BooleanValue registerCalcite;
     public static ForgeConfigSpec.BooleanValue registerClay;
     public static ForgeConfigSpec.BooleanValue registerCoal;
     public static ForgeConfigSpec.BooleanValue registerCobble;
@@ -27,6 +30,9 @@ public class ConfigRegistryList
     public static void initConfig(ForgeConfigSpec.Builder builder)
     {
         registerAndesite = builder.comment("Enable/Disable Andesite Compression").define("Andesite",ModInfo.GUI_DEFAULT);
+        registerBasalt = builder.comment("Enable/Disable Basalt Compression").define("Basalt",ModInfo.GUI_DEFAULT);
+        registerBlackstone = builder.comment("Enable/Disable Blackstone Compression").define("Blackstone",ModInfo.GUI_DEFAULT);
+        registerCalcite = builder.comment("Enable/Disable Calcite Compression").define("Calcite",ModInfo.GUI_DEFAULT);
         registerClay = builder.comment("Enable/Disable Clay Compression").define("Clay",ModInfo.GUI_DEFAULT);
         registerCoal = builder.comment("Enable/Disable Coal Compression").define("Coal",ModInfo.GUI_DEFAULT);
         registerCobble = builder.comment("Enable/Disable Cobblestone Compression").define("Cobblestone",ModInfo.GUI_DEFAULT);

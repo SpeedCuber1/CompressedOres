@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockcalcite.septuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockcalcite.sextuple",
+    "count": 9
+  }
+}

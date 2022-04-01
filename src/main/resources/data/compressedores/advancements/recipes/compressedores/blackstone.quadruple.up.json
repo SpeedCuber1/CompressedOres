@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:blackstone.quadruple.up"
+    ]
+  },
+  "criteria": {
+    "blackstone.quadruple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockblackstone.quadruple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:blackstone.quadruple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blackstone.quadruple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

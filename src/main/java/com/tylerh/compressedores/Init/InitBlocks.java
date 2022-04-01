@@ -37,6 +37,63 @@ public class InitBlocks
             blockRegistry(BlockList.blockAndesiteSeptuple,event);
             blockRegistry(BlockList.blockAndesiteOctuple,event);
         }
+        if(ConfigRegistryList.registerBasalt.get())
+        {
+            BlockList.blockBasaltCompressed = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 0);
+            BlockList.blockBasaltDouble = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 1);
+            BlockList.blockBasaltTriple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 2);
+            BlockList.blockBasaltQuadruple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 3);
+            BlockList.blockBasaltQuintuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 4);
+            BlockList.blockBasaltSextuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 5);
+            BlockList.blockBasaltSeptuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 6);
+            BlockList.blockBasaltOctuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockbasalt", false, 7);
+            blockRegistry(BlockList.blockBasaltCompressed,event);
+            blockRegistry(BlockList.blockBasaltDouble,event);
+            blockRegistry(BlockList.blockBasaltTriple,event);
+            blockRegistry(BlockList.blockBasaltQuadruple,event);
+            blockRegistry(BlockList.blockBasaltQuintuple,event);
+            blockRegistry(BlockList.blockBasaltSextuple,event);
+            blockRegistry(BlockList.blockBasaltSeptuple,event);
+            blockRegistry(BlockList.blockBasaltOctuple,event);
+        }
+        if(ConfigRegistryList.registerBlackstone.get())
+        {
+            BlockList.blockBlackstoneCompressed = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 0);
+            BlockList.blockBlackstoneDouble = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 1);
+            BlockList.blockBlackstoneTriple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 2);
+            BlockList.blockBlackstoneQuadruple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 3);
+            BlockList.blockBlackstoneQuintuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 4);
+            BlockList.blockBlackstoneSextuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 5);
+            BlockList.blockBlackstoneSeptuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 6);
+            BlockList.blockBlackstoneOctuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockblackstone", false, 7);
+            blockRegistry(BlockList.blockBlackstoneCompressed,event);
+            blockRegistry(BlockList.blockBlackstoneDouble,event);
+            blockRegistry(BlockList.blockBlackstoneTriple,event);
+            blockRegistry(BlockList.blockBlackstoneQuadruple,event);
+            blockRegistry(BlockList.blockBlackstoneQuintuple,event);
+            blockRegistry(BlockList.blockBlackstoneSextuple,event);
+            blockRegistry(BlockList.blockBlackstoneSeptuple,event);
+            blockRegistry(BlockList.blockBlackstoneOctuple,event);
+        }
+        if(ConfigRegistryList.registerCalcite.get())
+        {
+            BlockList.blockCalciteCompressed = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 0);
+            BlockList.blockCalciteDouble = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 1);
+            BlockList.blockCalciteTriple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 2);
+            BlockList.blockCalciteQuadruple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 3);
+            BlockList.blockCalciteQuintuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 4);
+            BlockList.blockCalciteSextuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 5);
+            BlockList.blockCalciteSeptuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 6);
+            BlockList.blockCalciteOctuple = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockcalcite", false, 7);
+            blockRegistry(BlockList.blockCalciteCompressed,event);
+            blockRegistry(BlockList.blockCalciteDouble,event);
+            blockRegistry(BlockList.blockCalciteTriple,event);
+            blockRegistry(BlockList.blockCalciteQuadruple,event);
+            blockRegistry(BlockList.blockCalciteQuintuple,event);
+            blockRegistry(BlockList.blockCalciteSextuple,event);
+            blockRegistry(BlockList.blockCalciteSeptuple,event);
+            blockRegistry(BlockList.blockCalciteOctuple,event);
+        }
         if(ConfigRegistryList.registerClay.get())
         {
             BlockList.blockClayCompressed = new BlockMetaCompressedOre(Material.STONE, 3.0f, 5.0f, "blockclay", false, 0);
@@ -401,6 +458,63 @@ public class InitBlocks
             itemRegistry(ItemBlockList.itemBlockAndesiteSextuple,event);
             itemRegistry(ItemBlockList.itemBlockAndesiteSeptuple,event);
             itemRegistry(ItemBlockList.itemBlockAndesiteOctuple,event);
+        }
+        if(ConfigRegistryList.registerBasalt.get())
+        {
+            ItemBlockList.itemBlockBasaltCompressed = new ItemBlockMetaCompressedOre(BlockList.blockBasaltCompressed, COMPORES,0);
+            ItemBlockList.itemBlockBasaltDouble = new ItemBlockMetaCompressedOre(BlockList.blockBasaltDouble,COMPORES,1);
+            ItemBlockList.itemBlockBasaltTriple = new ItemBlockMetaCompressedOre(BlockList.blockBasaltTriple,COMPORES,2);
+            ItemBlockList.itemBlockBasaltQuadruple = new ItemBlockMetaCompressedOre(BlockList.blockBasaltQuadruple,COMPORES,3);
+            ItemBlockList.itemBlockBasaltQuintuple = new ItemBlockMetaCompressedOre(BlockList.blockBasaltQuintuple,COMPORES,4);
+            ItemBlockList.itemBlockBasaltSextuple = new ItemBlockMetaCompressedOre(BlockList.blockBasaltSextuple,COMPORES,5);
+            ItemBlockList.itemBlockBasaltSeptuple = new ItemBlockMetaCompressedOre(BlockList.blockBasaltSeptuple,COMPORES,6);
+            ItemBlockList.itemBlockBasaltOctuple = new ItemBlockMetaCompressedOre(BlockList.blockBasaltOctuple,COMPORES,7);
+            itemRegistry(ItemBlockList.itemBlockBasaltCompressed, event);
+            itemRegistry(ItemBlockList.itemBlockBasaltDouble,event);
+            itemRegistry(ItemBlockList.itemBlockBasaltTriple,event);
+            itemRegistry(ItemBlockList.itemBlockBasaltQuadruple,event);
+            itemRegistry(ItemBlockList.itemBlockBasaltQuintuple,event);
+            itemRegistry(ItemBlockList.itemBlockBasaltSextuple,event);
+            itemRegistry(ItemBlockList.itemBlockBasaltSeptuple,event);
+            itemRegistry(ItemBlockList.itemBlockBasaltOctuple,event);
+        }
+        if(ConfigRegistryList.registerBlackstone.get())
+        {
+            ItemBlockList.itemBlockBlackstoneCompressed = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneCompressed, COMPORES,0);
+            ItemBlockList.itemBlockBlackstoneDouble = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneDouble,COMPORES,1);
+            ItemBlockList.itemBlockBlackstoneTriple = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneTriple,COMPORES,2);
+            ItemBlockList.itemBlockBlackstoneQuadruple = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneQuadruple,COMPORES,3);
+            ItemBlockList.itemBlockBlackstoneQuintuple = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneQuintuple,COMPORES,4);
+            ItemBlockList.itemBlockBlackstoneSextuple = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneSextuple,COMPORES,5);
+            ItemBlockList.itemBlockBlackstoneSeptuple = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneSeptuple,COMPORES,6);
+            ItemBlockList.itemBlockBlackstoneOctuple = new ItemBlockMetaCompressedOre(BlockList.blockBlackstoneOctuple,COMPORES,7);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneCompressed, event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneDouble,event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneTriple,event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneQuadruple,event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneQuintuple,event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneSextuple,event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneSeptuple,event);
+            itemRegistry(ItemBlockList.itemBlockBlackstoneOctuple,event);
+        }
+        if(ConfigRegistryList.registerCalcite.get())
+        {
+            ItemBlockList.itemBlockCalciteCompressed = new ItemBlockMetaCompressedOre(BlockList.blockCalciteCompressed, COMPORES,0);
+            ItemBlockList.itemBlockCalciteDouble = new ItemBlockMetaCompressedOre(BlockList.blockCalciteDouble,COMPORES,1);
+            ItemBlockList.itemBlockCalciteTriple = new ItemBlockMetaCompressedOre(BlockList.blockCalciteTriple,COMPORES,2);
+            ItemBlockList.itemBlockCalciteQuadruple = new ItemBlockMetaCompressedOre(BlockList.blockCalciteQuadruple,COMPORES,3);
+            ItemBlockList.itemBlockCalciteQuintuple = new ItemBlockMetaCompressedOre(BlockList.blockCalciteQuintuple,COMPORES,4);
+            ItemBlockList.itemBlockCalciteSextuple = new ItemBlockMetaCompressedOre(BlockList.blockCalciteSextuple,COMPORES,5);
+            ItemBlockList.itemBlockCalciteSeptuple = new ItemBlockMetaCompressedOre(BlockList.blockCalciteSeptuple,COMPORES,6);
+            ItemBlockList.itemBlockCalciteOctuple = new ItemBlockMetaCompressedOre(BlockList.blockCalciteOctuple,COMPORES,7);
+            itemRegistry(ItemBlockList.itemBlockCalciteCompressed, event);
+            itemRegistry(ItemBlockList.itemBlockCalciteDouble,event);
+            itemRegistry(ItemBlockList.itemBlockCalciteTriple,event);
+            itemRegistry(ItemBlockList.itemBlockCalciteQuadruple,event);
+            itemRegistry(ItemBlockList.itemBlockCalciteQuintuple,event);
+            itemRegistry(ItemBlockList.itemBlockCalciteSextuple,event);
+            itemRegistry(ItemBlockList.itemBlockCalciteSeptuple,event);
+            itemRegistry(ItemBlockList.itemBlockCalciteOctuple,event);
         }
         if(ConfigRegistryList.registerClay.get())
         {

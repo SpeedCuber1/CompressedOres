@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockblackstone.septuple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockblackstone.sextuple",
+    "count": 9
+  }
+}

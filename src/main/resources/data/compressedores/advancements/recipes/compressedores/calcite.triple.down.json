@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:calcite.triple.down"
+    ]
+  },
+  "criteria": {
+    "calcite.triple.down": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcalcite.triple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:calcite.triple.down"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "calcite.triple.down",
+      "has_the_recipe"
+    ]
+  ]
+}

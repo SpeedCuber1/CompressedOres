@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockbasalt.triple"
+    }
+  ],
+  "result": {
+    "item": "compressedores:blockbasalt.double",
+    "count": 9
+  }
+}

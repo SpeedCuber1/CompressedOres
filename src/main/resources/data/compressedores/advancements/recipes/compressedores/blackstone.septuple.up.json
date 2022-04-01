@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:blackstone.septuple.up"
+    ]
+  },
+  "criteria": {
+    "blackstone.septuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockblackstone.septuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:blackstone.septuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blackstone.septuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:calcite.sextuple.up"
+    ]
+  },
+  "criteria": {
+    "calcite.sextuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcalcite.sextuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:calcite.sextuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "calcite.sextuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}

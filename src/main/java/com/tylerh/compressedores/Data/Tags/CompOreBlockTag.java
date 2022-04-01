@@ -18,6 +18,9 @@ public class CompOreBlockTag extends BlockTagsProvider
         for(int i = 0; i < 8; i++)
         {
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.andesiteBlocks[i]);
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.basaltBlocks[i]);
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.blackstoneBlocks[i]);
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.calciteBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.clayBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.coalBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.cobbleBlocks[i]);
@@ -36,6 +39,9 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.sandBlocks[i]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.tuffBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.andesiteBlocks[i]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.basaltBlocks[i]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.blackstoneBlocks[i]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.calciteBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.clayBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.coalBlocks[i]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.cobbleBlocks[i]);

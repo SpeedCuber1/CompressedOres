@@ -1,5 +1,5 @@
 {
-  "parent": "compressedores:block/blocksand.octuple",
+  "parent": "compressedores:block/blocktuff.octuple",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

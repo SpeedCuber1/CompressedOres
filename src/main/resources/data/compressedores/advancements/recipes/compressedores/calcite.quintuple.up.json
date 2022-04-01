@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "compressedores:calcite.quintuple.up"
+    ]
+  },
+  "criteria": {
+    "calcite.quintuple.up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcalcite.quintuple"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "compressedores:calcite.quintuple.up"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "calcite.quintuple.up",
+      "has_the_recipe"
+    ]
+  ]
+}
