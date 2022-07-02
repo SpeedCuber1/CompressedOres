@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "blockiron.septuple",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "compressedores:blockiron.septuple"
         }
-      ]
+      ],
+      "name": "blockiron.septuple",
+      "rolls": 1.0
     }
   ]
 }

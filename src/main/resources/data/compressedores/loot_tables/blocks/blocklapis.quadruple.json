@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "blocklapis.quadruple",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "compressedores:blocklapis.quadruple"
         }
-      ]
+      ],
+      "name": "blocklapis.quadruple",
+      "rolls": 1.0
     }
   ]
 }

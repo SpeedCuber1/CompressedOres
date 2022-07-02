@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "iii",
-    "iii",
-    "iii"
-  ],
   "key": {
     "i": {
       "item": "minecraft:sand"
     }
   },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
   "result": {
     "item": "compressedores:blocksand.compressed"
   }

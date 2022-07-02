@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "iii",
-    "iii",
-    "iii"
-  ],
   "key": {
     "i": {
       "item": "compressedores:blockandesite.quintuple"
     }
   },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
   "result": {
     "item": "compressedores:blockandesite.sextuple"
   }

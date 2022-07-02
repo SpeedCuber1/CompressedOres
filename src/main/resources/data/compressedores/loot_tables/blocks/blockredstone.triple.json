@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "blockredstone.triple",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "compressedores:blockredstone.triple"
         }
-      ]
+      ],
+      "name": "blockredstone.triple",
+      "rolls": 1.0
     }
   ]
 }

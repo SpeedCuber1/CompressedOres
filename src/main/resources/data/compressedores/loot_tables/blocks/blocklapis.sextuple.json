@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "blocklapis.sextuple",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "compressedores:blocklapis.sextuple"
         }
-      ]
+      ],
+      "name": "blocklapis.sextuple",
+      "rolls": 1.0
     }
   ]
 }

@@ -2,12 +2,10 @@ package com.tylerh.compressedores.Data.Advancements;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import net.minecraft.advancements.Advancement;
+import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
-import net.minecraft.data.HashCache;
 import net.minecraft.data.advancements.AdvancementProvider;
 import net.minecraft.resources.ResourceLocation;
 import org.apache.logging.log4j.LogManager;
@@ -22,7 +20,6 @@ public class BaseAdvancementProvider extends AdvancementProvider
 {
     private final DataGenerator generator;
     private static final Logger LOGGER = LogManager.getLogger();
-    private static final Gson GSON = (new GsonBuilder()).setPrettyPrinting().create();
     private final List<Consumer<Consumer<Advancement>>> advancements = ImmutableList.of(new CompOresAdvancement());
     public BaseAdvancementProvider(DataGenerator generator)
     {
@@ -30,7 +27,7 @@ public class BaseAdvancementProvider extends AdvancementProvider
         this.generator = generator;
     }
     @Override
-    public void run(HashCache cache)
+    public void run(CachedOutput cache)
     {
         Path path = this.generator.getOutputFolder();
         Set<ResourceLocation> set = Sets.newHashSet();
@@ -41,7 +38,7 @@ public class BaseAdvancementProvider extends AdvancementProvider
                 Path path1 = getPath(path, p_204017_3_);
 
                 try {
-                    DataProvider.save(GSON, cache, p_204017_3_.deconstruct().serializeToJson(), path1);
+                    DataProvider.saveStable(cache, p_204017_3_.deconstruct().serializeToJson(), path1);
                 } catch (IOException ioexception) {
                     LOGGER.error("Couldn't save advancement {}", path1, ioexception);
                 }

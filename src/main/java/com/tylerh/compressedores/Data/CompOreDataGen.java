@@ -16,9 +16,9 @@ public class CompOreDataGen
     public static void gatherData(GatherDataEvent event)
     {
         DataGenerator generator = event.getGenerator();
-        generator.addProvider(new LootTables(generator));
-        generator.addProvider(new BaseAdvancementProvider(generator));
-        generator.addProvider(new CompOreRecipe(generator));
-        generator.addProvider(new CompOreBlockTag(generator,event.getExistingFileHelper()));
+        generator.addProvider(true,new LootTables(generator));
+        generator.addProvider(true,new BaseAdvancementProvider(generator));
+        generator.addProvider(true,new CompOreRecipe(generator));
+        generator.addProvider(true,new CompOreBlockTag(generator,event.getExistingFileHelper()));
     }
 }

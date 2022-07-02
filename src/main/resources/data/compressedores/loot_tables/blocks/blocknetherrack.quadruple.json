@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "blocknetherrack.quadruple",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "compressedores:blocknetherrack.quadruple"
         }
-      ]
+      ],
+      "name": "blocknetherrack.quadruple",
+      "rolls": 1.0
     }
   ]
 }
