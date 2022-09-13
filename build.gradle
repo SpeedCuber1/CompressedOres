@@ -116,10 +116,10 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19.2-43.1.3'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.1.25'
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.3.0.260") // Adds the full JEI mod as a runtime dependency
+    runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.3.0.262") // Adds the full JEI mod as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
 
     // Examples using mod jars from ./libs
