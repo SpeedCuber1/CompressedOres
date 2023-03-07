@@ -3,7 +3,6 @@ package com.tylerh.compressedores.Init;
 import com.tylerh.compressedores.Blocks.BlockMetaCompressedOre;
 import com.tylerh.compressedores.Items.ItemBlockMetaCompressedOre;
 import com.tylerh.compressedores.Util.EnumLevel;
-import com.tylerh.compressedores.Util.ItemGroupCompOres;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -18,7 +17,6 @@ import java.util.function.Supplier;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class InitBlocks
 {
-    private static final CreativeModeTab COMPORES = new ItemGroupCompOres();
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModInfo.MOD_ID);
     public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,ModInfo.MOD_ID);
 
@@ -271,7 +269,7 @@ public class InitBlocks
     {
         String uName = name + "." + EnumLevel.byMetadata(meta).getString();
         RegistryObject<T> block = BLOCKS.register(uName,supplier);
-        ITEMS.register(uName,() -> new ItemBlockMetaCompressedOre(block.get(),COMPORES,meta));
+        ITEMS.register(uName,() -> new ItemBlockMetaCompressedOre(block.get(),meta));
         return block;
     }
 }

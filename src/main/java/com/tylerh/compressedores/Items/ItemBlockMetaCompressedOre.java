@@ -12,9 +12,9 @@ import java.util.List;
 public class ItemBlockMetaCompressedOre extends BlockItem
 {
     private int meta;
-    public ItemBlockMetaCompressedOre(Block block, CreativeModeTab group, int meta)
+    public ItemBlockMetaCompressedOre(Block block, int meta)
     {
-        super(block,new Item.Properties().tab(group).stacksTo(64));
+        super(block,new Item.Properties().stacksTo(64));
         this.meta = meta;
     }
     @Override

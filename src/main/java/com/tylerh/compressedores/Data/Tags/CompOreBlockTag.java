@@ -1,64 +1,73 @@
 package com.tylerh.compressedores.Data.Tags;
 
+import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
-public class CompOreBlockTag extends BlockTagsProvider
+import java.util.concurrent.CompletableFuture;
+
+public class CompOreBlockTag extends TagsProvider<Block>
 {
-    public CompOreBlockTag(DataGenerator gen, ExistingFileHelper existingFileHelper)
+    public CompOreBlockTag(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper existingFileHelper)
     {
-        super(gen, ModInfo.MOD_ID,existingFileHelper);
+        super(output, ForgeRegistries.Keys.BLOCKS, provider, ModInfo.MOD_ID, existingFileHelper);
     }
+
     @Override
-    public void addTags()
+    protected void addTags(HolderLookup.Provider provider)
     {
-        for(int i = 0; i < 8; i++)
+        for(EnumLevel level : EnumLevel.values())
         {
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.andesiteBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.basaltBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.blackstoneBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.calciteBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.clayBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.coalBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.cobbleBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.deepslateCobbleBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.diamondBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.dioriteBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.dirtBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.emeraldBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.goldBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.graniteBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.gravelBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.ironBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.lapisBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.quartzBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.redstoneBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.sandBlocks[i]);
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.tuffBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.andesiteBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.basaltBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.blackstoneBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.calciteBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.clayBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.coalBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.cobbleBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.deepslateCobbleBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.diamondBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.dioriteBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.dirtBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.emeraldBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.goldBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.graniteBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.gravelBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.ironBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.lapisBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.quartzBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.redstoneBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.sandBlocks[i]);
-            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.tuffBlocks[i]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.andesiteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.basaltBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.blackstoneBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.calciteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.clayBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.coalBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.cobbleBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.deepslateCobbleBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.diamondBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dioriteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dirtBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.emeraldBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.goldBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.graniteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.gravelBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.ironBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.lapisBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.netherrackBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.quartzBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.redstoneBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.sandBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.tuffBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.andesiteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.basaltBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.blackstoneBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.calciteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.clayBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.coalBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.cobbleBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.deepslateCobbleBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.diamondBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dioriteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dirtBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.emeraldBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.goldBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.graniteBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.gravelBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.ironBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.lapisBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.netherrackBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.quartzBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.redstoneBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.sandBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.tuffBlocks[level.getMetadata()]).get());
         }
     }
 }
