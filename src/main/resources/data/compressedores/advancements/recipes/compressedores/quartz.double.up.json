@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:quartz.double.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "quartz.double.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockquartz.double"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "quartz.double.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:quartz.double.up"
+    ]
+  }
+}

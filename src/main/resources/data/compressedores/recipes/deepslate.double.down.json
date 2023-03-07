@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockdeepslatecobble.double"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressedores:blockdeepslatecobble.compressed"
+  }
+}
