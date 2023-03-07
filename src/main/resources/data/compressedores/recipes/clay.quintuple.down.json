@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressedores:blockclay.quintuple"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressedores:blockclay.quadruple"
+  }
+}

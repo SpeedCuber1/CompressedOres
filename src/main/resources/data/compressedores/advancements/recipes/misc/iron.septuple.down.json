@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:iron.septuple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "iron.septuple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockiron.septuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "iron.septuple.down",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:iron.septuple.down"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:sand.septuple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "sand.septuple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocksand.septuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "sand.septuple.down",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:sand.septuple.down"
+    ]
+  }
+}

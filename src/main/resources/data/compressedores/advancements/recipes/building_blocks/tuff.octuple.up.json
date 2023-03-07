@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:tuff.octuple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "tuff.octuple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocktuff.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "tuff.octuple.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:tuff.octuple.up"
+    ]
+  }
+}

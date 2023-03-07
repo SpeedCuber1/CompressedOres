@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:sand.triple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "sand.triple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocksand.triple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "sand.triple.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:sand.triple.up"
+    ]
+  }
+}

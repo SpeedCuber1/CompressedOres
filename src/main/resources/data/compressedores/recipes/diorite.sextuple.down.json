@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressedores:blockdiorite.sextuple"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressedores:blockdiorite.quintuple"
+  }
+}

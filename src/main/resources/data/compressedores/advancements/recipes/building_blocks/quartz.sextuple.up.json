@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:quartz.sextuple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "quartz.sextuple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockquartz.sextuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "quartz.sextuple.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:quartz.sextuple.up"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressedores:blockandesite.octuple"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressedores:blockandesite.septuple"
+  }
+}

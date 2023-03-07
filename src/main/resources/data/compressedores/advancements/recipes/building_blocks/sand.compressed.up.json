@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:sand.compressed.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "sand.compressed.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocksand.compressed"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "sand.compressed.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:sand.compressed.up"
+    ]
+  }
+}

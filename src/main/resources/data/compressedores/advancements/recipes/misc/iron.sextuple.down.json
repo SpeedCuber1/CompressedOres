@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:iron.sextuple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "iron.sextuple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockiron.sextuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "iron.sextuple.down",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:iron.sextuple.down"
+    ]
+  }
+}
