@@ -4,7 +4,6 @@ import com.tylerh.compressedores.Blocks.BlockMetaCompressedOre;
 import com.tylerh.compressedores.Items.ItemBlockMetaCompressedOre;
 import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Material;
