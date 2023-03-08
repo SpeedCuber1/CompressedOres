@@ -30,8 +30,8 @@ public class CompressedOres
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,ConfigHandler.spec);
         ConfigHandler.loadConfig(ConfigHandler.spec, FMLPaths.CONFIGDIR.get().resolve("compressedores-common.toml"));
         MinecraftForge.EVENT_BUS.register(this);
-        InitBlocks.registerBlocks();
         bus.addListener(this::addCreative);
+        InitBlocks.registerBlocks();
     }
     private void setup(FMLCommonSetupEvent event)
     {
