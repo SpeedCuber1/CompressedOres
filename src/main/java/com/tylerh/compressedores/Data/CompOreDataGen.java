@@ -1,6 +1,6 @@
 package com.tylerh.compressedores.Data;
 
-import com.tylerh.compressedores.Data.Advancements.BaseAdvancementProvider;
+import com.tylerh.compressedores.Data.Advancements.CompOreAdvancementGenerator;
 import com.tylerh.compressedores.Data.Loot_Tables.CompOreLootTableProvider;
 import com.tylerh.compressedores.Data.Recipes.CompOreRecipe;
 import com.tylerh.compressedores.Data.Blockstates.CompOreBlockstateProvider;
@@ -20,7 +20,7 @@ public class CompOreDataGen
         var existingFileHelper = event.getExistingFileHelper();
         var lookupProvider = event.getLookupProvider();
         generator.addProvider(true, CompOreLootTableProvider.create(packOutput));
-        generator.addProvider(true,new BaseAdvancementProvider(packOutput,lookupProvider,existingFileHelper));
+        generator.addProvider(true,new CompOreAdvancementGenerator(packOutput));
         generator.addProvider(true,new CompOreRecipe(packOutput));
         generator.addProvider(true,new CompOreBlockTag(packOutput,lookupProvider,existingFileHelper));
         generator.addProvider(true,new CompOreBlockstateProvider(packOutput,existingFileHelper));

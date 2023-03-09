@@ -1,5 +1,6 @@
 package com.tylerh.compressedores.Data.Advancements;
 
+import com.google.common.collect.Sets;
 import com.tylerh.compressedores.Init.BlockList;
 import com.tylerh.compressedores.Util.EnumCriterionCompOres;
 import com.tylerh.compressedores.Util.ModInfo;
@@ -7,28 +8,49 @@ import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.FrameType;
 import net.minecraft.advancements.RequirementsStrategy;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.advancements.AdvancementSubProvider;
+import net.minecraft.data.CachedOutput;
+import net.minecraft.data.DataProvider;
+import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeAdvancementProvider;
-
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-public class CompOresAdvancement implements ForgeAdvancementProvider.AdvancementGenerator
+public class CompOreAdvancementGenerator implements DataProvider
 {
-    public CompOresAdvancement(HolderLookup.Provider provider, Consumer<Advancement> advancementConsumer, ExistingFileHelper existingFileHelper)
+    private final PackOutput packOutput;
+    public CompOreAdvancementGenerator(PackOutput output)
     {
+        packOutput = output;
     }
-
     @Override
-    public void generate(HolderLookup.Provider registries, Consumer<Advancement> saver, ExistingFileHelper existingFileHelper)
+    public CompletableFuture<?> run(CachedOutput output)
     {
-        Advancement root = Advancement.Builder.advancement()
-                .display(Blocks.GOLD_BLOCK, Component.translatable("Compressed Ores"),Component.translatable("Start Collecting Ores"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,false,false,false)
+        Path path = this.packOutput.getOutputFolder();
+        Set<ResourceLocation> set = Sets.newHashSet();
+        var futures = new ArrayList<CompletableFuture<?>>();
+        Consumer<Advancement> consumer = (advancement) ->
+        {
+            if (!set.add(advancement.getId())) {
+                throw new IllegalStateException("Duplicate advancement " + advancement.getId());
+            } else {
+                Path path1 = createPath(path, advancement);
+
+                futures.add(DataProvider.saveStable(output, advancement.deconstruct().serializeToJson(), path1));
+            }
+        };
+        generateAdvancements(consumer);
+
+        return CompletableFuture.allOf(futures.toArray(CompletableFuture[]::new));
+    }
+    private void generateAdvancements(Consumer<Advancement> consumer)
+    {
+        var root = Advancement.Builder.advancement().display(Blocks.GOLD_BLOCK,Component.translatable("Compressed Ores"),Component.translatable("Start Collecting Resources"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND), FrameType.TASK,false,false,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion("Clay", InventoryChangeTrigger.TriggerInstance.hasItems(Items.CLAY_BALL))
                 .addCriterion("Coal", InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL))
@@ -39,8 +61,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion("Lapis", InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_LAZULI))
                 .addCriterion("Quartz", InventoryChangeTrigger.TriggerInstance.hasItems(Items.QUARTZ))
                 .addCriterion("Redstone", InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE))
-                .save(saver,"compressedores:root");
-        Advancement craftCompressed = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:root");
+        var craftCompressed = Advancement.Builder.advancement().display(BlockList.blockGoldCompressed.get(),Component.translatable("Small Step of the Journey"),Component.translatable("Craft a Compressed Block"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
                 .display(BlockList.blockGoldCompressed.get(),Component.translatable("Small Step of the Journey"),Component.translatable("Craft a Compressed Block"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteCompressed.get()))
@@ -66,8 +88,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandCompressed.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffCompressed.get()))
                 .parent(root)
-                .save(saver,"compressedores:craftcompressed");
-        Advancement craftDouble = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:craftcompressed");
+        var craftDouble = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldDouble.get(),Component.translatable("Double Down"),Component.translatable("Reach Compression Level 2"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteDouble.get()))
@@ -93,8 +115,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandDouble.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffDouble.get()))
                 .parent(craftCompressed)
-                .save(saver,"compressedores:craftdouble");
-        Advancement craftTriple = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:craftdouble");
+        var craftTriple = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldTriple.get(),Component.translatable("Triple Threat"),Component.translatable("Reach Compression Level 3"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteTriple.get()))
@@ -120,8 +142,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandTriple.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffTriple.get()))
                 .parent(craftDouble)
-                .save(saver,"compressedores:crafttriple");
-        Advancement craftQuadruple = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:crafttriple");
+        var craftQuadruple = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldQuadruple.get(),Component.translatable("Quad-Core"),Component.translatable("Reach Compression Level 4"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteQuadruple.get()))
@@ -147,8 +169,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandQuadruple.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffQuadruple.get()))
                 .parent(craftTriple)
-                .save(saver,"compressedores:craftquadruple");
-        Advancement craftQuintuple = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:craftquadruple");
+        var craftQuintuple = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldQuintuple.get(),Component.translatable("Quintessential Quandary"),Component.translatable("Reach Compression Level 5"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.CHALLENGE,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteQuintuple.get()))
@@ -174,8 +196,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandQuintuple.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffQuintuple.get()))
                 .parent(craftQuadruple)
-                .save(saver,"compressedores:craftquintuple");
-        Advancement craftSextuple = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:craftquintuple");
+        var craftSextuple = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldSextuple.get(),Component.translatable("Six-Pack"),Component.translatable("Reach Compression Level 6"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.CHALLENGE,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteSextuple.get()))
@@ -201,8 +223,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandSextuple.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffSextuple.get()))
                 .parent(craftQuintuple)
-                .save(saver,"compressedores:craftsextuple");
-        Advancement craftSeptuple = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:craftsextuple");
+        var craftSeptuple = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldSeptuple.get(),Component.translatable("Seven Really is the Luckiest Number"),Component.translatable("Reach Compression Level 7"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.CHALLENGE,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteSeptuple.get()))
@@ -228,8 +250,8 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandSeptuple.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffSeptuple.get()))
                 .parent(craftSextuple)
-                .save(saver,"compressedores:craftseptuple");
-        Advancement craftOctuple = Advancement.Builder.advancement()
+                .save(consumer,"compressedores:craftseptuple");
+        var craftOctuple = Advancement.Builder.advancement()
                 .display(BlockList.blockGoldOctuple.get(),Component.translatable("Compression Master"),Component.translatable("Reach Top Compression Level"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.GOAL,true,true,false)
                 .requirements(RequirementsStrategy.OR)
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteOctuple.get()))
@@ -255,12 +277,15 @@ public class CompOresAdvancement implements ForgeAdvancementProvider.Advancement
                 .addCriterion(EnumCriterionCompOres.SAND.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockSandOctuple.get()))
                 .addCriterion(EnumCriterionCompOres.TUFF.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockTuffOctuple.get()))
                 .parent(craftSeptuple)
-                .save(saver,"compressedores:craftoctuple");
+                .save(consumer,"compressedores:craftoctuple");
     }
-
-    @Override
-    public AdvancementSubProvider toSubProvider(ExistingFileHelper existingFileHelper)
+    private static Path createPath(Path basePath,Advancement advancement)
     {
-        return ForgeAdvancementProvider.AdvancementGenerator.super.toSubProvider(existingFileHelper);
+        return basePath.resolve("data/" + advancement.getId().getNamespace()+ "/advancements/" + advancement.getId().getPath() + ".json");
+    }
+    @Override
+    public String getName()
+    {
+        return "Compressed Ores Advancements";
     }
 }
