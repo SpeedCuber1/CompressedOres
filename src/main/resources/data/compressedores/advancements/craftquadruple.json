@@ -1,6 +1,18 @@
 {
   "parent": "compressedores:crafttriple",
   "criteria": {
+    "amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.quadruple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "andesite": {
       "conditions": {
         "items": [
@@ -270,7 +282,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "Reach Compression Level 4"
+      "translate": "compressedores.craftquadruple.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -279,11 +291,12 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "Quad-Core"
+      "translate": "compressedores.craftquadruple"
     }
   },
   "requirements": [
     [
+      "amethyst",
       "andesite",
       "basalt",
       "blackstone",

@@ -18,6 +18,7 @@ public class CompOreBlockTag extends BlockTagsProvider
     {
         for(EnumLevel level : EnumLevel.values())
         {
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.amethystBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.andesiteBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.basaltBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.blackstoneBlocks[level.getMetadata()]);
@@ -39,6 +40,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.redstoneBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.sandBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.tuffBlocks[level.getMetadata()]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.amethystBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.andesiteBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.basaltBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.blackstoneBlocks[level.getMetadata()]);

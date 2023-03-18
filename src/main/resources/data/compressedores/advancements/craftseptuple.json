@@ -1,6 +1,18 @@
 {
   "parent": "compressedores:craftsextuple",
   "criteria": {
+    "amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.septuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "andesite": {
       "conditions": {
         "items": [
@@ -270,7 +282,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "Reach Compression Level 7"
+      "translate": "compressedores.craftseptuple.desc"
     },
     "frame": "challenge",
     "hidden": false,
@@ -279,11 +291,12 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "Seven Really is the Luckiest Number"
+      "translate": "compressedores.craftseptuple"
     }
   },
   "requirements": [
     [
+      "amethyst",
       "andesite",
       "basalt",
       "blackstone",

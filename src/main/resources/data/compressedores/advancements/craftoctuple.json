@@ -1,6 +1,18 @@
 {
   "parent": "compressedores:craftseptuple",
   "criteria": {
+    "amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "andesite": {
       "conditions": {
         "items": [
@@ -270,7 +282,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "Reach Top Compression Level"
+      "translate": "compressedores.craftoctuple.desc"
     },
     "frame": "goal",
     "hidden": false,
@@ -279,11 +291,12 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "Compression Master"
+      "translate": "compressedores.craftoctuple"
     }
   },
   "requirements": [
     [
+      "amethyst",
       "andesite",
       "basalt",
       "blackstone",

@@ -31,6 +31,21 @@ public class CompOreRecipe extends RecipeProvider
                 {
                     switch (ores.getString())
                     {
+                        case "amethyst" -> {
+                            //Compressing
+                            ShapedRecipeBuilder.shaped(ModInfo.amethystBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i', Blocks.AMETHYST_BLOCK)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up", has(ModInfo.amethystBlocks[levels.getMetadata()]))
+                                    .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".up"));
+                            //Decompressing
+                            ShapelessRecipeBuilder.shapeless(Blocks.AMETHYST_BLOCK, 9)
+                                    .requires(ModInfo.amethystBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.amethystBlocks[levels.getMetadata()]))
+                                    .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                        }
                         case "andesite" -> {
                             //Compressing
                             ShapedRecipeBuilder.shaped(ModInfo.andesiteBlocks[levels.getMetadata()])
@@ -367,6 +382,21 @@ public class CompOreRecipe extends RecipeProvider
                 {
                     switch (ores.getString())
                     {
+                        case "amethyst" -> {
+                            //Compressing
+                            ShapedRecipeBuilder.shaped(ModInfo.amethystBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i', ModInfo.amethystBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up", has(ModInfo.amethystBlocks[levels.getMetadata()]))
+                                    .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".up"));
+                            //Decompressing
+                            ShapelessRecipeBuilder.shapeless(ModInfo.amethystBlocks[levels.getMetadata() - 1], 9)
+                                    .requires(ModInfo.amethystBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.amethystBlocks[levels.getMetadata()]))
+                                    .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                        }
                         case "andesite" -> {
                             //Compressing
                             ShapedRecipeBuilder.shaped(ModInfo.andesiteBlocks[levels.getMetadata()])

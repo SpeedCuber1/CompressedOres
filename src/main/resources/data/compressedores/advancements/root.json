@@ -1,5 +1,29 @@
 {
   "criteria": {
+    "Amethyst Block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "Amethyst Shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "Clay": {
       "conditions": {
         "items": [
@@ -113,7 +137,7 @@
     "announce_to_chat": false,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "Start Collecting Ores"
+      "translate": "compressedores.root.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -122,11 +146,13 @@
     },
     "show_toast": false,
     "title": {
-      "translate": "Compressed Ores"
+      "translate": "compressedores.root"
     }
   },
   "requirements": [
     [
+      "Amethyst Shard",
+      "Amethyst Block",
       "Clay",
       "Coal",
       "Diamond",

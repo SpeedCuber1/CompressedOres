@@ -1,6 +1,18 @@
 {
   "parent": "compressedores:craftcompressed",
   "criteria": {
+    "amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.double"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "andesite": {
       "conditions": {
         "items": [
@@ -270,7 +282,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "Reach Compression Level 2"
+      "translate": "compressedores.craftdouble.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -279,11 +291,12 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "Double Down"
+      "translate": "compressedores.craftdouble"
     }
   },
   "requirements": [
     [
+      "amethyst",
       "andesite",
       "basalt",
       "blackstone",

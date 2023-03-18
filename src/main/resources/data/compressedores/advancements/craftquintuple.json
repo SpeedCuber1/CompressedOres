@@ -1,6 +1,18 @@
 {
   "parent": "compressedores:craftquadruple",
   "criteria": {
+    "amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.quintuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "andesite": {
       "conditions": {
         "items": [
@@ -270,7 +282,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
-      "translate": "Reach Compression Level 5"
+      "translate": "compressedores.craftquintuple.desc"
     },
     "frame": "challenge",
     "hidden": false,
@@ -279,11 +291,12 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "Quintessential Quandary"
+      "translate": "compressedores.craftquintuple"
     }
   },
   "requirements": [
     [
+      "amethyst",
       "andesite",
       "basalt",
       "blackstone",

@@ -19,6 +19,7 @@ public class CompOreBlockstateProvider extends BlockStateProvider
     {
         for(EnumLevel level : EnumLevel.values())
         {
+            blockWithItem(ModInfo.amethystBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.andesiteBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.basaltBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.blackstoneBlocks[level.getMetadata()]);

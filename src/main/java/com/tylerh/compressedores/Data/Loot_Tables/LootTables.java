@@ -16,6 +16,7 @@ public class LootTables extends BaseLootTableProvider
     {
         for(EnumLevel level : EnumLevel.values())
         {
+            lootTables.put(ModInfo.amethystBlocks[level.getMetadata()],createStandardTable("blockamethyst." + level.getString(),ModInfo.amethystBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.andesiteBlocks[level.getMetadata()],createStandardTable("blockandesite." + level.getString(),ModInfo.andesiteBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.basaltBlocks[level.getMetadata()],createStandardTable("blockbasalt." + level.getString(),ModInfo.basaltBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.blackstoneBlocks[level.getMetadata()],createStandardTable("blockblackstone." + level.getString(),ModInfo.blackstoneBlocks[level.getMetadata()]));

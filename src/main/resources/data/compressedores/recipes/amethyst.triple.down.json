@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "compressedores:blockamethyst.triple"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressedores:blockamethyst.double"
+  }
+}
