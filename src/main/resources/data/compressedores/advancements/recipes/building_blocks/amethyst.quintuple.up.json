@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "amethyst.quintuple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.quintuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:amethyst.quintuple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "amethyst.quintuple.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:amethyst.quintuple.up"
+    ]
+  }
+}

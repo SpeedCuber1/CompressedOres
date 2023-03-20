@@ -22,6 +22,7 @@ public class CompOreLootTable extends BlockLootSubProvider
     {
         for(EnumLevel levels : EnumLevel.values())
         {
+            dropSelf(ModInfo.amethystBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.andesiteBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.basaltBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.blackstoneBlocks[levels.getMetadata()]);

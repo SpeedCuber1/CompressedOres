@@ -10,8 +10,9 @@ public class ModInfo
     public static final boolean GUI_DEFAULT = true;
 
     public static final String[] matCosts = {"9","81","729","6,561","59,049","531,441","4,782,969","43,046,721"};
-    public static final String[] appendNames = {"Gold","Iron","Diamond","Emerald","Lapis","Quartz","Redstone","Coal","Clay"};
+    public static final String[] appendNames = {"Amethyst","Gold","Iron","Diamond","Emerald","Lapis","Quartz","Redstone","Coal","Clay"};
     public static final String[] extraNames = {"Andesite","Basalt","Blackstone","Calcite","Cobblestone","Cobbled Deepslate","Diorite","Dirt","Granite","Gravel","Netherrack","Sand","Tuff"};
+    public static final Block[] amethystBlocks = {BlockList.blockAmethystCompressed.get(),BlockList.blockAmethystDouble.get(),BlockList.blockAmethystTriple.get(),BlockList.blockAmethystQuadruple.get(),BlockList.blockAmethystQuintuple.get(),BlockList.blockAmethystSextuple.get(),BlockList.blockAmethystSeptuple.get(),BlockList.blockAmethystOctuple.get()};
     public static final Block[] andesiteBlocks = {BlockList.blockAndesiteCompressed.get(),BlockList.blockAndesiteDouble.get(),BlockList.blockAndesiteTriple.get(),BlockList.blockAndesiteQuadruple.get(),BlockList.blockAndesiteQuintuple.get(),BlockList.blockAndesiteSextuple.get(),BlockList.blockAndesiteSeptuple.get(),BlockList.blockAndesiteOctuple.get()};
     public static final Block[] basaltBlocks = {BlockList.blockBasaltCompressed.get(),BlockList.blockBasaltDouble.get(),BlockList.blockBasaltTriple.get(),BlockList.blockBasaltQuadruple.get(),BlockList.blockBasaltQuintuple.get(),BlockList.blockBasaltSextuple.get(),BlockList.blockBasaltSeptuple.get(),BlockList.blockBasaltOctuple.get()};
     public static final Block[] blackstoneBlocks = {BlockList.blockBlackstoneCompressed.get(),BlockList.blockBlackstoneDouble.get(),BlockList.blockBlackstoneTriple.get(),BlockList.blockBlackstoneQuadruple.get(),BlockList.blockBlackstoneQuintuple.get(),BlockList.blockBlackstoneSextuple.get(),BlockList.blockBlackstoneSeptuple.get(),BlockList.blockBlackstoneOctuple.get()};

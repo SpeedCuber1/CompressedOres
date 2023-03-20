@@ -21,6 +21,17 @@ public class InitBlocks
 
     public static void registerBlocks()
     {
+        if(ConfigRegistryList.registerAmethyst.get())
+        {
+            BlockList.blockAmethystCompressed = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 0);
+            BlockList.blockAmethystDouble = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 1);
+            BlockList.blockAmethystTriple = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 2);
+            BlockList.blockAmethystQuadruple = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 3);
+            BlockList.blockAmethystQuintuple = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 4);
+            BlockList.blockAmethystSextuple = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 5);
+            BlockList.blockAmethystSeptuple = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 6);
+            BlockList.blockAmethystOctuple = register("blockamethyst", () -> new BlockMetaCompressedOre(Material.AMETHYST,3.0F,5.0F), 7);
+        }
         if(ConfigRegistryList.registerAndesite.get())
         {
             BlockList.blockAndesiteCompressed = register("blockandesite", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 0);

@@ -1,0 +1,324 @@
+{
+  "parent": "compressedores:craftseptuple",
+  "criteria": {
+    "amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockamethyst.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "andesite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockandesite.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "basalt": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockbasalt.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blackstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockblackstone.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "calcite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcalcite.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "clay": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockclay.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "coal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcoal.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockcobble.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "deepslate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdeepslatecobble.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdiamond.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diorite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdiorite.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dirt": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockdirt.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockemerald.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gold": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockgold.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "granite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockgranite.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "gravel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockgravel.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockiron.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "lapis": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocklapis.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "netherrack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocknetherrack.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockquartz.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "redstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockredstone.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sand": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocksand.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "tuff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blocktuff.octuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "compressedores.craftoctuple.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "compressedores:blockgold.octuple"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "compressedores.craftoctuple"
+    }
+  },
+  "requirements": [
+    [
+      "amethyst",
+      "andesite",
+      "basalt",
+      "blackstone",
+      "calcite",
+      "clay",
+      "coal",
+      "cobble",
+      "deepslate",
+      "diamond",
+      "diorite",
+      "dirt",
+      "emerald",
+      "gold",
+      "granite",
+      "gravel",
+      "iron",
+      "lapis",
+      "netherrack",
+      "quartz",
+      "redstone",
+      "sand",
+      "tuff"
+    ]
+  ]
+}

@@ -4,6 +4,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 public class BlockList
 {
+    public static RegistryObject<Block> blockAmethystCompressed;
+    public static RegistryObject<Block> blockAmethystDouble;
+    public static RegistryObject<Block> blockAmethystTriple;
+    public static RegistryObject<Block> blockAmethystQuadruple;
+    public static RegistryObject<Block> blockAmethystQuintuple;
+    public static RegistryObject<Block> blockAmethystSextuple;
+    public static RegistryObject<Block> blockAmethystSeptuple;
+    public static RegistryObject<Block> blockAmethystOctuple;
     public static RegistryObject<Block> blockAndesiteCompressed;
     public static RegistryObject<Block> blockAndesiteDouble;
     public static RegistryObject<Block> blockAndesiteTriple;

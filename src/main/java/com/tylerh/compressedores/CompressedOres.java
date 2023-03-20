@@ -47,6 +47,7 @@ public class CompressedOres
         {
             for(EnumLevel level : EnumLevel.values())
             {
+                event.accept(new ItemStack(ModInfo.amethystBlocks[level.getMetadata()]));
                 event.accept(new ItemStack(ModInfo.andesiteBlocks[level.getMetadata()]));
                 event.accept(new ItemStack(ModInfo.basaltBlocks[level.getMetadata()]));
                 event.accept(new ItemStack(ModInfo.blackstoneBlocks[level.getMetadata()]));

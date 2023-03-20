@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressedores:blockamethyst.octuple"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressedores:blockamethyst.septuple"
+  }
+}

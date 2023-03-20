@@ -24,6 +24,7 @@ public class CompOreBlockTag extends TagsProvider<Block>
     {
         for(EnumLevel level : EnumLevel.values())
         {
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.amethystBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.andesiteBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.basaltBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.blackstoneBlocks[level.getMetadata()]).get());
@@ -46,6 +47,7 @@ public class CompOreBlockTag extends TagsProvider<Block>
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.redstoneBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.sandBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.tuffBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.amethystBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.andesiteBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.basaltBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.blackstoneBlocks[level.getMetadata()]).get());

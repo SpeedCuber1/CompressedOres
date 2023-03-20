@@ -5,6 +5,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 public class ConfigRegistryList
 {
+    public static ForgeConfigSpec.BooleanValue registerAmethyst;
     public static ForgeConfigSpec.BooleanValue registerAndesite;
     public static ForgeConfigSpec.BooleanValue registerBasalt;
     public static ForgeConfigSpec.BooleanValue registerBlackstone;
@@ -29,6 +30,7 @@ public class ConfigRegistryList
     public static ForgeConfigSpec.BooleanValue registerTuff;
     public static void initConfig(ForgeConfigSpec.Builder builder)
     {
+        registerAmethyst = builder.comment("Enable/Disable Amethyst Compression").define("Amethyst",ModInfo.GUI_DEFAULT);
         registerAndesite = builder.comment("Enable/Disable Andesite Compression").define("Andesite",ModInfo.GUI_DEFAULT);
         registerBasalt = builder.comment("Enable/Disable Basalt Compression").define("Basalt",ModInfo.GUI_DEFAULT);
         registerBlackstone = builder.comment("Enable/Disable Blackstone Compression").define("Blackstone",ModInfo.GUI_DEFAULT);
