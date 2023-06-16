@@ -1,5 +1,5 @@
 {
-  "itemGroup.compressedores": "Compressed Ores",
+  "itemgroup.compressedores": "Compressed Ores",
   "compressedores.root": "Compressed Ores",
   "compressedores.root.desc": "Start Collecting Resources",
   "compressedores.craftcompressed": "Small Step of the Journey",

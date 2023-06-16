@@ -3,12 +3,13 @@ package com.tylerh.compressedores.Blocks;
 import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MapColor;
+
 
 public class BlockMetaCompressedOre extends Block
 {
-    public BlockMetaCompressedOre(Material mat, float hardness, float resistance)
+    public BlockMetaCompressedOre(MapColor map, float hardness, float resistance)
     {
-        super(BlockBehaviour.Properties.of(mat).strength(hardness).explosionResistance(resistance).requiresCorrectToolForDrops());
+        super(BlockBehaviour.Properties.of().mapColor(map).strength(hardness).explosionResistance(resistance).requiresCorrectToolForDrops());
     }
 }

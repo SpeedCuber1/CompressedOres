@@ -7,7 +7,7 @@ import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -27,11 +27,12 @@ public class CompressedOres
         bus.register(this);
         InitBlocks.BLOCKS.register(bus);
         InitBlocks.ITEMS.register(bus);
+        CompOreCreativeTab.CREATIVE_TAB.register(bus);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,ConfigHandler.spec);
         ConfigHandler.loadConfig(ConfigHandler.spec, FMLPaths.CONFIGDIR.get().resolve("compressedores-common.toml"));
         MinecraftForge.EVENT_BUS.register(this);
-        bus.addListener(this::addCreative);
         InitBlocks.registerBlocks();
+        bus.addListener(this::addCreative);
     }
     private void setup(FMLCommonSetupEvent event)
     {
@@ -41,9 +42,9 @@ public class CompressedOres
     {
 
     }
-    private void addCreative(CreativeModeTabEvent.BuildContents event)
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTab() == CompOreCreativeTab.COMPORES)
+        if(event.getTab() == CompOreCreativeTab.COMPORES.get())
         {
             for(EnumLevel level : EnumLevel.values())
             {
