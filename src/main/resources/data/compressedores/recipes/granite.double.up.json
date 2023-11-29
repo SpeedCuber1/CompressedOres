@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockgranite.double"
-  }
+  },
+  "show_notification": true
 }

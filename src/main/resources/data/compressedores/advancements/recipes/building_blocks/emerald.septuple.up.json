@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:emerald.septuple.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockgold.triple"
-  }
+  },
+  "show_notification": true
 }

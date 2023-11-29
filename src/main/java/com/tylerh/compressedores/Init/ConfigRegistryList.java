@@ -18,6 +18,7 @@ public class ConfigRegistryList
     public static ForgeConfigSpec.BooleanValue registerDiorite;
     public static ForgeConfigSpec.BooleanValue registerDirt;
     public static ForgeConfigSpec.BooleanValue registerEmerald;
+    public static ForgeConfigSpec.BooleanValue registerEndStone;
     public static ForgeConfigSpec.BooleanValue registerGold;
     public static ForgeConfigSpec.BooleanValue registerGranite;
     public static ForgeConfigSpec.BooleanValue registerGravel;
@@ -43,6 +44,7 @@ public class ConfigRegistryList
         registerDiorite = builder.comment("Enable/Disable Diorite Compression").define("Diorite",ModInfo.GUI_DEFAULT);
         registerDirt = builder.comment("Enable/Disable Dirt Compression").define("Dirt",ModInfo.GUI_DEFAULT);
         registerEmerald = builder.comment("Enable/Disable Emerald Compression").define("Emerald",ModInfo.GUI_DEFAULT);
+        registerEndStone = builder.comment("Enable/Disable End Stone Compression").define("End Stone",ModInfo.GUI_DEFAULT);
         registerGold = builder.comment("Enable/Disable Gold Compression").define("Gold", ModInfo.GUI_DEFAULT);
         registerGranite = builder.comment("Enable/Disable Granite Compression").define("Granite",ModInfo.GUI_DEFAULT);
         registerGravel = builder.comment("Enable/Disable Gravel Compression").define("Gravel",ModInfo.GUI_DEFAULT);

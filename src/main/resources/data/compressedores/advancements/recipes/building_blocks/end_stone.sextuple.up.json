@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "end_stone.sextuple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockendstone.sextuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:end_stone.sextuple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "end_stone.sextuple.up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:end_stone.sextuple.up"
+    ]
+  },
+  "sends_telemetry_event": false
+}

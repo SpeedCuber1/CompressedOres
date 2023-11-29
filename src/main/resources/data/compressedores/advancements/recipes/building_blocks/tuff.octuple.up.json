@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:tuff.octuple.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

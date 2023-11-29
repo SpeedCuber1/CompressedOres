@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockgold.quintuple"
-  }
+  },
+  "show_notification": true
 }

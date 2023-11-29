@@ -35,6 +35,7 @@ public class CompOreLootTable extends BlockLootSubProvider
             dropSelf(ModInfo.dioriteBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.dirtBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.emeraldBlocks[levels.getMetadata()]);
+            dropSelf(ModInfo.endStoneBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.goldBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.graniteBlocks[levels.getMetadata()]);
             dropSelf(ModInfo.gravelBlocks[levels.getMetadata()]);

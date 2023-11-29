@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocklapis.octuple"
-  }
+  },
+  "show_notification": true
 }

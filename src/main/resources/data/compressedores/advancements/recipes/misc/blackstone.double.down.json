@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:blackstone.double.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

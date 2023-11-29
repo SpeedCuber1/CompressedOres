@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:tuff.quintuple.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

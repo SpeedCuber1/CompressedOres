@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockemerald.octuple"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:granite.octuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

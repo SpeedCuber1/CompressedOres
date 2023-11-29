@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:coal.double.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

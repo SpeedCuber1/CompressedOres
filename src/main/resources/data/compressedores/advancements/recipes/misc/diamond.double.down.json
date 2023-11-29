@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:diamond.double.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

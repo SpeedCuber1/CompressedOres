@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:redstone.quintuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

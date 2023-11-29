@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockamethyst.triple"
-  }
+  },
+  "show_notification": true
 }

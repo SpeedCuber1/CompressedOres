@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockblackstone.septuple"
-  }
+  },
+  "show_notification": true
 }

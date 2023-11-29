@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockredstone.triple"
-  }
+  },
+  "show_notification": true
 }

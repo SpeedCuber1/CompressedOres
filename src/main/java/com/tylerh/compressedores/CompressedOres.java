@@ -88,6 +88,9 @@ public class CompressedOres
                         case "emerald" -> {
                             event.accept(new ItemStack(ModInfo.emeraldBlocks[level.getMetadata()]));
                         }
+                        case "end_stone" -> {
+                            event.accept(new ItemStack(ModInfo.endStoneBlocks[level.getMetadata()]));
+                        }
                         case "gold" -> {
                             event.accept(new ItemStack(ModInfo.goldBlocks[level.getMetadata()]));
                         }

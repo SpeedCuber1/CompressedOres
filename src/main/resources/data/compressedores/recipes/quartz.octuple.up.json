@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockquartz.octuple"
-  }
+  },
+  "show_notification": true
 }

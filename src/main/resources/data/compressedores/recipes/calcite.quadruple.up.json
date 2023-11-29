@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockcalcite.quadruple"
-  }
+  },
+  "show_notification": true
 }

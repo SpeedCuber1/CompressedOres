@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:sand.quadruple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

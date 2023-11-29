@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockdiamond.octuple"
-  }
+  },
+  "show_notification": true
 }

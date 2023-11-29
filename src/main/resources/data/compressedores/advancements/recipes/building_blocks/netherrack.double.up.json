@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:netherrack.double.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

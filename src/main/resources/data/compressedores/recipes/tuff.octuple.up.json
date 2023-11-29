@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocktuff.octuple"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:iron.quadruple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

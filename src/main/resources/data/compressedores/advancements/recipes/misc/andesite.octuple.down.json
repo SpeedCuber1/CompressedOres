@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:andesite.octuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

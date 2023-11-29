@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocklapis.quadruple"
-  }
+  },
+  "show_notification": true
 }

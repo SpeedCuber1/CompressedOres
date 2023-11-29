@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:gravel.compressed.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

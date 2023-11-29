@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:andesite.triple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

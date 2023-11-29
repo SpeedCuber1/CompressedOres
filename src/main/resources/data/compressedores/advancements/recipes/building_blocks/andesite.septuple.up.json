@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:andesite.septuple.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

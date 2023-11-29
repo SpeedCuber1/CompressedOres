@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockandesite.quintuple"
-  }
+  },
+  "show_notification": true
 }

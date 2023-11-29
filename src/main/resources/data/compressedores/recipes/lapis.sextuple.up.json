@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocklapis.sextuple"
-  }
+  },
+  "show_notification": true
 }

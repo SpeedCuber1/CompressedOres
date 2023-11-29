@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:netherrack.octuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

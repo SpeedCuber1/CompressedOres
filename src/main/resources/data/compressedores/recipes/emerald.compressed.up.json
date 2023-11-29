@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockemerald.compressed"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockandesite.octuple"
-  }
+  },
+  "show_notification": true
 }

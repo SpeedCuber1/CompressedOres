@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockdeepslatecobble.septuple"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:quartz.quintuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockdeepslatecobble.sextuple"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:emerald.quadruple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

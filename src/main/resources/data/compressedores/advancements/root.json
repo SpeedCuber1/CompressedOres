@@ -163,5 +163,6 @@
       "Quartz",
       "Redstone"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

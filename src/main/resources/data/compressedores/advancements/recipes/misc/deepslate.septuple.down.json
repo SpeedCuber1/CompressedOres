@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:deepslate.septuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

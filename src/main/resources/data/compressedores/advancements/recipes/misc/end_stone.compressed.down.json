@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "end_stone.compressed.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockendstone.compressed"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:end_stone.compressed.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "end_stone.compressed.down",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:end_stone.compressed.down"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:coal.octuple.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

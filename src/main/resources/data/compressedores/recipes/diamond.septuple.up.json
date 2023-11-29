@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockdiamond.septuple"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:gold.quadruple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

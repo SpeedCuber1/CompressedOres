@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocktuff.quadruple"
-  }
+  },
+  "show_notification": true
 }

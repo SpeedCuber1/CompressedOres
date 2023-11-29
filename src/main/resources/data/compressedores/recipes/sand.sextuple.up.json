@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocksand.sextuple"
-  }
+  },
+  "show_notification": true
 }

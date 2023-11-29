@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:basalt.sextuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

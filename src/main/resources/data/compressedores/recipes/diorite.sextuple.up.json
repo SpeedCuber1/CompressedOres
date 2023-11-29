@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockdiorite.sextuple"
-  }
+  },
+  "show_notification": true
 }

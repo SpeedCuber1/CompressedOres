@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:lapis.quadruple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

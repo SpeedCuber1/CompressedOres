@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:amethyst.septuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockcalcite.sextuple"
-  }
+  },
+  "show_notification": true
 }

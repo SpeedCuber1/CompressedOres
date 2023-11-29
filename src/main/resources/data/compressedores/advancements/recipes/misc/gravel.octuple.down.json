@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:gravel.octuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

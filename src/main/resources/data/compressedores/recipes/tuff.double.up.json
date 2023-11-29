@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocktuff.double"
-  }
+  },
+  "show_notification": true
 }

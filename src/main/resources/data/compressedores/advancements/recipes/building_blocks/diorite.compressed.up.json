@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:diorite.compressed.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

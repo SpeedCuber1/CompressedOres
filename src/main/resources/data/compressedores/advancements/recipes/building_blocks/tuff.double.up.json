@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:tuff.double.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

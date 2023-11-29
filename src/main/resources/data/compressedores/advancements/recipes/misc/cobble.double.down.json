@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:cobble.double.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

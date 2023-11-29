@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:dirt.double.up"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

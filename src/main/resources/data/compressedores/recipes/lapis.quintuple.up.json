@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocklapis.quintuple"
-  }
+  },
+  "show_notification": true
 }

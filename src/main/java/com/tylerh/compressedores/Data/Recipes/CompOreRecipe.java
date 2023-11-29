@@ -224,6 +224,21 @@ public class CompOreRecipe extends RecipeProvider implements IConditionBuilder
                                     .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.emeraldBlocks[levels.getMetadata()]))
                                     .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
                         }
+                        case "end_stone" -> {
+                            //Compressing
+                            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS,ModInfo.endStoneBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i',Blocks.END_STONE)
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.endStoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            //Decompressing
+                            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,Blocks.END_STONE,9)
+                                    .requires(ModInfo.endStoneBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.endStoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
+                        }
                         case "gold" -> {
                             //Compressing
                             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS,ModInfo.goldBlocks[levels.getMetadata()])
@@ -574,6 +589,21 @@ public class CompOreRecipe extends RecipeProvider implements IConditionBuilder
                                     .requires(ModInfo.emeraldBlocks[levels.getMetadata()])
                                     .unlockedBy(ores.getString() + "." + levels.getString() + ".down", has(ModInfo.emeraldBlocks[levels.getMetadata()]))
                                     .save(consumer, new ResourceLocation("compressedores", ores.getString() + "." + levels.getString() + ".down"));
+                        }
+                        case "end_stone" -> {
+                            //Compressing
+                            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS,ModInfo.endStoneBlocks[levels.getMetadata()])
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .pattern("iii")
+                                    .define('i', ModInfo.endStoneBlocks[levels.getMetadata() - 1])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".up",has(ModInfo.endStoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".up"));
+                            //Decompressing
+                            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModInfo.endStoneBlocks[levels.getMetadata() - 1],9)
+                                    .requires(ModInfo.endStoneBlocks[levels.getMetadata()])
+                                    .unlockedBy(ores.getString() + "." + levels.getString() + ".down",has(ModInfo.endStoneBlocks[levels.getMetadata()]))
+                                    .save(consumer,new ResourceLocation("compressedores",ores.getString() + "." + levels.getString() + ".down"));
                         }
                         case "gold" -> {
                             //Compressing

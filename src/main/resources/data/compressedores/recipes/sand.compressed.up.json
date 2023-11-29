@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blocksand.compressed"
-  }
+  },
+  "show_notification": true
 }

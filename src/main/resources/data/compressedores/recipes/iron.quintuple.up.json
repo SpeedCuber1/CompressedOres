@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "compressedores:blockiron.quintuple"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "compressedores:calcite.quintuple.down"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

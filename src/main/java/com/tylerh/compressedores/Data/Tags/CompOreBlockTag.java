@@ -37,6 +37,7 @@ public class CompOreBlockTag extends TagsProvider<Block>
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dioriteBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dirtBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.emeraldBlocks[level.getMetadata()]).get());
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.endStoneBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.goldBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.graniteBlocks[level.getMetadata()]).get());
             tag(BlockTags.NEEDS_IRON_TOOL).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.gravelBlocks[level.getMetadata()]).get());
@@ -60,6 +61,7 @@ public class CompOreBlockTag extends TagsProvider<Block>
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dioriteBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.dirtBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.emeraldBlocks[level.getMetadata()]).get());
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.endStoneBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.goldBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.graniteBlocks[level.getMetadata()]).get());
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ForgeRegistries.BLOCKS.getResourceKey(ModInfo.gravelBlocks[level.getMetadata()]).get());
