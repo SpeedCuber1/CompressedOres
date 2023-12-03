@@ -167,6 +167,17 @@ public class InitBlocks
             BlockList.blockEmeraldSeptuple = register("blockemerald", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 6);
             BlockList.blockEmeraldOctuple = register("blockemerald", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 7);
         }
+        if(ConfigRegistryList.registerEndStone.get())
+        {
+            BlockList.blockEndStoneCompressed = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 0);
+            BlockList.blockEndStoneDouble = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 1);
+            BlockList.blockEndStoneTriple = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 2);
+            BlockList.blockEndStoneQuadruple = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 3);
+            BlockList.blockEndStoneQuintuple = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 4);
+            BlockList.blockEndStoneSextuple = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 5);
+            BlockList.blockEndStoneSeptuple = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 6);
+            BlockList.blockEndStoneOctuple = register("blockendstone", () -> new BlockMetaCompressedOre(Material.STONE,3.0F,5.0F), 7);
+        }
         if(ConfigRegistryList.registerGold.get())
         {
             BlockList.blockGoldCompressed = register("blockgold", () -> new BlockMetaCompressedOre(Material.METAL,3.0F,5.0F), 0);

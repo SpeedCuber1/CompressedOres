@@ -31,6 +31,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.dioriteBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.dirtBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.emeraldBlocks[level.getMetadata()]);
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.endStoneBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.goldBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.graniteBlocks[level.getMetadata()]);
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModInfo.gravelBlocks[level.getMetadata()]);
@@ -53,6 +54,7 @@ public class CompOreBlockTag extends BlockTagsProvider
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.dioriteBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.dirtBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.emeraldBlocks[level.getMetadata()]);
+            tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.endStoneBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.goldBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.graniteBlocks[level.getMetadata()]);
             tag(BlockTags.NEEDS_IRON_TOOL).add(ModInfo.gravelBlocks[level.getMetadata()]);

@@ -72,6 +72,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "End Stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:end_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "Gold": {
       "conditions": {
         "items": [
@@ -157,6 +169,7 @@
       "Coal",
       "Diamond",
       "Emerald",
+      "End Stone",
       "Gold",
       "Iron",
       "Lapis",

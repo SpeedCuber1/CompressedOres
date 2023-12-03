@@ -32,6 +32,7 @@ public class CompOreBlockstateProvider extends BlockStateProvider
             blockWithItem(ModInfo.dioriteBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.dirtBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.emeraldBlocks[level.getMetadata()]);
+            blockWithItem(ModInfo.endStoneBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.goldBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.graniteBlocks[level.getMetadata()]);
             blockWithItem(ModInfo.gravelBlocks[level.getMetadata()]);

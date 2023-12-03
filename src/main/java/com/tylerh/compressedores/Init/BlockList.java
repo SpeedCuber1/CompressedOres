@@ -108,6 +108,14 @@ public class BlockList
     public static RegistryObject<Block> blockEmeraldSextuple;
     public static RegistryObject<Block> blockEmeraldSeptuple;
     public static RegistryObject<Block> blockEmeraldOctuple;
+    public static RegistryObject<Block> blockEndStoneCompressed;
+    public static RegistryObject<Block> blockEndStoneDouble;
+    public static RegistryObject<Block> blockEndStoneTriple;
+    public static RegistryObject<Block> blockEndStoneQuadruple;
+    public static RegistryObject<Block> blockEndStoneQuintuple;
+    public static RegistryObject<Block> blockEndStoneSextuple;
+    public static RegistryObject<Block> blockEndStoneSeptuple;
+    public static RegistryObject<Block> blockEndStoneOctuple;
     public static RegistryObject<Block> blockGoldCompressed;
     public static RegistryObject<Block> blockGoldDouble;
     public static RegistryObject<Block> blockGoldTriple;

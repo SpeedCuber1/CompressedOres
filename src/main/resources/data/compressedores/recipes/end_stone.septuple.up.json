@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "i": {
+      "item": "compressedores:blockendstone.sextuple"
+    }
+  },
+  "pattern": [
+    "iii",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "item": "compressedores:blockendstone.septuple"
+  }
+}

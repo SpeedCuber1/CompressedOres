@@ -29,6 +29,7 @@ public class LootTables extends BaseLootTableProvider
             lootTables.put(ModInfo.dioriteBlocks[level.getMetadata()],createStandardTable("blockdiorite." + level.getString(),ModInfo.dioriteBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.dirtBlocks[level.getMetadata()],createStandardTable("blockdirt." + level.getString(),ModInfo.dirtBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.emeraldBlocks[level.getMetadata()],createStandardTable("blockemerald." + level.getString(),ModInfo.emeraldBlocks[level.getMetadata()]));
+            lootTables.put(ModInfo.endStoneBlocks[level.getMetadata()],createStandardTable("blockendstone." + level.getString(),ModInfo.endStoneBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.goldBlocks[level.getMetadata()],createStandardTable("blockgold." + level.getString(),ModInfo.goldBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.graniteBlocks[level.getMetadata()],createStandardTable("blockgranite." + level.getString(),ModInfo.graniteBlocks[level.getMetadata()]));
             lootTables.put(ModInfo.gravelBlocks[level.getMetadata()],createStandardTable("blockgravel." + level.getString(),ModInfo.gravelBlocks[level.getMetadata()]));

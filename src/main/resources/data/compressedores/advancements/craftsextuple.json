@@ -157,6 +157,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "end_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressedores:blockendstone.sextuple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "gold": {
       "conditions": {
         "items": [
@@ -309,6 +321,7 @@
       "diorite",
       "dirt",
       "emerald",
+      "end_stone",
       "gold",
       "granite",
       "gravel",
