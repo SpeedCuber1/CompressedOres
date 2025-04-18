@@ -3,8 +3,8 @@ package com.tylerh.compressedores.Data.Blockstates;
 import com.tylerh.compressedores.Util.EnumLevel;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 public class CompOreBlockstateProvider extends BlockStateProvider
 {

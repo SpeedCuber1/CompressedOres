@@ -18,7 +18,7 @@ public class ItemBlockMetaCompressedOre extends BlockItem
         this.meta = meta;
     }
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> list, TooltipFlag flag)
+    public void appendHoverText(ItemStack stack,TooltipContext context,List<Component> list, TooltipFlag flag)
     {
         for(int i = 0; i < ModInfo.appendNames.length; i++)
         {

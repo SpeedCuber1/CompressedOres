@@ -8,7 +8,6 @@ public class ModInfo
 {
     public static final String MOD_ID = "compressedores";
     public static final boolean GUI_DEFAULT = true;
-
     public static final String[] matCosts = {"9","81","729","6,561","59,049","531,441","4,782,969","43,046,721"};
     public static final String[] appendNames = {"Amethyst","Gold","Iron","Diamond","Emerald","Lapis","Quartz","Redstone","Coal","Clay"};
     public static final String[] extraNames = {"Andesite","Basalt","Blackstone","Calcite","Cobblestone","Cobbled Deepslate","Diorite","Dirt","End Stone","Granite","Gravel","Netherrack","Sand","Tuff"};

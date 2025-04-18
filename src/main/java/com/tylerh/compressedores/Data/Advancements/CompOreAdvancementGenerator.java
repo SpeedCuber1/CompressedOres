@@ -1,58 +1,31 @@
 package com.tylerh.compressedores.Data.Advancements;
 
-import com.google.common.collect.Sets;
 import com.tylerh.compressedores.Init.BlockList;
 import com.tylerh.compressedores.Util.EnumCriterionCompOres;
 import com.tylerh.compressedores.Util.ModInfo;
 import net.minecraft.advancements.Advancement;
-import net.minecraft.advancements.FrameType;
-import net.minecraft.advancements.RequirementsStrategy;
+import net.minecraft.advancements.AdvancementHolder;
+import net.minecraft.advancements.AdvancementRequirements;
+import net.minecraft.advancements.AdvancementType;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.data.CachedOutput;
-import net.minecraft.data.DataProvider;
-import net.minecraft.data.PackOutput;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.data.AdvancementProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-public class CompOreAdvancementGenerator implements DataProvider
+public final class CompOreAdvancementGenerator implements AdvancementProvider.AdvancementGenerator
 {
-    private final PackOutput packOutput;
-    public CompOreAdvancementGenerator(PackOutput output)
-    {
-        packOutput = output;
-    }
     @Override
-    public CompletableFuture<?> run(CachedOutput output)
-    {
-        Path path = this.packOutput.getOutputFolder();
-        Set<ResourceLocation> set = Sets.newHashSet();
-        var futures = new ArrayList<CompletableFuture<?>>();
-        Consumer<Advancement> consumer = (advancement) ->
-        {
-            if (!set.add(advancement.getId())) {
-                throw new IllegalStateException("Duplicate advancement " + advancement.getId());
-            } else {
-                Path path1 = createPath(path, advancement);
-
-                futures.add(DataProvider.saveStable(output, advancement.deconstruct().serializeToJson(), path1));
-            }
-        };
-        generateAdvancements(consumer);
-
-        return CompletableFuture.allOf(futures.toArray(CompletableFuture[]::new));
-    }
-    private void generateAdvancements(Consumer<Advancement> consumer)
+    public void generate(HolderLookup.Provider provider, Consumer<AdvancementHolder> consumer, ExistingFileHelper existingFileHelper)
     {
         var root = Advancement.Builder.advancement()
-                .display(Blocks.GOLD_BLOCK,Component.translatable("compressedores.root"),Component.translatable("compressedores.root.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND), FrameType.TASK,false,false,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(Blocks.GOLD_BLOCK,Component.translatable("compressedores.root"),Component.translatable("compressedores.root.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND), AdvancementType.TASK,false,false,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion("Amethyst Shard",InventoryChangeTrigger.TriggerInstance.hasItems(Items.AMETHYST_SHARD))
                 .addCriterion("Amethyst Block",InventoryChangeTrigger.TriggerInstance.hasItems(Items.AMETHYST_BLOCK))
                 .addCriterion("Clay", InventoryChangeTrigger.TriggerInstance.hasItems(Items.CLAY_BALL))
@@ -66,8 +39,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .addCriterion("Redstone", InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE))
                 .save(consumer,"compressedores:root");
         var craftCompressed = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldCompressed.get(),Component.translatable("compressedores.craftcompressed"),Component.translatable("compressedores.craftcompressed.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldCompressed.get(),Component.translatable("compressedores.craftcompressed"),Component.translatable("compressedores.craftcompressed.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.TASK,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystCompressed.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteCompressed.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltCompressed.get()))
@@ -95,8 +68,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(root)
                 .save(consumer,"compressedores:craftcompressed");
         var craftDouble = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldDouble.get(),Component.translatable("compressedores.craftdouble"),Component.translatable("compressedores.craftdouble.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldDouble.get(),Component.translatable("compressedores.craftdouble"),Component.translatable("compressedores.craftdouble.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.TASK,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystDouble.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteDouble.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltDouble.get()))
@@ -124,8 +97,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftCompressed)
                 .save(consumer,"compressedores:craftdouble");
         var craftTriple = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldTriple.get(),Component.translatable("compressedores.crafttriple"),Component.translatable("compressedores.crafttriple.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldTriple.get(),Component.translatable("compressedores.crafttriple"),Component.translatable("compressedores.crafttriple.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND), AdvancementType.TASK,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystTriple.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteTriple.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltTriple.get()))
@@ -153,8 +126,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftDouble)
                 .save(consumer,"compressedores:crafttriple");
         var craftQuadruple = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldQuadruple.get(),Component.translatable("compressedores.craftquadruple"),Component.translatable("compressedores.craftquadruple.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.TASK,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldQuadruple.get(),Component.translatable("compressedores.craftquadruple"),Component.translatable("compressedores.craftquadruple.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.TASK,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystQuadruple.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteQuadruple.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltQuadruple.get()))
@@ -182,8 +155,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftTriple)
                 .save(consumer,"compressedores:craftquadruple");
         var craftQuintuple = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldQuintuple.get(),Component.translatable("compressedores.craftquintuple"),Component.translatable("compressedores.craftquintuple.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.CHALLENGE,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldQuintuple.get(),Component.translatable("compressedores.craftquintuple"),Component.translatable("compressedores.craftquintuple.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.CHALLENGE,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystQuintuple.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteQuintuple.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltQuintuple.get()))
@@ -211,8 +184,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftQuadruple)
                 .save(consumer,"compressedores:craftquintuple");
         var craftSextuple = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldSextuple.get(),Component.translatable("compressedores.craftsextuple"),Component.translatable("compressedores.craftsextuple.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.CHALLENGE,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldSextuple.get(),Component.translatable("compressedores.craftsextuple"),Component.translatable("compressedores.craftsextuple.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.CHALLENGE,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystSextuple.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteSextuple.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltSextuple.get()))
@@ -240,8 +213,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftQuintuple)
                 .save(consumer,"compressedores:craftsextuple");
         var craftSeptuple = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldSeptuple.get(),Component.translatable("compressedores.craftseptuple"),Component.translatable("compressedores.craftseptuple.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.CHALLENGE,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldSeptuple.get(),Component.translatable("compressedores.craftseptuple"),Component.translatable("compressedores.craftseptuple.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.CHALLENGE,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystSeptuple.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteSeptuple.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltSeptuple.get()))
@@ -269,8 +242,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftSextuple)
                 .save(consumer,"compressedores:craftseptuple");
         var craftOctuple = Advancement.Builder.advancement()
-                .display(BlockList.blockGoldOctuple.get(),Component.translatable("compressedores.craftoctuple"),Component.translatable("compressedores.craftoctuple.desc"),new ResourceLocation(ModInfo.ADVANCEMENT_BACKGROUND),FrameType.GOAL,true,true,false)
-                .requirements(RequirementsStrategy.OR)
+                .display(BlockList.blockGoldOctuple.get(),Component.translatable("compressedores.craftoctuple"),Component.translatable("compressedores.craftoctuple.desc"),ResourceLocation.parse(ModInfo.ADVANCEMENT_BACKGROUND),AdvancementType.GOAL,true,true,false)
+                .requirements(AdvancementRequirements.Strategy.OR)
                 .addCriterion(EnumCriterionCompOres.AMETHYST.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAmethystOctuple.get()))
                 .addCriterion(EnumCriterionCompOres.ANDESITE.getString(),InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockAndesiteOctuple.get()))
                 .addCriterion(EnumCriterionCompOres.BASALT.getString(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockList.blockBasaltOctuple.get()))
@@ -298,13 +271,8 @@ public class CompOreAdvancementGenerator implements DataProvider
                 .parent(craftSeptuple)
                 .save(consumer,"compressedores:craftoctuple");
     }
-    private static Path createPath(Path basePath,Advancement advancement)
+    private static Path createPath(Path basePath,AdvancementHolder advancement)
     {
-        return basePath.resolve("data/" + advancement.getId().getNamespace()+ "/advancements/" + advancement.getId().getPath() + ".json");
-    }
-    @Override
-    public String getName()
-    {
-        return "Compressed Ores Advancements";
+        return basePath.resolve("data/" + advancement.id().getNamespace()+ "/advancements/" + advancement.id().getPath() + ".json");
     }
 }

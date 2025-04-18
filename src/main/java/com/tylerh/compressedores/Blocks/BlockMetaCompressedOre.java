@@ -1,6 +1,5 @@
 package com.tylerh.compressedores.Blocks;
 
-import com.tylerh.compressedores.Util.EnumLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
