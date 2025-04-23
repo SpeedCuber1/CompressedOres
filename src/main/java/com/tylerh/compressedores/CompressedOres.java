@@ -15,7 +15,8 @@ public class CompressedOres
 {
     public CompressedOres(IEventBus bus, ModContainer container)
     {
-        container.registerConfig(ModConfig.Type.COMMON, CompOresConfig.SPEC);
+        container.registerConfig(ModConfig.Type.STARTUP,CompOresConfig.SPEC,"compressedores-common.toml");
+        CompOresConfig.initConfig();
         bus.addListener(this::onCommonSetup);
         CompOreCreativeTab.CREATIVE_TABS.register(bus);
         InitBlocks.BLOCKS.register(bus);
