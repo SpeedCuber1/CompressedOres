@@ -16,7 +16,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
-
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
@@ -33,9 +32,8 @@ public class CompOresAdvancementProvider extends AdvancementProvider
         @Override
         public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> output)
         {
-            final String ADVANCEMENT_BACKGROUND = "textures/gui/advancements/backgrounds/stone";
             var root = Advancement.Builder.advancement()
-                    .display(Blocks.GOLD_BLOCK, Component.translatable("compressedores.root"),Component.translatable("compressedores.root.desc"),Identifier.withDefaultNamespace(ADVANCEMENT_BACKGROUND), AdvancementType.TASK,false,false,false)
+                    .display(Blocks.GOLD_BLOCK, Component.translatable("compressedores.root"),Component.translatable("compressedores.root.desc"),Identifier.withDefaultNamespace(ModInfo.ADVANCEMENT_BACKGROUND), AdvancementType.TASK,false,false,false)
                     .requirements(AdvancementRequirements.Strategy.OR)
                     .addCriterion("Amethyst Shard", InventoryChangeTrigger.TriggerInstance.hasItems(Items.AMETHYST_SHARD))
                     .addCriterion("Amethyst Block",InventoryChangeTrigger.TriggerInstance.hasItems(Items.AMETHYST_BLOCK))
