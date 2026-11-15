@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blocksand.octuple"
+  ],
+  "result": {
+    "count": 9,
+    "id": "compressedores:blocksand.septuple"
+  }
+}

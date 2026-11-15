@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:sand.quadruple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "sand.quadruple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blocksand.quadruple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "sand.quadruple.down"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:sand.quadruple.down"
+    ]
+  }
+}

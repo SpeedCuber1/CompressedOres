@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blockdiorite.quadruple"
+  ],
+  "result": {
+    "count": 9,
+    "id": "compressedores:blockdiorite.triple"
+  }
+}

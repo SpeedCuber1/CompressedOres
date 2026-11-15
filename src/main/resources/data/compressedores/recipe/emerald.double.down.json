@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blockemerald.double"
+  ],
+  "result": {
+    "count": 9,
+    "id": "compressedores:blockemerald.compressed"
+  }
+}

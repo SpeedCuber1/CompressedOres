@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blockendstone.triple"
+  ],
+  "result": {
+    "count": 9,
+    "id": "compressedores:blockendstone.double"
+  }
+}

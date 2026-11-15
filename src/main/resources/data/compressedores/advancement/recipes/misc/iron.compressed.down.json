@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:iron.compressed.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "iron.compressed.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blockiron.compressed"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "iron.compressed.down"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:iron.compressed.down"
+    ]
+  }
+}

@@ -35,5 +35,4 @@ public class ModInfo
     public static final Block[] redstoneBlocks = {BlockList.blockRedstoneCompressed.get(),BlockList.blockRedstoneDouble.get(),BlockList.blockRedstoneTriple.get(),BlockList.blockRedstoneQuadruple.get(),BlockList.blockRedstoneQuintuple.get(),BlockList.blockRedstoneSextuple.get(),BlockList.blockRedstoneSeptuple.get(),BlockList.blockRedstoneOctuple.get()};
     public static final Block[] sandBlocks = {BlockList.blockSandCompressed.get(),BlockList.blockSandDouble.get(),BlockList.blockSandTriple.get(),BlockList.blockSandQuadruple.get(),BlockList.blockSandQuintuple.get(),BlockList.blockSandSextuple.get(),BlockList.blockSandSeptuple.get(),BlockList.blockSandOctuple.get()};
     public static final Block[] tuffBlocks = {BlockList.blockTuffCompressed.get(),BlockList.blockTuffDouble.get(),BlockList.blockTuffTriple.get(),BlockList.blockTuffQuadruple.get(),BlockList.blockTuffQuintuple.get(),BlockList.blockTuffSextuple.get(),BlockList.blockTuffSeptuple.get(),BlockList.blockTuffOctuple.get()};
-    public static final String ADVANCEMENT_BACKGROUND = "minecraft:textures/gui/advancements/backgrounds/stone.png";
 }

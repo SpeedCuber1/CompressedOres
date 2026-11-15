@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blockgold.compressed"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:gold_block"
+  }
+}

@@ -1,14 +1,11 @@
 package com.tylerh.compressedores.Blocks;
-
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 
 
 public class BlockMetaCompressedOre extends Block
 {
-    public BlockMetaCompressedOre(MapColor map, float hardness, float resistance)
+    public BlockMetaCompressedOre(Properties properties)
     {
-        super(BlockBehaviour.Properties.of().mapColor(map).strength(hardness).explosionResistance(resistance).requiresCorrectToolForDrops());
+        super(properties.requiresCorrectToolForDrops());
     }
 }

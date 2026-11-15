@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "emerald.quadruple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blockemerald.quadruple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:emerald.quadruple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "emerald.quadruple.up"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:emerald.quadruple.up"
+    ]
+  }
+}

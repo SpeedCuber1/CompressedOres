@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "basalt.septuple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blockbasalt.septuple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:basalt.septuple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "basalt.septuple.down"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:basalt.septuple.down"
+    ]
+  }
+}

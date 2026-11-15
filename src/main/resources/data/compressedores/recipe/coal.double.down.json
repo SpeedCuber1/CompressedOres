@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blockcoal.double"
+  ],
+  "result": {
+    "count": 9,
+    "id": "compressedores:blockcoal.compressed"
+  }
+}

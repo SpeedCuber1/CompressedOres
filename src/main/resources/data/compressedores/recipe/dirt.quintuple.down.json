@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "compressedores:blockdirt.quintuple"
+  ],
+  "result": {
+    "count": 9,
+    "id": "compressedores:blockdirt.quadruple"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:lapis.septuple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "lapis.septuple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blocklapis.septuple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "lapis.septuple.down"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:lapis.septuple.down"
+    ]
+  }
+}

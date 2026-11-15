@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:lapis.double.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "lapis.double.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blocklapis.double"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "lapis.double.down"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:lapis.double.down"
+    ]
+  }
+}

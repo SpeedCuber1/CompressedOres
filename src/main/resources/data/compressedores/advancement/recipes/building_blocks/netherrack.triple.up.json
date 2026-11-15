@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:netherrack.triple.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "netherrack.triple.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blocknetherrack.triple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "netherrack.triple.up"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:netherrack.triple.up"
+    ]
+  }
+}

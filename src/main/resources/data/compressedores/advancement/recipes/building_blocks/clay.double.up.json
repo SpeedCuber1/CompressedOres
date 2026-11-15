@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "clay.double.up": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blockclay.double"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:clay.double.up"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "clay.double.up"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:clay.double.up"
+    ]
+  }
+}

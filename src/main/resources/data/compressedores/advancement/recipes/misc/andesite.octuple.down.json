@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "andesite.octuple.down": {
+      "conditions": {
+        "items": [
+          {
+            "items": "compressedores:blockandesite.octuple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "compressedores:andesite.octuple.down"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "andesite.octuple.down"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compressedores:andesite.octuple.down"
+    ]
+  }
+}
