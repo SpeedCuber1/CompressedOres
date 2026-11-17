@@ -17,15 +17,11 @@ public class CompressedOres
     {
         container.registerConfig(ModConfig.Type.STARTUP,CompOresConfig.SPEC,"compressedores-common.toml");
         CompOresConfig.initConfig();
-        bus.addListener(this::onCommonSetup);
         CompOreCreativeTab.CREATIVE_TABS.register(bus);
         InitBlocks.BLOCKS.register(bus);
         InitBlocks.ITEMS.register(bus);
         InitBlocks.registerBlocks();
         bus.addListener(this::addCreative);
-    }
-    private void onCommonSetup(final FMLCommonSetupEvent event)
-    {
     }
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
