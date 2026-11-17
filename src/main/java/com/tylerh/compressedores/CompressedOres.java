@@ -23,10 +23,6 @@ public class CompressedOres
         InitBlocks.registerBlocks();
         bus.addListener(this::addCreative);
     }
-    public static Identifier resource(String path)
-    {
-        return Identifier.fromNamespaceAndPath(ModInfo.MOD_ID,path);
-    }
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTab() == CompOreCreativeTab.COMPORES.get())
